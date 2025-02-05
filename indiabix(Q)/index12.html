@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Look at this series: 14, 28, 20, 40, 32, 64, ... -->
+
+    <script>
+
+        let x = prompt("Enter n : ");
+
+        let n = parseInt(x);//14,-8,20,-12,32,-16
+
+        let a = 14;
+
+        let i = 1;
+
+        document.write(a + " ")
+
+        for(i=1; i<=n; i++)
+        {
+
+            if(i%2==0)
+            {
+                a -= 8;
+            }
+            else
+            {
+                a *= 2;
+            }
+
+            document.write(a + " ");
+        }
+
+    </script>
+
+</body>
+</html>

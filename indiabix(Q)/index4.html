@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Look at this series: 22, 21, 23, 22, 24, 23, ... -->
+
+    <script>
+
+            
+        let x = prompt("Enter n : ");
+
+        let n = parseInt(x);
+
+        let i = 1;
+
+        let a = 22;
+
+        document.write(a + " ");
+
+        for(i=1; i<=10; i++)
+        {
+            if(i%2==0)
+            {
+                a += 2;
+            }
+            else
+            {
+                a -= 1;
+            }
+
+            document.write(a + " ");
+
+        }
+
+    </script>
+
+</body>
+</html>
