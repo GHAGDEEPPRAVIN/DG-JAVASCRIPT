@@ -1,14 +1,50 @@
 //  wap to check given number is armstrong or not.
 
-function twoas(n)
+function armstrong(n)
 {
-    let ld = n/10;
+    let num = n;
+    let result = 0;
+    let count = 0;
 
-    n /= 10;
+    while(num>0)
+    {
+        num = Math.floor(num/10);
+        count++;
+    }
 
-    document.write(ld,n);
+    num = n;
+
+    for(let i=1; i<=count; i++)
+    {
+
+        let ld = num % 10;
+
+        let mult = 1;
+
+        for(let j=1; j<=count; j++)
+        {
+
+            mult = mult * ld;
+        
+        }
+
+        result = result + mult;
+        num = Math.floor(num/10);
+    }
+
+    if(n==result)
+    {
+        document.write("This is armstrong number !");
+    }
+    else
+    {
+        document.write("This is not an armstrong number !");
+    }
+
 }
 
-let n = 45;
+let x = prompt("enter any number : ");
 
-twoas(n);
+let n = parseInt(x);
+
+armstrong(n)
