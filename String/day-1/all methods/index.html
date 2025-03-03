@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let arr = [1,2,5,8,6,4,93,5];
+
+            document.write("Orinal array arr = ",arr);
+            document.write("<br><br><br>");
+
+            // length methods (to get length of array)
+
+            document.write("Example of length methods <br>");
+            document.write(arr.length + "<br>");
+
+            // push methods (to add element at end of an array)
+
+            arr.push(790);
+            document.write("Example of push methods <br>");
+            document.write(arr + "<br>");
+
+            // toString methods (to convert array into string)
+
+            let val = arr.toString();
+            document.write("Example of toString methods <br>");
+            document.write(val + "<br>");            
+
+            // join methods (to convert array into string with seprator)
+
+            let val1 = arr.join("*");
+            document.write("Example of join methods <br>");
+            document.write(val1 + "<br>");             
+
+            // at methods (to get element of specific index)
+
+            let val2 = arr.at(2);
+            document.write("Example of at methods <br>");
+            document.write(val2 + "<br>");
+            
+            // pop methods (to remover last elment of array and return it)
+
+            let val3 = arr.pop();
+            document.write("Example of pop methods <br>");
+            document.write(val3 + "<br>");  
+
+            // shift methods (to remover first element of array and return it)
+
+            let val4 = arr.shift();
+            document.write("Example of shift methods <br>");
+            document.write(val4 + "<br>");  
+
+            // unshift methods (to insert new element at the start of array and return new length of an array)
+
+            let val5 = arr.unshift(1010);
+            document.write("Example of unshift methods <br>");
+            document.write(val5 + "<br>");  
+
+            // short methods (to arrange array in acending order)
+
+            let val6 = arr.short();
+            document.write("Example of short methods <br>");
+            document.write(val6 + "<br>");  
+
+    </script>
+    
+</body>
+</html>

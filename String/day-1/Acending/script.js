@@ -1,19 +1,17 @@
 // acending order
 
-let num = "2849763";
-
-let acd = num[0]
+let num = [1,5,4,8,9,1,0,2];
 
 for(let i=0; i<num.length; i++)
 {
-    acd = num[i];
-
-    for(let j=i; j<num.length; j++)
+    for(let j=i+1; j<num.length; j++)
     {
-        if(acd>=num[j])
+        if(num[i]>num[j])
         {
-            acd = num[j];
+            let acd = num[i];
+            num[i] = num[j];
+            num[j] = acd;
         }
     }
-    document.write(acd + " ");
 }
+document.write(acd + " ");
