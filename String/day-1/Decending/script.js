@@ -1,18 +1,18 @@
 // decending aodre form string
 
-let num = "284973";
+let num = [2,8,4,9,7,3];
 
-let dec = num[i];
+let dec = num[0];
 
 for(let i=0; i<num.length; i++)
 {
-    dec = num[i];
-
     for(let j=0; j<num.length; j++)
     {
         if(dec<num[j])
         {
-            dec = num[j];
+            dec = num[i];
+            num[i] = num[j];
+            num[j] = dec;
         }
     }
     document.write(dec + " ");
