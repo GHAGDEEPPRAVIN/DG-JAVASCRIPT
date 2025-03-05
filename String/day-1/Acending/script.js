@@ -13,5 +13,5 @@ for(let i=0; i<num.length; i++)
             num[j] = acd;
         }
     }
+    document.write(acd + "<br> ");
 }
-document.write(acd + " ");
