@@ -224,9 +224,9 @@ let jiosaavn = {
     }
   }
 
-  let jiosaavnarr = jiosaavn.data.topQuery;
+  let jiosaavnarr = jiosaavn.data.topQuery.results[0];
 
-  jiosaavnarr.forEach((song) => {
+  jiosaavnarr.forEach((re) => {
 
     document.write(results[0].id + "<br>")
     
