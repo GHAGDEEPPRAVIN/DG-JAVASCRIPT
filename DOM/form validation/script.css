@@ -1,0 +1,21 @@
+.form
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.form .field
+{
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#signin
+{
+    height: 30px;
+    padding: 5px;
+    margin: 30px auto auto auto;
+    width: 30%;
+    border-radius: 5px;
+}
