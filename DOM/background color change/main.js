@@ -1,18 +1,46 @@
-const btn = document.querySelector("#btn");
-// const body = document.querySelector("body");
-const body = document.querySelector(".body");
+// const btn = document.querySelector("#btn");
 
-btn.addEventListener("click",()=>{
-    changebackgroundcolor();
-});
 
-function changebackgroundcolor()
-{
-    let color = (Math.floor(Math.random() * 16777216).toString(16));
+// function changebackgroundcolor()
+// {
+//     // let color = (Math.floor(Math.random() * 16777216).toString(16));
     
-    let pick = "#" + color;
-
-    body.style.backgroundcolor = pick;
+//     // document.body.style.backgroundcolor = "#" + color;
     
-    btn.innerHTML = pick;
+//     // btn.innerHTML = "#" + color;
+
+//     const randomNumber = Math.floor(Math.random() * 16777245);
+//     const randomCode = "#" + randomNumber.toString(16);
+
+//     // console.log(randomNumber, randomCode);
+//     document.body.style.backgroundColor + randomCode;
+// }
+
+
+// btn.addEventListener("click",()=>{
+//     changebackgroundcolor();
+// });
+
+
+const colorchange = document.getElementById("color-code");
+
+const getcolor = () => {
+    const randomNumber = Math.floor(Math.random()*16777215).toString(16);
+
+    // const randomCode = "#" +  Math.floor(randomNumber.toString(16));
+
+// randomNumber.toString(16);
+
+    const randomCode = "#" + randomNumber;
+    document.body.style.backgroundColor = randomCode;
+
+    colorchange.innerHTML = randomCode;
+    navigator.clipboard.writeText(randomCode);
 }
+
+document.getElementById("btn").addEventListener(
+    "click",
+    getcolor
+)
+
+getcolor();
