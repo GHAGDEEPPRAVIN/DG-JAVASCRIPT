@@ -13,7 +13,7 @@
 //     const randomCode = "#" + randomNumber.toString(16);
 
 //     // console.log(randomNumber, randomCode);
-//     document.body.style.backgroundColor + randomCode;
+//     document.body.style.backgroundColor = randomCode;
 // }
 
 
