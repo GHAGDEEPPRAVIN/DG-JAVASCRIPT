@@ -4,7 +4,7 @@ A simple web-based notes application that uses **LocalStorage** to save and retr
 
 ## 📽️ Demo
 
-<img src="">
+<img src="outputvideo.gif">
 
 ## 🖼️ Screenshots
 
