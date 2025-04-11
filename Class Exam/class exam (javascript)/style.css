@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e0e7ff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+.main {
+    background: #fefefe;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 600px;
+}
+
+#input {
+    width: 95%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+}
+#addbtn {
+    width:100%;
+    padding: 12px;
+    background-color: #5b21b6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#addbtn:hover {
+    background-color: #4c1d95;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.diplaylist {
+    width: 30%;
+    margin: 10px;
+    height: 120px;
+    padding: 15px;
+    background-color: #fff9c4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.diplaylist p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+#btn {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    margin-right: 5px;
+}
+
+.deletebtn {
+    background-color: red;
+    color: white;
+}
+
+.editbtn {
+    background-color: blue;
+    color: white;
+}
