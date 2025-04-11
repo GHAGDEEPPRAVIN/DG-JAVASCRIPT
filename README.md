@@ -8,7 +8,7 @@ A simple web-based notes application that uses **LocalStorage** to save and retr
 
 ## 🖼️ Screenshots
 
-<img src="">
+<img src="outputimages.png">
 
 ## 🌟 Features
 
