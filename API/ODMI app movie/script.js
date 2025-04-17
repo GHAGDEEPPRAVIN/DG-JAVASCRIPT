@@ -9,15 +9,17 @@ const des = document.getElementById("des");
 let movie = title.value;
 
 
-function callApi(movie)
+function callApi()
 {
-    let link = "https://omdbapi.com/?t="+rrr+"&apikey=5e2fb6f7";
+    // let link = "https://omdbapi.com/?t=rrr&apikey=5e2fb6f7";
 
-    img.src = link.Poster;
-    name.innerHTML = link.Title;
-
+    fetch("https://omdbapi.com/?t=rrr&apikey=5e2fb6f7").then((response) => {response.json()} 
+    ).then((data) => {
+        img.src = data.Poster;
+        name.innerHTML = data.Title.value;
+    });
 }
 
-btn.addEventListener("click",callApi(movie));
+btn.addEventListener("click",callApi);
 
-callApi(movie);
+// callApi();
