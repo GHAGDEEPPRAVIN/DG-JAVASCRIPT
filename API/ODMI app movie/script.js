@@ -11,14 +11,23 @@ let movie = title.value;
 
 function callApi()
 {
-    // let link = "https://omdbapi.com/?t=rrr&apikey=5e2fb6f7";
+    const link = "https://omdbapi.com/?t=rrr&apikey=5e2fb6f7";
 
-    fetch("https://omdbapi.com/?t=rrr&apikey=5e2fb6f7").then((response) => {response.json()} 
-    ).then((data) => {
+    fetch(link).then((response) => 
+        response.json()
+    ).then((data) => 
         img.src = data.Poster;
-        name.innerHTML = data.Title.value;
-    });
+    );
 }
+
+// function dogImg()
+// {
+//     fetch("https://dog.ceo/api/breeds/image/random").then((response) => 
+//         response.json()
+//     ).then((data) => 
+//         img.src = data.message
+//     );
+// }
 
 btn.addEventListener("click",callApi);
 
