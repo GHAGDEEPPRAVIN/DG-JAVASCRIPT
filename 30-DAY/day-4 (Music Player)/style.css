@@ -4,3 +4,31 @@
     padding: 0%;
     box-sizing: border-box;
 }
+body {
+    background: #111;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .player {
+    margin-top: 100px;
+  }
+  
+  .controls button {
+    background: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .controls button:hover {
+    background: #555;
+  }
+  
