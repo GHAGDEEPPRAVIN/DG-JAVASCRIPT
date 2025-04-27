@@ -1,26 +1,49 @@
-let cart = [];
-let total = 0;
+const cart = [];
 
-function addToCart(productName, price) {
-  cart.push({ name: productName, price: price });
-  total += price;
-  updateCart();
-}
+    function addToCart(name, price) {
+      const existingItem = cart.find(item => item.name === name);
+      if (existingItem) {
+        existingItem.quantity++;
+      } else {
+        cart.push({ name, price, quantity: 1 });
+      }
+      renderCart();
+    }
 
-function updateCart() {
-  const cartElement = document.getElementById('cart');
-  const totalElement = document.getElementById('total');
+    function renderCart() {
+      const cartItemsDiv = document.getElementById('cart-items');
+      cartItemsDiv.innerHTML = '';
 
-  // Clear current cart
-  cartElement.innerHTML = '';
+      let total = 0;
+      cart.forEach((item, index) => {
+        total += item.price * item.quantity;
 
-  // Add each item
-  cart.forEach(item => {
-    const li = document.createElement('li');
-    li.innerText = `${item.name} - $${item.price}`;
-    cartElement.appendChild(li);
-  });
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `
+          <span>${item.name} - $${item.price}</span>
+          <div>
+            <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)">
+            <button onclick="removeFromCart(${index})">Remove</button>
+          </div>
+        `;
+        cartItemsDiv.appendChild(div);
+      });
 
-  // Update total
-  totalElement.innerText = `Total: $${total}`;
-}
+      document.getElementById('total').innerText = `Total: $${total.toFixed(2)}`;
+    }
+
+    function updateQuantity(index, quantity) {
+      if (quantity < 1) {
+        removeFromCart(index);
+        return;
+      }
+      cart[index].quantity = parseInt(quantity);
+      renderCart();
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      renderCart();
+    }
+ 

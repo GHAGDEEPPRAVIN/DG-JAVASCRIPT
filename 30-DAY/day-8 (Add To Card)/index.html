@@ -8,31 +8,27 @@
 </head>
 <body>
 
-<div class="container">
-  <h1>Simple Store</h1>
-  
-  <div class="products">
-    <div class="product">
-      <h2>Product 1</h2>
-      <p>$10</p>
-      <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+  <div class="product">
+    <h2>Product List</h2>
+    <div>
+      <p><strong>Apple</strong> - $1</p>
+      <button onclick="addToCart('Apple', 1)">Add to Cart</button>
     </div>
-    <div class="product">
-      <h2>Product 2</h2>
-      <p>$20</p>
-      <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+    <div>
+      <p><strong>Banana</strong> - $0.5</p>
+      <button onclick="addToCart('Banana', 0.5)">Add to Cart</button>
     </div>
-    <div class="product">
-      <h2>Product 3</h2>
-      <p>$15</p>
-      <button onclick="addToCart('Product 3', 15)">Add to Cart</button>
+    <div>
+      <p><strong>Orange</strong> - $0.8</p>
+      <button onclick="addToCart('Orange', 0.8)">Add to Cart</button>
     </div>
   </div>
 
-  <h2>Your Cart</h2>
-  <ul id="cart"></ul>
-  <h3 id="total">Total: $0</h3>
-</div>
+  <div class="cart">
+    <h2>🛒 Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3 id="total">Total: $0</h3>
+  </div>
 
 <script src="script.js"></script>
 </body>
