@@ -1,5 +1,3 @@
-# 9 DAYS OUTPUT
-
 ## DAY-1 OUTPUT
 
 🎯 Quiz App
