@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Add to Cart App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛒 Add to Cart System</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="product">
-    <h2>Product List</h2>
-    <div>
-      <p><strong>Apple</strong> - $1</p>
-      <button onclick="addToCart('Apple', 1)">Add to Cart</button>
-    </div>
-    <div>
-      <p><strong>Banana</strong> - $0.5</p>
-      <button onclick="addToCart('Banana', 0.5)">Add to Cart</button>
-    </div>
-    <div>
-      <p><strong>Orange</strong> - $0.8</p>
-      <button onclick="addToCart('Orange', 0.8)">Add to Cart</button>
-    </div>
-  </div>
+    <header>
+        <h1>🛍️ My Shop</h1>
+        <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+    </header>
 
-  <div class="cart">
-    <h2>🛒 Your Cart</h2>
-    <div id="cart-items"></div>
-    <h3 id="total">Total: $0</h3>
-  </div>
+    <main class="product-container" id="product-list">
+    </main>
 
-<script src="script.js"></script>
+    <div class="cart" id="cart">
+        <h2>🛒 Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <h3>Total: $<span id="total-price">0</span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
