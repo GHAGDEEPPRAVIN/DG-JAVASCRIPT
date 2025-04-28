@@ -48,7 +48,7 @@ Minimal and customizable styling
 
 🎥 Demo
 
-<img src"output-2.gif">
+<img src="output-2.gif">
 
 🛠️ Tech Stack
 HTML5 — Structure
