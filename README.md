@@ -197,6 +197,34 @@ Clean and smooth UI animations
 
 Weather API — (Example: OpenWeatherMap API)
 
+## DAY-7 OUTPUT
+
+🖼️ Image Search Engine
+
+A sleek and responsive image search engine built with HTML, CSS, and JavaScript, powered by a public image API (e.g., Unsplash API or Pexels API). This project allows users to search for images using keywords and view results in a visually appealing gallery format.
+
+🔍 Features
+
+--> Real-time image search using API
+
+--> Responsive and modern UI design
+
+--> Infinite scroll / Load more functionality
+
+--> Error handling for failed API requests
+
+--> Clean and organized codebase
+
+🚀 Tech Stack
+
+--> Frontend: HTML5, CSS3, JavaScript (Vanilla)
+
+--> API: Unsplash API / Pexels API (customizable)
+
+📸 Demo
+
+<img src="output-7.gif">
+
 ## DAY-8 OUTPUT
 
 🛒 Add to Cart App
