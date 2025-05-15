@@ -1,47 +1,58 @@
-const signs = ['+', '-', '*', '/'];
+// const keyboard = document.querySelectorAll("#keyboard > div");
+// const display = document.getElementById("display");
 
-const number = document.querySelectorAll('.number');
-let display = document.getElementById('display');
+// console.log(keyboard)
+// let total = "";
 
-number.forEach((btn) => {
-    btn.addEventListener('click', (el) => {
-        let type = el.currentTarget.innerHTML;
+// keyboard.forEach((element,index)=>
+// {
+//     element.addEventListener("click", ()=>
+//     {
+//         const currentValue = element.innerText; 
+        
+//         display.innerText = currentValue;
 
-        if(/[=]/.test(type)){
-            extract_number(display.innerHTML);
-        }else if(type == 'C'){
-            display.innerHTML = "";
-        }else{
-            display.innerHTML = display.innerHTML + type;
+//         if(currentValue == "C")
+//         {
+//             display.innerText = "";
+//             total = "";
+//         }
+//         else if(currentValue == "=")
+//         {
+//             display.innerText = eval(total);
+//         }
+//         else
+//         {
+//             total += currentValue;
+//             display.innerText = total;
+//         }
+//     })
+// })
+
+
+const keyboard = document.querySelectorAll("#keyboard > div");
+const display = document.getElementById("display");
+
+let total = "";
+
+keyboard.forEach((element) => {
+    element.addEventListener("click", () => {
+        const currentValue = element.innerText;
+
+        if (currentValue === "C") {
+            total = "";
+            display.innerText = "";
+        } else if (currentValue === "=") {
+            try {
+                total = eval(total);
+                display.innerText = total;
+            } catch (error) {
+                display.innerText = "Error";
+                total = "";
+            }
+        } else {
+            total += currentValue;
+            display.innerText = total;
         }
     });
 });
-
-function extract_number(str){
-    for(let i = 0; i < str.length; i++){
-        signs.forEach((el) => {
-            if(str[i] === el){
-                let sign = str[i];
-                let num1 = str.slice(0, i);
-                let num2 = str.slice(i+1);
-                
-                calculation(sign, num1, num2);
-            }
-        });
-    }
-}
-
-function calculation(sign, num1, num2){
-    let ans = null;
-    if(sign === '+'){
-        ans = parseInt(num1) + parseInt(num2);
-    }else if(sign === '-'){
-        ans = parseInt(num1) - parseInt(num2);
-    }else if(sign === '*'){
-        ans = parseInt(num1) * parseInt(num2);
-    }else if(sign === '/'){
-        ans = parseInt(num1) / parseInt(num2);
-    }
-
-    display.innerHTML = ans;
-}
