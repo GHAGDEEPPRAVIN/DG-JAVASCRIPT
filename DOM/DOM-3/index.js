@@ -61,10 +61,37 @@ form.addEventListener("submit", function(event)
     let inputTask = input.value;
     let prioritySelector = priority.value;
 
-    let todo = {task : inputTask , priority : prioritySelector}
+    let todo = {task : inputTask , priority : prioritySelector , Delete :"delete" }
 
     formData.push(todo);
 
-    console.log(formData);
+    console.log(formData)
+
+    let tr = document.createElement("tr");
+    
+    let tasktd = document.createElement("td");
+    tasktd.textContent = todo.task; 
+
+    let prioritytd = document.createElement("td");
+    prioritytd.textContent = todo.priority;
+    
+    let deletetd = document.createElement("td");
+    deletetd.textContent = todo.Delete;
+    deletetd.style.color = "red";
+    deletetd.style.cursor = "pointer";
+
+    deletetd.addEventListener('click',function()
+    {
+        tr.remove();
+    })
+
+    tr.appendChild(tasktd);
+    tr.appendChild(prioritytd);
+    tr.appendChild(deletetd);
+
+    tbody.appendChild(tr)
+
+    input.value = "";
+    priority.value = "";
 
 })
