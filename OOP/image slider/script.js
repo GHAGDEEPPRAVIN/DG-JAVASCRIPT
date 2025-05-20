@@ -1,18 +1,32 @@
-const slider = document.getElementById('slider');
-    const slides = document.querySelectorAll('.slider-images img');
-    let index = 0;
+let images = ["images/1.jpeg","images/2.jpeg","images/3.jpeg"];
 
-    function showSlide(i) {
-      if (i < 0) index = slides.length - 1;
-      else if (i >= slides.length) index = 0;
-      else index = i;
-      slider.style.transform = `translateX(${-index * 600}px)`;
-    }
+const img = document.getElementById("img");
+const left = document.getElementById("left");
+const right = document.getElementById("right");
+let index = 0;
 
-    function nextSlide() {
-      showSlide(index + 1);
-    }
+function display()
+{
+  img.src = images[index];
+}
 
-    function prevSlide() {
-      showSlide(index - 1);
-    }
+function showleft(){
+  if(index>images.length-1)
+  {
+      index--;
+  }
+  img.src = images[index];
+}
+
+function showright(){
+  if(index<images.length-1)
+  {
+      index++;
+  }
+  img.src = images[index];
+}
+
+left.addEventListener('click',showleft());
+right.addEventListener('click',showright());
+
+display();
