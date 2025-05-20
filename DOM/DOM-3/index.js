@@ -1,97 +1,48 @@
-// const form = document.getElementById("form");
-// const input = document.getElementById("task");
-// const priority = document.getElementById("priority");
-// let tbody = document.querySelector("tbody");
-
-// form.addEventListener("submit", function(event) 
-// {
-//     event.preventDefault();
-
-//     let inputTask = input.value;
-//     let prioritySelector = priority.value;
-
-//     if(inputTask === "" || prioritySelector === "")
-//     {
-//         alert("Please Enter Both Task and Priority");
-//         return;
-//     }
-
-//     let tr = document.createElement("tr");
-    
-//     let tasktd = document.createElement("td");
-//     tasktd.textContent = inputTask; 
-
-//     let prioritytd = document.createElement("td");
-//     prioritytd.textContent = prioritySelector;
-    
-//     let deletetd = document.createElement("td");
-//     deletetd.textContent = "Delete";
-//     deletetd.style.color = "red";
-//     deletetd.style.cursor = "pointer";
-
-
-//     deletetd.addEventListener('click',function()
-//     {
-//         tr.remove();
-//     })
-
-//     tr.appendChild(tasktd);
-//     tr.appendChild(prioritytd);
-//     tr.appendChild(deletetd);
-
-//     tbody.appendChild(tr);
-    
-//     input.value = "";
-//     priority.value = "";
-// })
-
-
-// onject array form
-
 const form = document.getElementById("form");
-const input = document.getElementById("task");
-const priority = document.getElementById("priority");
-let tbody = document.querySelector("tbody");
-let formData = [];
+const tbody = document.querySelector("tbody");
 
-form.addEventListener("submit", function(event) 
-{
-    event.preventDefault();
+let formData = JSON.parse(localStorage.getItem("todoData")) || [];
+console.log(formData);
 
-    let inputTask = input.value;
-    let prioritySelector = priority.value;
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-    let todo = {task : inputTask , priority : prioritySelector , Delete :"delete" }
+    const taskvalue = form.task.value;
+    const priorityvalue = form.priority.value;
 
-    formData.push(todo);
+    const todoObj = {
+        task: taskvalue,
+        priority: priorityvalue,
+    };
 
-    console.log(formData)
+    formData.push(todoObj);
+    localStorage.setItem("todoData", JSON.stringify(formData));
+    DisplayTodoData(formData);
+    form.reset();
+});
 
-    let tr = document.createElement("tr");
-    
-    let tasktd = document.createElement("td");
-    tasktd.textContent = todo.task; 
+function DisplayTodoData(arr) {
+  tbody.innerHTML = null;
 
-    let prioritytd = document.createElement("td");
-    prioritytd.textContent = todo.priority;
-    
-    let deletetd = document.createElement("td");
-    deletetd.textContent = todo.Delete;
-    deletetd.style.color = "red";
-    deletetd.style.cursor = "pointer";
+  arr.forEach((el, i) => {
+    const tr = document.createElement("tr");
+    const td1 = document.createElement("td");
+    const td2 = document.createElement("td");
+    const td3 = document.createElement("td");
 
-    deletetd.addEventListener('click',function()
-    {
-        tr.remove();
-    })
+    td1.innerText = el.task;
+    td2.innerText = el.priority;
+    td3.innerText = "Delete";
 
-    tr.appendChild(tasktd);
-    tr.appendChild(prioritytd);
-    tr.appendChild(deletetd);
+    td3.addEventListener("click", () => {
+      formData.splice(i, 1);
+      localStorage.setItem("todoData", JSON.stringify(formData));
+      DisplayTodoData(formData);
+    });
 
-    tbody.appendChild(tr)
+    tr.append(td1, td2, td3);
+    tbody.append(tr);
+  });
+}
 
-    input.value = "";
-    priority.value = "";
-
-})
+DisplayTodoData(formData);
