@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+    </div>
+
+    <script>
+
+        fetch("https://api.escuelajs.co/api/v1/products")
+    .then((response) => response.json())
+    .then((data) => {
+        cardList(data);
+    });
+
+function cardList(data) {
+    let cards = data.map((el) =>
+        cardDiv(el.id, el.images, el.price, el.title, el.description)
+    );
+
+    console.log(cards)
+    document.getElementById("container").innerHTML = cards.join("");
+}
+
+function cardDiv(id, image, price, title, description) {
+    return `
+        <div>
+            <p>${id}</p>
+            <img style="height:200px;" src="${image}" alt="">
+            <h3>${price}</h3>
+            <h3>${title}</h3>
+            <p>${description}</p>
+        </div>
+    `;
+}
+
+
+    </script>
+
+</body>
+</html>
