@@ -1,0 +1,533 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* indroducing navbar code starts */
+
+.indroducing-navbar
+{
+    width: 100%;
+    background-color: #143A47;
+    height: 42.4px;
+    line-height: 42.4px;
+    margin: 0%;
+}
+.indroducing-navbar .container
+{
+    height: auto;
+    color: white;
+    padding: 0px 40px;
+}
+.indroducing-navbar .container .containesCJA a
+{
+    margin-left: 50px;
+    color: white;
+    text-decoration: none; 
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;   
+    transition: 0.7s;
+}
+.indroducing-navbar .container .containesCJA a:hover
+{
+    border-bottom: 1px solid white;
+}
+.indroducing-navbar .container .containesCJA span
+{
+    margin-left: 65px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.indroducing-navbar .container .row p
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.indroducing-navbar .container .row p a
+{
+    margin-left: 3px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    transition: 0.7s;
+}
+.indroducing-navbar .container .row p:hover a
+{
+    border :  0px solid white;
+}
+
+
+/* indroducing navbar code ends */
+
+/* navbar code starts */
+
+.navbar
+{
+    height: 78.25px;
+    width: 100%;
+    line-height: 78.25px;
+    padding: 0%;
+}
+.navbar .container
+{
+    height: 78.25px;
+    display: flex;
+    align-content: center;
+    padding: 0px 40px;
+}
+.navbar .container .header-logo img
+{
+    width: 123px;
+}
+.navbar .container .header-menu ul
+{
+    display: flex;
+    margin-bottom: 0%;
+}
+.navbar .container .header-menu ul li
+{
+    list-style: none;
+}
+.navbar .container .header-menu ul li a
+{
+    text-decoration: none;
+    color: black;
+    padding: 25px 8px;
+    margin-right: 20px;
+}
+.navbar .container .header-icon i
+{
+    padding: 25px 8px;
+    font-size: 28px;
+    color: black;
+    font-weight: 500;
+}
+
+/* navbar code ends */
+
+/* The Eight banner code starts */
+
+.theeightbanner
+{
+    margin-bottom: 100px;
+    height: 730px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url("images/theEightbanner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.theeightbanner .container-fluid
+{
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.theeightbanner .container-fluid h1
+{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    height: 70px;
+}
+.theeightbanner .container-fluid p
+{
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: white;
+    height: 35px;
+}
+.theeightbanner .container-fluid button
+{
+    height: 50px;
+    width: 220px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid white;
+    background: none;
+    transition: 0.3s;
+}
+.theeightbanner .container-fluid button:hover
+{
+    color: #143A47;
+    background-color: white;
+}
+
+/* The Eight banner code ends */
+
+/* Meet the Ratio line-up code starts */
+
+.Meet-the-Ratio-line-up
+{
+    height: 630px;
+    margin: 100px 0px;
+}
+.Meet-the-Ratio-line-up .container .heading
+{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0px 40px;
+}  
+.Meet-the-Ratio-line-up .container .heading h2
+{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c2e2f;
+    margin-bottom: 10px;
+}
+.Meet-the-Ratio-line-up .container .heading p
+{
+    width: 60%;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: #2c2e2f;
+}
+.Meet-the-Ratio-line-up .container .products .product-description
+{
+    text-align: center;
+}
+
+/* Meet the Ratio line-up product 1 code starts */
+
+.Meet-the-Ratio-line-up .container .products .product-images img
+{
+    width: 100%;
+    height: 320px;
+}
+.Meet-the-Ratio-line-up .container .products .product-description .product-description-btn1
+{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 40px;
+    margin: auto;
+}
+
+/* Meet the Ratio line-up product 1 code ends */
+
+/* Meet the Ratio line-up product 2 code starts */
+
+.Meet-the-Ratio-line-up .container .products .product-description .product-description-btn2
+{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 40px;
+    margin: auto;
+}
+
+/* Meet the Ratio line-up product 2 code ends */
+
+/* Meet the Ratio line-up product 3 code starts */
+
+.Meet-the-Ratio-line-up .container .products .product-description .product-description-btn3
+{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 40px;
+    margin: auto;
+}
+
+/* Meet the Ratio line-up product 3 code ends */
+
+/* Meet the Ratio line-up product 4 code starts */
+
+.Meet-the-Ratio-line-up .container .products .product-description .product-description-btn4
+{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 40px;
+    margin: auto;
+}
+
+/* Meet the Ratio line-up product 4 code ends */
+
+
+
+/* Meet the Ratio line-up code ends */
+
+/* makers are used and loved slider code starts */
+
+.makers-are-used-and-loved-slider .container
+{
+    padding: 0px 40px;
+}
+.makers-are-used-and-loved-slider .container h1
+{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.makers-are-used-and-loved-slider .container h1 span
+{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.makers-are-used-and-loved-slider .container p
+{
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+}
+.makers-are-used-and-loved-slider .container .sliders
+{
+    height: 650px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+.makers-are-used-and-loved-slider .container .sliders img
+{
+    width: 100%;
+}
+.makers-are-used-and-loved-slider .container .sliders #slider-left-btn 
+{
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+    width: 120px;
+    padding: 10px 12px;
+    border-radius: 60%;
+    border: none;
+    color: black;
+    position: relative;
+    left: -1040px;
+    top: 270px;
+}
+.makers-are-used-and-loved-slider .container .sliders #slider-right-btn 
+{
+    font-size: 14px;
+    width: 120px;
+    text-align: center;
+    background-color: white;
+    padding: 10px 12px;
+    border-radius: 60%;
+    border: none;
+    color: black;
+    position: relative;
+    left: -1025px;
+    top: 270px;
+}
+.makers-are-used-and-loved-slider .container .sliders .sliders-sub-description
+{
+    width: 600px;
+    height: 350px;
+    background-color: rgb(247, 243, 238);
+    position: absolute;
+    right: 6.6%;
+    padding: 50px;
+}
+.makers-are-used-and-loved-slider .container .sliders .sliders-sub-description h2
+{
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.makers-are-used-and-loved-slider .container .sliders .sliders-sub-description p
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: inline;
+}
+.makers-are-used-and-loved-slider .container .sliders .sliders-sub-description span
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.makers-are-used-and-loved-slider .container .sliders .sliders-sub-description button
+{
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 11px 40px;
+    display: block;
+}
+
+/* makers are used and loved slider code ends */
+
+/* The best part of your day just got better code starts */
+
+.the_best_part_of_your_day_just_got_better
+{
+    margin: 100px 0px;
+}
+.the_best_part_of_your_day_just_got_better .container 
+{
+    padding: 0px 40px;
+}
+.the_best_part_of_your_day_just_got_better .container h2
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.the_best_part_of_your_day_just_got_better .container .row img
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.the_best_part_of_your_day_just_got_better .container .row h3
+{
+    font-family: sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.the_best_part_of_your_day_just_got_better .container .row p
+{
+    margin: auto;
+    width: 370px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* The best part of your day just got better code ends */
+
+/* Compare Ratio machines code starts */
+
+.compare_ratio_machines
+{
+    margin-bottom: 100px;
+}
+.compare_ratio_machines .container
+{
+    height: 453px;
+    padding: 0px 40px;
+}
+.compare_ratio_machines .container .row
+{
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+.compare_ratio_machines .container .row img
+{
+    height: 100%;
+    width: 100%;
+}
+.compare_ratio_machines .container .row .compare_ratio_machines_div1
+{
+    width: 49%;
+    margin-right: 10px;
+    padding: 120px 70px;
+    background-color: #F7F3EE;
+}
+.compare_ratio_machines .container .compare_ratio_machines_div1 span
+{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.compare_ratio_machines .container .compare_ratio_machines_div1 h2
+{
+    font-family: sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.compare_ratio_machines .container .compare_ratio_machines_div1 p
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.compare_ratio_machines .container .compare_ratio_machines_div1 button
+{
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 11px 40px;
+    border: 2px solid #143a47;
+    background-color: #143a47;
+    color: white;
+    transition: 0.4s;
+}
+.compare_ratio_machines .container .compare_ratio_machines_div1 button:hover
+{
+    color: #143a47;
+    background-color: white;
+}
+
+
+/* Compare Ratio machines code ends */
+
+/* Complete your Ratio set up starts */
+/* //fetching form api// */
+/* Complete your Ratio set up ends */
+
+/* The latest from the journal starts */
+/* //fetching form api// */
+/* The latest from the journal ends */
+
+/* footercode starts */
+
+.footer
+{
+    border-top: 0.8px solid #2c2e2f6d;
+    margin-top: 15px;
+    padding: 40px 0px;
+}
+.footer .container
+{
+    padding: 0px 40px;
+}
+.footer .container .row h3
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+.footer .container .row ul
+{
+    margin: 0%;
+    padding-left: 25px;
+}
+.footer .container .row ul li
+{
+    list-style: none;
+    margin: 10px 0px;
+}
+.footer .container .row ul li a
+{
+    padding: 8px 0px;
+    text-decoration: none;
+    color: #2c2e2f;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* footer code ends */
