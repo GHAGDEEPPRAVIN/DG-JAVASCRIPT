@@ -132,6 +132,9 @@
 }
 .navbar .container .header-menu ul li a
 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
     text-decoration: none;
     color: black;
     padding: 25px 8px;
@@ -147,16 +150,86 @@
 
 /* navbar code ends */
 
-/* login form code starts */
+/* contact us code starts */
 
-.loginform
+.contactus h1
 {
-    margin: 100px;
-    height: 450px;
-    padding: 60px 40px;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.contactus p
+{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    width: 56%;
+    text-align: center;
+    margin: auto;
+}
+.contactus .conatiner
+{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    padding: 0px 40px;
+    margin-top: 65px;
+    background-color: #F2F2F2;
+}
+.contactus .conatiner .contact-box
+{
+    margin-left: 100px;
+    width: 430px;
+    padding: 40px 60px 40px 40px;
+    background-color: white;
+}
+.contactus .conatiner .contact-box h2
+{
+    font-size: 21px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+.contactus .conatiner .contact-box p
+{
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin: 0px 0px 20px 0px;
+}
+.contactus .conatiner .contact-box span
+{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.contactus .conatiner .contact-box button
+{
+    color: white;
+    background-color: #143A47;
+    width: 100%;
+    display: block;
+    padding: 11px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.contactus .conatiner .contact-box button:hover
+{
+    background-color: white;
+    color: #143A47;
 }
 
-/* login form code ends */
+
+/* contact us code ends */
 
 
 /* footercode starts */
@@ -196,6 +269,7 @@
 }
 .footer .container .row ul li a
 {
+    color: #143A47;
     padding: 8px 0px;
     text-decoration: none;
     color: #2c2e2f;
@@ -316,13 +390,37 @@
 
     <!-- navbar ends -->
 
-    <!-- login form starts -->
+    <!-- contactus starts -->
 
-    <div class="loginform">
-        
+    <div class="contactus">
+
+        <h1>Contact Us</h1>
+        <p>We are just a quick email, chat, or call away to help with any of your Ratio questions or just to chat about your favorite brew. Whatever it is, we look forward to chatting with you soon!</p>
+
+
+        <div class="conatiner">
+
+            <div class="contact-box">
+
+                <h2>Ratio HQ</h2>
+
+                <p>1204 SE Water Ave, Ste 15 <br> Portland, OR 97214</p>
+                
+                <span>PHONE / CHAT HOURS</span>
+                
+                <p>9:00am–1:00pm PST <br> Mon–Fri</p>
+                
+                <span>CALL, EMAIL, OR CHAT</span> 
+                
+                <button>(800) 261-9640</button>
+                <button>hello@ratiocoffee.com</button>
+            
+            </div>
+
+        </div>
     </div>
 
-    <!-- login form ends -->
+    <!-- contactus ends -->
 
     <!-- footer starts -->
 

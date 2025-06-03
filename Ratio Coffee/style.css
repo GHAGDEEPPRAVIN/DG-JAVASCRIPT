@@ -98,6 +98,9 @@
 }
 .navbar .container .header-menu ul li a
 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
     text-decoration: none;
     color: black;
     padding: 25px 8px;

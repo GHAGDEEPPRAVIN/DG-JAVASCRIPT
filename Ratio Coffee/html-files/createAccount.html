@@ -132,6 +132,9 @@
 }
 .navbar .container .header-menu ul li a
 {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
     text-decoration: none;
     color: black;
     padding: 25px 8px;
@@ -147,16 +150,87 @@
 
 /* navbar code ends */
 
-/* login form code starts */
+/* createAccount code starts */
 
-.loginform
-{
-    margin: 100px;
-    height: 450px;
-    padding: 60px 40px;
-}
+        .createAccount .form
+        {
+            height: 850px;
+            padding: 60px 40px;
+            width: 470px;
+            margin: auto;
+        }
+        .createAccount .form input
+        {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 30px;
+        }
+        .createAccount .form label
+        {
+            font-size: 14px;
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .createAccount .form h1
+        {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-bottom: 50px;
+        }
+        .createAccount .form button
+        {
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            width: 100%;
+            padding: 11px 40px;
+            margin-bottom: 30px;
+            background-color: #143A47;
+            color: white;
+            border: 1px solid #143A47;
+            margin-bottom: 50px;
+        }
+        .createAccount .form button:hover
+        {
+            color: #143A47;
+            background-color: white;
+        }
+        .createAccount .form a
+        {
+            text-decoration: none;
+            color: #2c2e2f;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: sans-serif;
+            /* margin-bottom: 50px; */
+        }
+        .createAccount .form label a
+        {
+            color: #2c2e2f;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: sans-serif;
+            /* margin-bottom: 50px; */
+        }
+        .createAccount .form span
+        {
+            color: #2c2e2f;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+        .createAccount .form #check-box
+        {
+            width: 20px;
+        }
 
-/* login form code ends */
+/* createAccount code ends */
 
 
 /* footercode starts */
@@ -316,13 +390,31 @@
 
     <!-- navbar ends -->
 
-    <!-- login form starts -->
+    <!-- createAccount starts -->
 
-    <div class="loginform">
-        <h1>I am form create account page</h1>
+    <div class="createAccount">
+        <div class="form">
+            <h1>Create Account</h1>
+            
+            <label>First Name</label>
+            <input type="text">
+
+            <label>Last Name</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Password</label>
+            <input type="password">
+
+            <input type="checkbox" id="check-box">
+            <span>Subscribe to our newsletter</span>
+
+            <button>Create</button>
     </div>
 
-    <!-- login form ends -->
+    <!-- createAccount ends -->
 
     <!-- footer starts -->
 

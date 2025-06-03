@@ -469,5 +469,43 @@
     "title" : "Espresso Machines",
     "id" : 6
   }
-]
+],
+"machine_page_products" : [
+  {
+    "image" : ["https://ratiocoffee.com/cdn/shop/files/ratio4-black-B2_360x.jpg?v=1727281481","https://ratiocoffee.com/cdn/shop/files/ratio4-black-A3_360x.jpg?v=1727281491"],
+    "title" : "Ratio Four Coffee Machine",
+    "reviews" : "(57 Reviews)",
+    "price" : "$259.00",
+    "id" :1
+  },
+  {
+    "image" : ["https://ratiocoffee.com/cdn/shop/products/ratio6-black-A3_7f3d3fc4-7d12-4aa4-a809-62746b73af24_360x.jpg?v=1675189304","https://ratiocoffee.com/cdn/shop/files/ratio6-black-C3_360x.jpg?v=1713379688"],
+    "title" : "Ratio six Coffee Machine",
+    "reviews" : "(508 Reviews)",
+    "price" : "$359.00",
+    "id" : 2
+  },
+  {
+    "image" : ["https://ratiocoffee.com/cdn/shop/files/eight-s2-main_360x.png?v=1747163998","https://ratiocoffee.com/cdn/shop/files/eight-s2-pic1_360x.jpg?v=1747163998"],
+    "title" : "Ratio Eight Series 2 Coffee Machine",
+    "cut-price" : "$799.00",
+    "price" : "$639.00",
+    "id" : 3
+  },
+  {
+    "image" : ["https://ratiocoffee.com/cdn/shop/products/ratio8-white-walnut-glass-A2_ec9add25-30ff-46d7-9ff8-9389fae5e6eb_360x.jpg?v=1748376563","https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"],
+    "title" : "Ratio Eight Original Coffee Machine",
+    "reviews" : "(241 Reviews)",
+    "price" : "$899.00",
+    "id" : 4
+  },
+  {
+    "image" : ["https://ratiocoffee.com/cdn/shop/products/ratio-silver-parawood-thermal-A1_a207b23a-1674-4c12-bb5d-4883215b1df2_360x.jpg?v=1675275744","https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"],
+    "title" : "Ratio Eight Original Coffee Machine (Thermal)",
+    "reviews" : "(100 Reviews)",
+    "price" : "$999.00",
+    "id" : 5
+  }
+],
+"login-data" : []
 }
