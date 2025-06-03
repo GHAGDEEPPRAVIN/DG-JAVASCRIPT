@@ -358,13 +358,21 @@
 }
 .makers-are-used-and-loved-slider .container .sliders .sliders-sub-description button
 {
+    color: #143A47;
     margin-top: 20px;
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 400;
     padding: 11px 40px;
     display: block;
+    transition: 0.5s;
 }
+.makers-are-used-and-loved-slider .container .sliders .sliders-sub-description button:hover
+{
+    color: white;
+    background-color: #143A47;
+}
+
 
 /* makers are used and loved slider code ends */
 
@@ -486,7 +494,53 @@
 /* Complete your Ratio set up ends */
 
 /* The latest from the journal starts */
-/* //fetching form api// */
+.the_latest_form_the_journal_starts 
+{
+    margin: 100px 0px;
+}
+.the_latest_form_the_journal_starts .container .header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.the_latest_form_the_journal_starts .container .header h2
+{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+.the_latest_form_the_journal_starts .container .header a
+{
+    text-decoration: none;
+    color: #2c2e2f;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.the_latest_form_the_journal_starts .container .row img
+{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.the_latest_form_the_journal_starts .container .row p
+{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.the_latest_form_the_journal_starts .container .row h3
+{
+    width: 280px;
+    line-height: 29px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 /* The latest from the journal ends */
 
 /* footercode starts */
@@ -495,11 +549,16 @@
 {
     border-top: 0.8px solid #2c2e2f6d;
     margin-top: 15px;
+    margin-bottom: 50px;
     padding: 40px 0px;
 }
 .footer .container
 {
     padding: 0px 40px;
+}
+.footer .container .row
+{
+    margin-bottom: 35px;
 }
 .footer .container .row h3
 {
@@ -529,5 +588,64 @@
     font-weight: 400;
     line-height: 24px;
 }
+.footer .container .information_footer
+{
+    margin-top: 35px;
+    padding-top: 35px;
+    border-top: 0.8px solid #2c2e2f6d;
+}
+.footer .container .information_footer .row h2
+{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer .container .information_footer .row input
+{
+    width: 300px;
+    padding: 8px 10px 8px 45px;
+}
+.footer .container .information_footer .row i
+{
+    position: relative;
+    left: -293px;
+    top: 3px;
+    font-size: 26px;
+}
+.footer .container .information_footer .follower_app i
+{
+    font-size: 24px;
+    position: relative;
+    left: 0%;
+    top: 0%;
+}
+.footer .container .information_footer .follower_app h2
+{
+    text-align: center;
+}
+.footer .container .information_footer .row p
+{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.footer .container .information_footer .row ul
+{
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .container .information_footer .row ul li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.footer .container .information_footer .row ul li a 
+{
+    text-decoration: none;
+}
+
 
 /* footer code ends */
