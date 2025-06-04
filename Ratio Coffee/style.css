@@ -83,7 +83,7 @@
     align-content: center;
     padding: 0px 40px;
 }
-.navbar .container .header-logo img
+.navbar .container .header-logo a img
 {
     width: 123px;
 }
