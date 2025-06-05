@@ -1,511 +1,694 @@
 {
-  "products":[
-  {
-  "image" : [
-        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-B2_720x.jpg?v=1727281481",
-        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-A3_360x.jpg?v=1727281491",
-        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-C1_720x.jpg?v=1727281500",
-        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-D1_720x.jpg?v=1727281502",
-        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-E1_720x.jpg?v=1727281485",
-        "https://ratiocoffee.com/cdn/shop/files/ratio4-carafe-B2_720x.jpg?v=1727281495",
-        "https://ratiocoffee.com/cdn/shop/files/ratio4-carafe-A1_720x.jpg?v=1727281497",
-        "https://ratiocoffee.com/cdn/shop/files/ratio4-carafe-B1_1_720x.jpg?v=1741199534",
-        "https://ratiocoffee.com/cdn/shop/files/ratio4-detail-A1_720x.png?v=1727735041"
+  "products": [
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-black-A3_7f3d3fc4-7d12-4aa4-a809-62746b73af24_360x.jpg?v=1675189304",
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-black-C3_360x.jpg?v=1713379688"
       ],
-  "title" : "Ratio Six Coffee Machine",
-  "rating" : "(508 Reviews)",
-  "price" : "$359.00",
-  "id" : 1
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-eight",
-  "title" : "Ratio Eight Original Coffee Machine",
-  "rating" : "(241 Reviews)",
-  "price" : "$899.00",
-  "id" : 2
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-four",
-  "title" : "Ratio Four Coffee Machine",
-  "rating" : "(57 Reviews)",
-  "price" : "$259.00",
-  "id" : 3
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-thermal-carafe-series-2",
-  "title" : "Ratio Six Thermal Carafe (Series 2)",
-  "rating" : "(100 Reviews)",
-  "price" : "$75.00",
-  "id" : 4
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-thermal-carafe-with-porcelain-dripper",
-  "title" : "Ratio Eight Thermal Carafe & Dripper",
-  "rating" : "(108 Reviews)",
-  "price" : "$125.00",
-  "id" : 5
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-glass-carafe-kone",
-  "title" : "Ratio Glass Carafe & Kone Filter",
-  "rating" : "(20 Reviews)",
-  "price" : "$89.00",
-  "id" : 6
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/glass-carafe",
-  "title" : "Ratio Glass Carafe",
-  "rating" : "(74 Reviews)",
-  "price" : "from $58.00",
-  "id" : 7
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-eight-coffee-maker-certified-refurbished",
-  "title" : "Ratio Eight Coffee Machine - Glass Carafe (Certified Refurbished)",
-  "rating" : "(19 Reviews)",
-  "price" : "",
-  "id" : 8
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-second-quality-silver",
-  "title" : "Ratio Six Coffee Machine (Certified Refurbished)",
-  "rating" : "(68 Reviews)",
-  "price" : "",
-  "id" : 9
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-thermal-carafe",
-  "title" : "Ratio Six Thermal Carafe - Series 1",
-  "rating" : "(41 Reviews)",
-  "price" : "",
-  "id" : 10
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/baratza-encore-coffee-grinder",
-  "title" : "Baratza Encore Coffee Grinder",
-  "rating" : "(39 Reviews)",
-  "price" : "$149.95",
-  "id" : 11
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/baratza-virtuoso-coffee-grinder",
-  "title" : "Baratza Virtuoso+ Coffee Grinder",
-  "rating" : "(12 Reviews)",
-  "price" : "$249.00",
-  "id" : 12
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/baratza-forte-bg-coffee-grinder",
-  "title" : "Baratza Forte BG Coffee Grinder",
-  "rating" : "",
-  "price" : "$899.95",
-  "id" : 13
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-kone",
-  "title" : "Kone Reusable Coffee Filter by Able Brewing",
-  "rating" : "(108 Reviews)",
-  "price" : "$39.50",
-  "id" : 14
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-porcelain-dripper",
-  "title" : "Ratio Eight Dripper",
-  "rating" : "(18 Reviews)",
-  "price" : "$28.00",
-  "id" : 15
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/catcher-white",
-  "title" : "Ratio Eight Catcher",
-  "rating" : "(20 Reviews)",
-  "price" : "$12.00",
-  "id" : 16
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-flat-bottom-filter",
-  "title" : "Ratio Six and Eight S2 Basket Paper Filters (100 Count)",
-  "rating" : "(44 Reviews)",
-  "price" : "$10.00",
-  "id" : 17
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/chemex-pre-folded-filters-round",
-  "title" : "Chemex Paper Filters for Ratio Eight",
-  "rating" : "(45 Reviews)",
-  "price" : "$11.00",
-  "id" : 18
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/microfiber-towel-1",
-  "title" : "Ratio Microfiber Towel",
-  "rating" : "(4 Reviews)",
-  "price" : "$5.00",
-  "id" : 19
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ode-brew-grinder-by-fellow",
-  "title" : "Fellow Ode Gen 2 Brew Grinder",
-  "rating" : "(47 Reviews)",
-  "price" : "$349.95",
-  "id" : 20
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/opus-conical-burr-grinder-by-fellow",
-  "title" : "Fellow Opus Conical Burr Grinder",
-  "rating" : "",
-  "price" : "$199.95",
-  "id" : 21
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/stagg-ekg-0-9l",
-  "title" : "Fellow Stagg EKG Electric Kettle",
-  "rating" : "(5 Reviews)",
-  "price" : "from $169.95",
-  "id" : 22
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-x-fellow-atmos-coffee-canister",
-  "title" : "Ratio x Fellow Atmos Coffee Canister",
-  "rating" : "(20 Reviews)",
-  "price" : "$74.95",
-  "id" : 23
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-x-fellow-carter-move-mug",
-  "title" : "Ratio x Fellow Carter Move Mug",
-  "rating" : "(1 Review)",
-  "price" : "$27.50",
-  "id" : 24
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/fellow-tally-pro-precision-scale",
-  "title" : "Fellow Tally Pro Precision Scale",
-  "rating" : "",
-  "price" : "$189.95",
-  "id" : 25
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/notneutral-lino-coffee-mug",
-  "title" : "notNeutral LINO Coffee Mug",
-  "rating" : "(33 Reviews)",
-  "price" : "from $18.00",
-  "id" : 26
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/notneutral-vero-cortado-glass-smoke-1",
-  "title" : "notNeutral Vero Cappuccino Cup (Smoke)",
-  "rating" : "(6 Reviews)",
-  "price" : "$22.50",
-  "id" : 27
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/hearth-cup-8oz",
-  "title" : "Hearth Coffee Cup (Set of 2)",
-  "rating" : "(24 Reviews)",
-  "price" : "$21.00",
-  "id" : 28
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/urnex-cleaning-powder-packets",
-  "title" : "Urnex - Cleaning Powder Packets",
-  "rating" : "(9 Reviews)",
-  "price" : "from $2.00",
-  "id" : 29
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/gift-card",
-  "title" : "Gift Card",
-  "rating" : "(8 Reviews)",
-  "price" : "from $25.00",
-  "id" : 30
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/lucca-a53-espresso-machine",
-  "title" : "LUCCA A53 Mini V2 Espresso Machine",
-  "rating" : "",
-  "price" : "from $2,395.00",
-  "id" : 31
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/lucca-m58-espresso-machine-by-quick-mill",
-  "title" : "LUCCA M58 Espresso Machine",
-  "rating" : "",
-  "price" : "from $2,895.00",
-  "id" : 32
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/eureka-silenzio-espresso-grinder",
-  "title" : "Eureka Silenzio Espresso Grinder",
-  "rating" : "(1 Review)",
-  "price" : "from $499.00",
-  "id" : 33
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/eureka-oro-mignon-xl-espresso-grinder",
-  "title" : "Eureka Oro Mignon XL Espresso Grinder",
-  "rating" : "",
-  "price" : "from $899.00",
-  "id" : 34
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/acaia-scale",
-  "title" : "Acaia Lunar Scale",
-  "rating" : "",
-  "price" : "$250.00",
-  "id" : 35
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/acaia-pearl-scale",
-  "title" : "Acaia Pearl Scale - Pitch Black",
-  "rating" : "(2 Reviews)",
-  "price" : "$150.00",
-  "id" : 36
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-carafe-heat-lid",
-  "title" : "Ratio Carafe Heat Lid",
-  "rating" : "(3 Reviews)",
-  "price" : "$8.00",
-  "id" : 37
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-thermal-carafe-handle-1",
-  "title" : "Ratio Thermal Carafe Handle Default",
-  "rating" : "(4 Reviews)",
-  "price" : "$60.00",
-  "id" : 38
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-thermal-carafe-lid",
-  "title" : "Ratio Six Thermal Carafe Lid Series 1",
-  "rating" : "(87 Reviews)",
-  "price" : "$10.00",
-  "id" : 39
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-heat-shield",
-  "title" : "Ratio Six Flat Basket Heat Shield",
-  "rating" : "(7 Reviews)",
-  "price" : "$5.00",
-  "id" : 40
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/glass-carafe-borosilicate-2nd-quality",
-  "title" : "Ratio Handblown Glass Carafe Clear (Second Quality)",
-  "rating" : "(19 Reviews)",
-  "price" : "$35.00",
-  "id" : 41
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-flat-bottom-brew-basket-set",
-  "title" : "Ratio Six Flat Bottom Brew Basket Set",
-  "rating" : "(6 Reviews)",
-  "price" : "$30.00",
-  "id" : 42
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-thermal-carafe-dewar-only",
-  "title" : "Ratio Six - Thermal Carafe (Dewar Only)",
-  "rating" : "(2 Reviews)",
-  "price" : "$50.00",
-  "id" : 43
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-eight-thermal-set",
-  "title" : "Ratio Eight Original Coffee Machine (Thermal)",
-  "rating" : "(100 Reviews)",
-  "price" : "$999.00",
-  "id" : 44
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/able-basket-coffee-filter-for-ratio-six",
-  "title" : "Able Basket Coffee Filter for Ratio Six and Eight S2",
-  "rating" : "(47 Reviews)",
-  "price" : "$34.50",
-  "id" : 45
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/halefresh-machine-wash",
-  "title" : "Halefresh Machine Wash",
-  "rating" : "(5 Reviews)",
-  "price" : "$15.00",
-  "id" : 46
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/s-o-blend",
-  "title" : "Coava Coffee Roasters - S.O. Blend",
-  "rating" : "(2 Reviews)",
-  "price" : "from $17.50",
-  "id" : 47
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/new-organic-trio",
-  "title" : "Sightglass Coffee - New Organic Trio",
-  "rating" : "",
-  "price" : "$61.50",
-  "id" : 48
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/organic-owls-howl",
-  "title" : "Sightglass Coffee - Organic, Owl's Howl",
-  "rating" : "",
-  "price" : "from $20.50",
-  "id" : 49
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/organic-blueboon",
-  "title" : "Sightglass Coffee - Organic, Blueboon",
-  "rating" : "(2 Reviews)",
-  "price" : "from $20.50",
-  "id" : 50
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/geometry",
-  "title" : "Onyx Coffee Lab - Geometry",
-  "rating" : "",
-  "price" : "from $11.25",
-  "id" : 51
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/southern-weather",
-  "title" : "Onyx Coffee Lab - Southern Weather",
-  "rating" : "",
-  "price" : "from $10.75",
-  "id" : 52
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/power-nap",
-  "title" : "Onyx Coffee Lab - Power Nap",
-  "rating" : "",
-  "price" : "from $12.25",
-  "id" : 53
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-x-mary-carroll-mug-white",
-  "title" : "Ratio x Mary Carroll Mug",
-  "rating" : "(3 Reviews)",
-  "price" : "$60.00",
-  "id" : 54
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-eight-thermal-carafe-handle-gasket",
-  "title" : "Ratio Eight - Thermal Carafe Handle Gasket",
-  "rating" : "(1 Review)",
-  "price" : "$3.00",
-  "id" : 55
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-fill-lid-silver",
-  "title" : "Ratio Six Fill Lid - Silver",
-  "rating" : "",
-  "price" : "$20.00",
-  "id" : 56
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-4-brew-basket-matte-stainless",
-  "title" : "Ratio Six #4 Brew Basket - Matte Stainless",
-  "rating" : "(1 Review)",
-  "price" : "$20.00",
-  "id" : 57
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-fill-lid-white",
-  "title" : "Ratio Six Fill Lid - White",
-  "rating" : "",
-  "price" : "$20.00",
-  "id" : 58
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-4-brew-basket-white",
-  "title" : "Ratio Six #4 Brew Basket - White",
-  "rating" : "",
-  "price" : "$20.00",
-  "id" : 59
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-fill-lid-matte-black",
-  "title" : "Ratio Six Fill Lid - Matte Black",
-  "rating" : "",
-  "price" : "$20.00",
-  "id" : 60
-},
-{
-  "image" : "https://ratiocoffee.com/collections/shop/products/ratio-six-4-brew-basket-matte-black",
-  "title" : "Ratio Six - #4 Brew Basket Matte Black",
-  "rating" : "",
-  "price" : "$20.00",
-  "id" : 61
-}
-],
-"home-page_products_setup" : [
-  {
-    "image" : "https://ratiocoffee.com/cdn/shop/files/Ratio_Grinder_Collection_Tile_540x.jpg?v=1641408511",
-    "title" : "Coffee  Grinders",
-    "id" : 1
-  },
-  {
-    "image" : "https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Black_Thermal_Carafe_Kone_notNeutral_Orange_Shadow_Lifestyle_12_540x.jpg?v=1620767305",
-    "title" : "Ratio Accesories",
-    "id" : 2
-  },
-  {
-    "image" : "https://ratiocoffee.com/cdn/shop/files/Ratio_Mugs_Cups_Collection_Tile_540x.jpg?v=1641407815",
-    "title" : "Mugs & Cups",
-    "id" : 3
-  },
-  {
-    "image" : "https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Black_Thermal_Carafe_Kone_notNeutral_Shadow_Lifestyle8_540x.jpg?v=1734741954",
-    "title" : "Manual Brewing",
-    "id" : 4
-  },
-  {
-    "image" : "https://ratiocoffee.com/cdn/shop/files/ratio-accessories-tile-image_540x.jpg?v=1640201218",
-    "title" : "Coffee Filters",
-    "id" : 5
-  },
-  {
-    "image" : "https://ratiocoffee.com/cdn/shop/collections/LUCCA-A53-Mini-Walnut-Espresso-Machine-Eureka-Mignon-XL-White-Grinder-04_540x.jpg?v=1636666752",
-    "title" : "Espresso Machines",
-    "id" : 6
-  }
-],
-"machine_page_products" : [
-  {
-    "image" : ["https://ratiocoffee.com/cdn/shop/files/ratio4-black-B2_360x.jpg?v=1727281481","https://ratiocoffee.com/cdn/shop/files/ratio4-black-A3_360x.jpg?v=1727281491"],
-    "title" : "Ratio Four Coffee Machine",
-    "reviews" : "(57 Reviews)",
-    "price" : "$259.00",
-    "id" :1
-  },
-  {
-    "image" : ["https://ratiocoffee.com/cdn/shop/products/ratio6-black-A3_7f3d3fc4-7d12-4aa4-a809-62746b73af24_360x.jpg?v=1675189304","https://ratiocoffee.com/cdn/shop/files/ratio6-black-C3_360x.jpg?v=1713379688"],
-    "title" : "Ratio six Coffee Machine",
-    "reviews" : "(508 Reviews)",
-    "price" : "$359.00",
-    "id" : 2
-  },
-  {
-    "image" : ["https://ratiocoffee.com/cdn/shop/files/eight-s2-main_360x.png?v=1747163998","https://ratiocoffee.com/cdn/shop/files/eight-s2-pic1_360x.jpg?v=1747163998"],
-    "title" : "Ratio Eight Series 2 Coffee Machine",
-    "cut-price" : "$799.00",
-    "price" : "$639.00",
-    "id" : 3
-  },
-  {
-    "image" : ["https://ratiocoffee.com/cdn/shop/products/ratio8-white-walnut-glass-A2_ec9add25-30ff-46d7-9ff8-9389fae5e6eb_360x.jpg?v=1748376563","https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"],
-    "title" : "Ratio Eight Original Coffee Machine",
-    "reviews" : "(241 Reviews)",
-    "price" : "$899.00",
-    "id" : 4
-  },
-  {
-    "image" : ["https://ratiocoffee.com/cdn/shop/products/ratio-silver-parawood-thermal-A1_a207b23a-1674-4c12-bb5d-4883215b1df2_360x.jpg?v=1675275744","https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"],
-    "title" : "Ratio Eight Original Coffee Machine (Thermal)",
-    "reviews" : "(100 Reviews)",
-    "price" : "$999.00",
-    "id" : 5
-  }
-],
-"login-data" : []
+      "title": "Ratio Six Coffee Machine",
+      "rating": "(508 Reviews)",
+      "price": "$359.00",
+      "id": 1
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio8-white-walnut-glass-A2_ec9add25-30ff-46d7-9ff8-9389fae5e6eb_360x.jpg?v=1748376563",
+        "https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"
+      ],
+      "title": "Ratio Eight Original Coffee Machine",
+      "rating": "(241 Reviews)",
+      "price": "$899.00",
+      "id": 2
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-B2_360x.jpg?v=1727281481",
+        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-A3_360x.jpg?v=1727281491"
+      ],
+      "title": "Ratio Four Coffee Machine",
+      "rating": "(57 Reviews)",
+      "price": "$259.00",
+      "id": 3
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/2024-02-09_AbleBrewing_6869_360x.jpg?v=1711043311",
+        "https://ratiocoffee.com/cdn/shop/files/2024-02-09_AbleBrewing_6869_360x.jpg?v=1711043311"
+      ],
+      "title": "Ratio Six Thermal Carafe (Series 2)",
+      "rating": "(100 Reviews)",
+      "price": "$75.00",
+      "id": 4
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio-eight-thermal-carafe-matte-black-with-dripper_360x.jpg?v=1628607028",
+        "https://ratiocoffee.com/cdn/shop/products/ratio-eight-thermal-carafe-matte-black_360x.jpg?v=1628607028"
+      ],
+      "title": "Ratio Eight Thermal Carafe & Dripper",
+      "rating": "(108 Reviews)",
+      "price": "$125.00",
+      "id": 5
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio-carafe-kone-combo_360x.jpg?v=1603212701",
+        "https://ratiocoffee.com/cdn/shop/products/ratio-carafe_360x.jpg?v=1603212856"
+      ],
+      "title": "Ratio Glass Carafe & Kone Filter",
+      "rating": "(20 Reviews)",
+      "price": "$89.00",
+      "id": 6
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/carafe-glass-A1-square_360x.jpg?v=1618523381",
+        "https://ratiocoffee.com/cdn/shop/files/carafe-glass-grey-A1_360x.png?v=1736795732"
+      ],
+      "title": "Ratio Glass Carafe",
+      "rating": "(74 Reviews)",
+      "price": "from $58.00",
+      "id": 7
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio8-silver-parawood-glass-A2_360x.jpg?v=1628806599",
+        "https://ratiocoffee.com/cdn/shop/products/ratio8-silver-parawood-glass-B2_360x.jpg?v=1628806611"
+      ],
+      "title": "Ratio Eight Coffee Machine - Glass Carafe (Certified Refurbished)",
+      "rating": "(19 Reviews)",
+      "price": "",
+      "id": 8
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-black-A3_12529f02-c017-4292-acb0-476e208b5e30_360x.jpg?v=1739826773",
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-stainless-A4_413e9489-3e91-4d49-8017-9729f90d61da_360x.jpg?v=1747163998"
+      ],
+      "title": "Ratio Six Coffee Machine (Certified Refurbished)",
+      "rating": "(68 Reviews)",
+      "price": "",
+      "id": 9
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-carafe-black-A3_360x.jpg?v=1628882891",
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-carafe-stainless-A3_360x.jpg?v=1634055373"
+      ],
+      "title": "Ratio Six Thermal Carafe - Series 1",
+      "rating": "(41 Reviews)",
+      "price": "",
+      "id": 10
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/black-encore-grinder-three-quarter-viewAccessories_360x.jpg?v=1628633891",
+        "https://ratiocoffee.com/cdn/shop/products/black-encore-grinder-frontAccessories_360x.jpg?v=1628633903"
+      ],
+      "title": "Baratza Encore Coffee Grinder",
+      "rating": "(39 Reviews)",
+      "price": "$149.95",
+      "id": 11
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/8hXXtrToSoWLUPIbbULX_Virtuoso_Plus_-_img1_360x.jpg?v=1562091030",
+        "https://ratiocoffee.com/cdn/shop/products/uigfVyYRkyToxRmzmbWA_Virt_Plus_5_360x.jpg?v=1562091094"
+      ],
+      "title": "Baratza Virtuoso+ Coffee Grinder",
+      "rating": "(12 Reviews)",
+      "price": "$249.00",
+      "id": 12
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/ZCG1086SIL1BUC1A_360x.png?v=1699393633",
+        "https://ratiocoffee.com/cdn/shop/files/ZCG1086_Carousel1_360x.png?v=1699393702"
+      ],
+      "title": "Baratza Forte BG Coffee Grinder",
+      "rating": "",
+      "price": "$899.95",
+      "id": 13
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/Able-Kone-D1_360x.jpg?v=1589487153",
+        "https://ratiocoffee.com/cdn/shop/files/Kone-Black-Back_e397187e-a566-4b68-939d-7c71fa446a1a_360x.jpg?v=1709060287"
+      ],
+      "title": "Kone Reusable Coffee Filter by Able Brewing",
+      "rating": "(108 Reviews)",
+      "price": "$39.50",
+      "id": 14
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/dripper-white-side_360x.jpg?v=1628809141",
+        "https://ratiocoffee.com/cdn/shop/products/dripper-white-top_360x.jpg?v=1628809144"
+      ],
+      "title": "Ratio Eight Dripper",
+      "rating": "(18 Reviews)",
+      "price": "$28.00",
+      "id": 15
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/catcher-white-side_360x.jpg?v=1585175692",
+        "https://ratiocoffee.com/cdn/shop/products/dripper-white-E1_360x.jpg?v=1584482813"
+      ],
+      "title": "Ratio Eight Catcher",
+      "rating": "(20 Reviews)",
+      "price": "$12.00",
+      "id": 16
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/Z-oNrxocpEx_360x.jpg?v=1581557558"
+      ],
+      "title": "Ratio Six and Eight S2 Basket Paper Filters (100 Count)",
+      "rating": "(44 Reviews)",
+      "price": "$10.00",
+      "id": 17
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/chemex-filters_2_360x.jpg?v=1561680044"
+      ],
+      "title": "Chemex Paper Filters for Ratio Eight",
+      "rating": "(45 Reviews)",
+      "price": "$11.00",
+      "id": 18
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio_microfiber_towel_square_360x.jpg?v=1642199630",
+        "https://ratiocoffee.com/cdn/shop/products/ratio_microfiber_towel_close_up_360x.jpg?v=1642199646"
+      ],
+      "title": "Ratio Microfiber Towel",
+      "rating": "(4 Reviews)",
+      "price": "$5.00",
+      "id": 19
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/OdeBrewGrinderGen2MatteBlack_360x.png?v=1669247547",
+        "https://ratiocoffee.com/cdn/shop/products/bYStF_360x.png?v=1669247547"
+      ],
+      "title": "Fellow Ode Gen 2 Brew Grinder",
+      "rating": "(47 Reviews)",
+      "price": "$349.95",
+      "id": 20
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/Opus_Conical_Burr_Grinder_Matte_Black_360x.png?v=1708629015",
+        "https://ratiocoffee.com/cdn/shop/files/OpusConicalBurrGrinderMatteBlackAllComponents_360x.png?v=1708629631"
+      ],
+      "title": "Fellow Opus Conical Burr Grinder",
+      "rating": "",
+      "price": "$199.95",
+      "id": 21
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/Black-Stagg-EKG-wood-handle-hero-shot_360x.jpg?v=1619543706",
+        "https://ratiocoffee.com/cdn/shop/products/White-Stagg-EKG-wood-handle-hero-shot_360x.jpg?v=1688153362"
+      ],
+      "title": "Fellow Stagg EKG Electric Kettle",
+      "rating": "(5 Reviews)",
+      "price": "from $169.95",
+      "id": 22
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/atmos-canister-black-A2_360x.jpg?v=1637090763",
+        "https://ratiocoffee.com/cdn/shop/products/atmos-canister-white-A1_360x.jpg?v=1637090764"
+      ],
+      "title": "Ratio x Fellow Atmos Coffee Canister",
+      "rating": "(20 Reviews)",
+      "price": "$74.95",
+      "id": 23
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/carter-mug-black-A1-grid_360x.jpg?v=1637090494",
+        "https://ratiocoffee.com/cdn/shop/products/carter-mug-grey-C1-productpage_360x.jpg?v=1637090493"
+      ],
+      "title": "Ratio x Fellow Carter Move Mug",
+      "rating": "(1 Review)",
+      "price": "$27.50",
+      "id": 24
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/Tally-Mode0g_360x.png?v=1686074285",
+        "https://ratiocoffee.com/cdn/shop/files/Tally-Mode0g_360x.png?v=1686074285"
+      ],
+      "title": "Fellow Tally Pro Precision Scale",
+      "rating": "",
+      "price": "$189.95",
+      "id": 25
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/lino_mug_white_1080_360x.jpg?v=1628808912",
+        "https://ratiocoffee.com/cdn/shop/products/lino_mug_gray_360x.jpg?v=1628809001"
+      ],
+      "title": "notNeutral LINO Coffee Mug",
+      "rating": "(33 Reviews)",
+      "price": "from $18.00",
+      "id": 26
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/bjKppiRz6FdobwsKAUqw_Smoked-Glass-Cortado-3-4_360x.jpg?v=1561746584",
+        "https://ratiocoffee.com/cdn/shop/products/utjsXraTYyeqT79RkNJ1_Smoked-Glass-Cortado-Side_360x.jpg?v=1561746584"
+      ],
+      "title": "notNeutral Vero Cappuccino Cup (Smoke)",
+      "rating": "(6 Reviews)",
+      "price": "$22.50",
+      "id": 27
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/240ml_smoke_hero_900x_5f18592d-be82-4453-832b-d1cfcc5b3413_360x.jpg?v=1628808771",
+        "https://ratiocoffee.com/cdn/shop/products/240ml_angled_900x_dfbd327d-9c0f-49f5-b06e-1d6d6a988c32_360x.jpg?v=1628808775"
+      ],
+      "title": "Hearth Coffee Cup (Set of 2)",
+      "rating": "(24 Reviews)",
+      "price": "$21.00",
+      "id": 28
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/able-cleaner-A1_360x.jpg?v=1636565452",
+        "https://ratiocoffee.com/cdn/shop/products/able-cleaner-B1_360x.jpg?v=1636565454"
+      ],
+      "title": "Urnex - Cleaning Powder Packets",
+      "rating": "(9 Reviews)",
+      "price": "from $2.00",
+      "id": 29
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/gift-card_360x.png?v=1575398343"
+      ],
+      "title": "Gift Card",
+      "rating": "(8 Reviews)",
+      "price": "from $25.00",
+      "id": 30
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/LUCCA-A53-mini-walnut-with-wood-knob-knockout-2021_360x.png?v=1636566624",
+        "https://ratiocoffee.com/cdn/shop/products/Lucca-A53-Mini_360x.jpg?v=1636566600"
+      ],
+      "title": "LUCCA A53 Mini V2 Espresso Machine",
+      "rating": "",
+      "price": "from $2,395.00",
+      "id": 31
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/Lucca-M58-Stainless-Espresso-Machine-Hero_360x.jpg?v=1648247146",
+        "https://ratiocoffee.com/cdn/shop/files/LUCCA-M58-Espresso-Machine-Black-with-Walnut-KO-by-Clive-Coffee-Hero_360x.jpg?v=1716577517"
+      ],
+      "title": "LUCCA M58 Espresso Machine",
+      "rating": "",
+      "price": "from $2,895.00",
+      "id": 32
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/Eureka-Mignon-Silenzio-Chrome_360x.jpg?v=1636739309",
+        "https://ratiocoffee.com/cdn/shop/products/Eureka-Mignon-Silenzio-Chrome-Detail-01_360x.jpg?v=1636739309"
+      ],
+      "title": "Eureka Silenzio Espresso Grinder",
+      "rating": "(1 Review)",
+      "price": "from $499.00",
+      "id": 33
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/Eureka-Mignon-Oro-XL-Espresso-Grinder-Chrome-Clive-Coffee-KO_360x.jpg?v=1716577005",
+        "https://ratiocoffee.com/cdn/shop/products/Eureka-Mignon-Oro-White-XL-KO-Hero_360x.png?v=1716577005"
+      ],
+      "title": "Eureka Oro Mignon XL Espresso Grinder",
+      "rating": "",
+      "price": "from $899.00",
+      "id": 34
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/Acaia-Lunar-Scale_360x.jpg?v=1647362366",
+        "https://ratiocoffee.com/cdn/shop/products/Acaia-Lunar-Scale-03_360x.jpg?v=1647362426"
+      ],
+      "title": "Acaia Lunar Scale",
+      "rating": "",
+      "price": "$250.00",
+      "id": 35
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/Pearl_Pitch-Black_360x.jpg?v=1647642510"
+      ],
+      "title": "Acaia Pearl Scale - Pitch Black",
+      "rating": "(2 Reviews)",
+      "price": "$150.00",
+      "id": 36
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/SKf49dwvSlaAWus9ucCf_Ratio-Heat-Lid-3-4_360x.jpg?v=1561745942",
+        "https://ratiocoffee.com/cdn/shop/products/eMMLmExYSdODdCW1nbWs_Ratio-Heat-Lid-Side_360x.jpg?v=1561745942"
+      ],
+      "title": "Ratio Carafe Heat Lid",
+      "rating": "(3 Reviews)",
+      "price": "$8.00",
+      "id": 37
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/Thermal-Carafe-Handle-3-4-1600x1600_360x.jpg?v=1585601584"
+      ],
+      "title": "Ratio Thermal Carafe Handle Default",
+      "rating": "(4 Reviews)",
+      "price": "$60.00",
+      "id": 38
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-carafe-lidweb_360x.jpg?v=1605139997"
+      ],
+      "title": "Ratio Six Thermal Carafe Lid Series 1",
+      "rating": "(87 Reviews)",
+      "price": "$10.00",
+      "id": 39
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-heat-shield-A1copy_360x.jpg?v=1648595095"
+      ],
+      "title": "Ratio Six Flat Basket Heat Shield",
+      "rating": "(7 Reviews)",
+      "price": "$5.00",
+      "id": 40
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/carafe-glass-A1-square_1e6f3d4a-a8e0-4e57-9cfa-b0c9924cf15d_360x.jpg?v=1585601579"
+      ],
+      "title": "Ratio Handblown Glass Carafe Clear (Second Quality)",
+      "rating": "(19 Reviews)",
+      "price": "$35.00",
+      "id": 41
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-basket-flat-black-A1_360x.jpg?v=1661451423",
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-basket-flat-black-C1_360x.jpg?v=1738884707"
+      ],
+      "title": "Ratio Six Flat Bottom Brew Basket Set",
+      "rating": "(6 Reviews)",
+      "price": "$30.00",
+      "id": 42
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/t/53/assets/no-image_large.jpg?v=6698591240890402471747857763"
+      ],
+      "title": "Ratio Six - Thermal Carafe (Dewar Only)",
+      "rating": "(2 Reviews)",
+      "price": "$50.00",
+      "id": 43
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio-silver-parawood-thermal-A1_a207b23a-1674-4c12-bb5d-4883215b1df2_360x.jpg?v=1675275744",
+        "https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"
+      ],
+      "title": "Ratio Eight Original Coffee Machine (Thermal)",
+      "rating": "(100 Reviews)",
+      "price": "$999.00",
+      "id": 44
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/AbleBasketFilterJan202312301_360x.jpg?v=1687459285",
+        "https://ratiocoffee.com/cdn/shop/files/AbleBasketFilterJan202312263-grey_360x.jpg?v=1687459285"
+      ],
+      "title": "Able Basket Coffee Filter for Ratio Six and Eight S2",
+      "rating": "(47 Reviews)",
+      "price": "$34.50",
+      "id": 45
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/halefresh-descaling-solution-front_360x.jpg?v=1689885123",
+        "https://ratiocoffee.com/cdn/shop/files/halefresh-descaling-solution-back_360x.jpg?v=1689885162"
+      ],
+      "title": "Halefresh Machine Wash",
+      "rating": "(5 Reviews)",
+      "price": "$15.00",
+      "id": 46
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/SO_Blend_Retail_Drip_e621df76-9161-4ee9-9e1f-f8f42b19d9f8_360x.png?v=1697811725"
+      ],
+      "title": "Coava Coffee Roasters - S.O. Blend",
+      "rating": "(2 Reviews)",
+      "price": "from $17.50",
+      "id": 47
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/2022-OrganicTrio-Update-775x875_360x.png?v=1697838811"
+      ],
+      "title": "Sightglass Coffee - New Organic Trio",
+      "rating": "",
+      "price": "$61.50",
+      "id": 48
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/OrganicOwlsHowl_775x875_4aec5872-d8e5-4bff-8490-a8ee2621c53e_360x.png?v=1697838813",
+        "https://ratiocoffee.com/cdn/shop/files/PDP-Coffee-775-x-875-08_360x.jpg?v=1697838817"
+      ],
+      "title": "Sightglass Coffee - Organic, Owl's Howl",
+      "rating": "",
+      "price": "from $20.50",
+      "id": 49
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/Blueboon_Organic775x875_360x.png?v=1697838813",
+        "https://ratiocoffee.com/cdn/shop/files/PDP-Coffee-775-x-875-10_360x.jpg?v=1697838830"
+      ],
+      "title": "Sightglass Coffee - Organic, Blueboon",
+      "rating": "(2 Reviews)",
+      "price": "from $20.50",
+      "id": 50
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/Geo_Update_cadc178a-278c-45e0-a752-50d4ee86b844_360x.png?v=1698253351",
+        "https://ratiocoffee.com/cdn/shop/files/Kraft_Rollover_3c90504d-607e-4f98-bbe9-93f50ab9b9bc_360x.png?v=1698253354"
+      ],
+      "title": "Onyx Coffee Lab - Geometry",
+      "rating": "",
+      "price": "from $11.25",
+      "id": 51
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/SouthernWeather_SquareHero_360x.png?v=1698253351",
+        "https://ratiocoffee.com/cdn/shop/files/Black_Bag_Rollover_Sqaure_360x.jpg?v=1698253356"
+      ],
+      "title": "Onyx Coffee Lab - Southern Weather",
+      "rating": "",
+      "price": "from $10.75",
+      "id": 52
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/PowerNap_SquareHero_360x.png?v=1698253352",
+        "https://ratiocoffee.com/cdn/shop/files/Cement_Bag_Rollover_Square_360x.jpg?v=1698253354"
+      ],
+      "title": "Onyx Coffee Lab - Power Nap",
+      "rating": "",
+      "price": "from $12.25",
+      "id": 53
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/RatioXMaryCarroll-Green-3_4_360x.jpg?v=1702357580",
+        "https://ratiocoffee.com/cdn/shop/files/RatioXMaryCarroll-Green-Top_360x.jpg?v=1702449495"
+      ],
+      "title": "Ratio x Mary Carroll Mug",
+      "rating": "(3 Reviews)",
+      "price": "$60.00",
+      "id": 54
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/t/53/assets/no-image_large.jpg?v=6698591240890402471747857763"
+      ],
+      "title": "Ratio Eight - Thermal Carafe Handle Gasket",
+      "rating": "(1 Review)",
+      "price": "$3.00",
+      "id": 55
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/t/53/assets/no-image_large.jpg?v=6698591240890402471747857763"
+      ],
+      "title": "Ratio Six Fill Lid - Silver",
+      "rating": "",
+      "price": "$20.00",
+      "id": 56
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-basket-number4-silver-B1_720x.jpg?v=1738884149",
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-basket-number4-silver-D1_720x.jpg?v=1738884151"
+      ],
+      "title": "Ratio Six #4 Brew Basket - Matte Stainless",
+      "rating": "(1 Review)",
+      "price": "$20.00",
+      "id": 57
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/t/53/assets/no-image_large.jpg?v=6698591240890402471747857763"
+      ],
+      "title": "Ratio Six Fill Lid - White",
+      "rating": "",
+      "price": "$20.00",
+      "id": 58
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-basket-number4-white-B1_360x.jpg?v=1738882205",
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-basket-number4-white-D1_360x.jpg?v=1738884094"
+      ],
+      "title": "Ratio Six #4 Brew Basket - White",
+      "rating": "",
+      "price": "$20.00",
+      "id": 59
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/t/53/assets/no-image_large.jpg?v=6698591240890402471747857763"
+      ],
+      "title": "Ratio Six Fill Lid - Matte Black",
+      "rating": "",
+      "price": "$20.00",
+      "id": 60
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-basket-number4-black-B1_360x.jpg?v=1738884046",
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-basket-number4-black-D1_360x.jpg?v=1738884051"
+      ],
+      "title": "Ratio Six - #4 Brew Basket Matte Black",
+      "rating": "",
+      "price": "$20.00",
+      "id": 61
+    }
+  ],
+  "home-page_products": [
+    {
+      "image": [
+                "https://ratiocoffee.com/cdn/shop/files/ratio4-black-B2_360x.jpg?v=1727281481",
+        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-A3_360x.jpg?v=1727281491"
+      ],
+      "sub_title": "ONE CUP WONDER",
+      "title": "Ratio Four Coffee Machine",
+      "btnn": "Shop Four",
+      "id": 1
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-black-A3_7f3d3fc4-7d12-4aa4-a809-62746b73af24_360x.jpg?v=1675189304",
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-black-C3_360x.jpg?v=1713379688"
+      ],
+      "sub_title": "SCA Award Winner",
+      "title": "Ratio Six Coffee Machine",
+      "btnn": "Shop Six",
+      "id": 2
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/eight-s2-main_360x.png?v=1747163998",
+        "https://ratiocoffee.com/cdn/shop/files/eight-s2-pic1_360x.jpg?v=1747163998"
+      ],
+      "sub_title": "UPDATING AN ICON",
+      "title": "Ratio Eight Series 2 Coffee Machine",
+      "btnn": "Shop Eight S2",
+      "id": 3
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio8-white-walnut-glass-A2_ec9add25-30ff-46d7-9ff8-9389fae5e6eb_360x.jpg?v=1748376563",
+        "https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"
+      ],
+      "sub_title": "Our Best-Selling Original",
+      "title": "Ratio Eight Original Coffee Machine",
+      "btnn": "Shop Eight Original",
+      "id": 4
+    }
+  ],
+  "machine_page_products": [
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-B2_360x.jpg?v=1727281481",
+        "https://ratiocoffee.com/cdn/shop/files/ratio4-black-A3_360x.jpg?v=1727281491"
+      ],
+      "title": "Ratio Four Coffee Machine",
+      "reviews": "(57 Reviews)",
+      "price": "$259.00",
+      "id": 1
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-black-A3_7f3d3fc4-7d12-4aa4-a809-62746b73af24_360x.jpg?v=1675189304",
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-black-C3_360x.jpg?v=1713379688"
+      ],
+      "title": "Ratio six Coffee Machine",
+      "reviews": "(508 Reviews)",
+      "price": "$359.00",
+      "id": 2
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/files/eight-s2-main_360x.png?v=1747163998",
+        "https://ratiocoffee.com/cdn/shop/files/eight-s2-pic1_360x.jpg?v=1747163998"
+      ],
+      "title": "Ratio Eight Series 2 Coffee Machine",
+      "reviews": "(241 Reviews)",
+      "price": "$639.00",
+      "id": 3
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio8-white-walnut-glass-A2_ec9add25-30ff-46d7-9ff8-9389fae5e6eb_360x.jpg?v=1748376563",
+        "https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"
+      ],
+      "title": "Ratio Eight Original Coffee Machine",
+      "reviews": "(241 Reviews)",
+      "price": "$899.00",
+      "id": 4
+    },
+    {
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio-silver-parawood-thermal-A1_a207b23a-1674-4c12-bb5d-4883215b1df2_360x.jpg?v=1675275744",
+        "https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"
+      ],
+      "title": "Ratio Eight Original Coffee Machine (Thermal)",
+      "reviews": "(100 Reviews)",
+      "price": "$999.00",
+      "id": 5
+    }
+  ],
+  "login-data": []
 }

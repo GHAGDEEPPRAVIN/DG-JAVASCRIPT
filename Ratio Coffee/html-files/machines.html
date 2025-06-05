@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Main Css File -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 
     <!-- font awrsome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -150,16 +150,80 @@
 
 /* navbar code ends */
 
-/* login form code starts */
+/* machine product page code ends */
 
-.loginform
+.machinesproductpage
 {
-    margin: 100px;
-    height: 450px;
-    padding: 60px 40px;
+    height: auto;
+    margin: 100px 0px;
+}
+.machinesproductpage .headder
+{
+    margin-bottom: 100px;
+}
+.machinesproductpage .headder h2
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.machinesproductpage .headder p
+{
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.machinesproductpage .machinesProducts
+{
+    padding: 0px 40px;
+    width: 88%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+.machinesproductpage .machinesProducts .product
+{
+    text-align: center;
+    margin-left: 20px;
+    width: 285px;
+    height: 400px;
+}
+.machinesproductpage .machinesProducts .product #product_image
+{
+    width: 100%;
+    height: 290px;
+}
+.machinesproductpage .machinesProducts .product #product_title
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+.machinesproductpage .machinesProducts .product #reviews
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.machinesproductpage .machinesProducts .product #price
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 
-/* login form code ends */
+
+
+/* machine product pade code ends */
+
+
 
 
 /* footercode starts */
@@ -303,7 +367,7 @@
             </div>
             <div class="header-menu">
                 <ul>
-                    <li><a href="">Machines</a></li>
+                    <li><a href="machines.html">Machines</a></li>
                     <li><a href="">Accessories</a></li>
                     <li><a href="">Coffee</a></li>
                     <li><a href="">Bundles</a></li>
@@ -319,13 +383,23 @@
 
     <!-- navbar ends -->
 
-    <!-- login form starts -->
 
-    <div class="loginform">
-        
+    <!-- machine product page starts -->
+
+    <div class="machinesproductpage">
+        <div class="headder">
+            <h2>Ratio Coffee Machines</h2>
+            <p>If you’re trying to decide between our machines, we empathize. They all produce rich, smooth coffee at the touch of a button and are backed by our 5 year warranty.</p>
+        </div>
+        <div class="machinesProducts">
+            
+        </div>
     </div>
 
-    <!-- login form ends -->
+    <!-- machines product page ends -->
+
+
+    
 
     <!-- footer starts -->
 
@@ -413,6 +487,61 @@
     </div>
 
     <!-- footer ends -->
+
+
+
+
+    <script>
+
+        const maindiv = document.querySelector(".machinesProducts");
+        
+        async function fetchDataFromServer()
+        {
+
+            const res = await fetch("http://localhost:3000/machine_page_products")
+            .then((res)=>res.json())
+            .then((data)=>
+            {
+                cardList(data)
+            }
+            ).catch((err)=>console.log(err))
+
+        }
+
+        fetchDataFromServer()
+
+
+        function cardList(data)
+        {
+            let machinespage = data.map((el,i)=>
+            {
+                return card(el.id,el.title,el.image[0],el.reviews,el.price);
+            })
+
+            console.log(machinespage)
+
+            maindiv.innerHTML = machinespage.join("")
+        } 
+
+        function card(id,title,image,reviews,price)
+        {
+            let singleDiv = 
+            `
+                <div class="product">
+                        <img id="product_image" src="${image}" alt="">
+                    <div class="des">
+                        <h1 id="product_title">${title}</h1>
+                        <span id="product_reviews">${reviews}</span>
+                        <p id="product_price">${price}</p>
+                    </div>
+                </div>
+
+            `
+
+            return singleDiv;
+        }
+
+    </script>
     
 </body>
 </html>

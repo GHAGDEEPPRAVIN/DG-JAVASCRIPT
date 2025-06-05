@@ -203,63 +203,63 @@
     font-weight: 400;
     color: #2c2e2f;
 }
-.Meet-the-Ratio-line-up .container .products .product-description
+.Meet-the-Ratio-line-up .container #home_product_append_div .product-description
 {
     text-align: center;
 }
 
-/* Meet the Ratio line-up product 1 code starts */
-
-.Meet-the-Ratio-line-up .container .products .product-images img
+.Meet-the-Ratio-line-up .container #home_product_append_div
 {
-    width: 100%;
-    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
 }
-.Meet-the-Ratio-line-up .container .products .product-description .product-description-btn1
+.Meet-the-Ratio-line-up .container #home_product_append_div .home_page_product
 {
-    font-size: 16px;
+    padding-left: 25px;
+    width: 286px;
+    height: 430px;
+}
+.Meet-the-Ratio-line-up .container #home_product_append_div .home_page_product #home_page_product_image
+{
+    width: 288px;
+    height: 288px;
+    margin-bottom: 10px;
+}
+.Meet-the-Ratio-line-up .container #home_product_append_div .home_page_product .product-description #home_page_product_subtitle
+{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.Meet-the-Ratio-line-up .container #home_product_append_div .home_page_product .product-description #home_page_product_title
+{
+    text-align: center;
+    font-size: 19px;
+    font-family: sans-serif;
     font-weight: 700;
-    padding: 11px 40px;
-    margin: auto;
-}
-
-/* Meet the Ratio line-up product 1 code ends */
-
-/* Meet the Ratio line-up product 2 code starts */
-
-.Meet-the-Ratio-line-up .container .products .product-description .product-description-btn2
+    margin-bottom: 10px;
+}.Meet-the-Ratio-line-up .container #home_product_append_div .home_page_product .product-description #product_description_btn1
 {
-    font-size: 16px;
-    font-weight: 700;
+    margin-top: 25px;
     padding: 11px 40px;
-    margin: auto;
+    color: #143A47;
+    border: 0.8px solid #143A47;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    transition: 0.5s;
 }
-
-/* Meet the Ratio line-up product 2 code ends */
-
-/* Meet the Ratio line-up product 3 code starts */
-
-.Meet-the-Ratio-line-up .container .products .product-description .product-description-btn3
+.Meet-the-Ratio-line-up .container #home_product_append_div .home_page_product .product-description #product_description_btn1:hover
 {
-    font-size: 16px;
-    font-weight: 700;
-    padding: 11px 40px;
-    margin: auto;
+    color: white;
+    background-color: #143A47;
 }
-
-/* Meet the Ratio line-up product 3 code ends */
-
-/* Meet the Ratio line-up product 4 code starts */
-
-.Meet-the-Ratio-line-up .container .products .product-description .product-description-btn4
-{
-    font-size: 16px;
-    font-weight: 700;
-    padding: 11px 40px;
-    margin: auto;
-}
-
-/* Meet the Ratio line-up product 4 code ends */
 
 
 
@@ -521,6 +521,11 @@
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+.the_latest_form_the_journal_starts .container .row a
+{
+    text-decoration: none;
+    color: #2c2e2f;
 }
 .the_latest_form_the_journal_starts .container .row img
 {

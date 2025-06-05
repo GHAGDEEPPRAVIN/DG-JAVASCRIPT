@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratio Coffee Machines</title>
+
+    <!-- main icon of the website -->
+    <link rel="icon" href="images/icon.png">
+
+    <!-- Bootstrap 5 CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5 Bundle Js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 5 Icon Cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Main Css File -->
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+    <!-- font awrsome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jquery main cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+ 
+            
+<style>
+    *
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* indroducing navbar code starts */
+
+.indroducing-navbar
+{
+    width: 100%;
+    background-color: #143A47;
+    height: 42.4px;
+    line-height: 42.4px;
+    margin: 0%;
+}
+.indroducing-navbar .container
+{
+    height: auto;
+    color: white;
+    padding: 0px 40px;
+}
+.indroducing-navbar .container .containesCJA a
+{
+    margin-left: 50px;
+    color: white;
+    text-decoration: none; 
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;   
+    transition: 0.7s;
+}
+.indroducing-navbar .container .containesCJA a:hover
+{
+    border-bottom: 1px solid white;
+}
+.indroducing-navbar .container .containesCJA span
+{
+    margin-left: 65px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.indroducing-navbar .container .row p
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.indroducing-navbar .container .row p a
+{
+    margin-left: 3px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    transition: 0.7s;
+}
+.indroducing-navbar .container .row p:hover a
+{
+    border :  0px solid white;
+}
+
+
+/* indroducing navbar code ends */
+
+/* navbar code starts */
+
+.navbar
+{
+    height: 78.25px;
+    width: 100%;
+    line-height: 78.25px;
+    padding: 0%;
+}
+.navbar .container
+{
+    height: 78.25px;
+    display: flex;
+    align-content: center;
+    padding: 0px 40px;
+}
+.navbar .container .header-logo a img
+{
+    width: 123px;
+}
+.navbar .container .header-menu ul
+{
+    display: flex;
+    margin-bottom: 0%;
+}
+.navbar .container .header-menu ul li
+{
+    list-style: none;
+}
+.navbar .container .header-menu ul li a
+{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    padding: 25px 8px;
+    margin-right: 20px;
+}
+.navbar .container .header-icon i
+{
+    padding: 25px 8px;
+    font-size: 28px;
+    color: black;
+    font-weight: 500;
+}
+
+/* navbar code ends */
+
+
+
+/* shop all code starts */
+
+.shopall
+{
+    height: auto;
+    margin: 100px 0px;
+}
+.shopall .container .headder
+{
+    margin-bottom: 100px;
+}
+.shopall .container .headder h1
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.shopall .container .headder p
+{
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+.shopall .container .shop_product
+{
+    padding: 60px 40px;
+    /* width: 90%; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+.shopall .container .shop_product .product
+{
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 18px;
+    width: 285px;
+    height: 450px;
+}
+.shopall .container .shop_product .product #product_image
+{
+    width: 100%;
+    height: 290px;
+    margin-bottom: 10px;
+}
+.shopall .container .shop_product .product #product_title
+{
+    width: 90%;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+.shopall .container .shop_product .product #reviews
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.shopall .container .shop_product .product #price
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/* shop all code ends */
+
+
+
+
+
+/* footercode starts */
+
+.footer
+{
+    border-top: 0.8px solid #2c2e2f6d;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding: 40px 0px;
+}
+.footer .container
+{
+    padding: 0px 40px;
+}
+.footer .container .row
+{
+    margin-bottom: 35px;
+}
+.footer .container .row h3
+{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+.footer .container .row ul
+{
+    margin: 0%;
+    padding-left: 25px;
+}
+.footer .container .row ul li
+{
+    list-style: none;
+    margin: 10px 0px;
+}
+.footer .container .row ul li a
+{
+    padding: 8px 0px;
+    text-decoration: none;
+    color: #2c2e2f;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.footer .container .information_footer
+{
+    margin-top: 35px;
+    padding-top: 35px;
+    border-top: 0.8px solid #2c2e2f6d;
+}
+.footer .container .information_footer .row h2
+{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer .container .information_footer .row input
+{
+    width: 300px;
+    padding: 8px 10px 8px 45px;
+}
+.footer .container .information_footer .row i
+{
+    position: relative;
+    left: -293px;
+    top: 3px;
+    font-size: 26px;
+}
+.footer .container .information_footer .follower_app i
+{
+    font-size: 24px;
+    position: relative;
+    left: 0%;
+    top: 0%;
+}
+.footer .container .information_footer .follower_app h2
+{
+    text-align: center;
+}
+.footer .container .information_footer .row p
+{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.footer .container .information_footer .row ul
+{
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .container .information_footer .row ul li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.footer .container .information_footer .row ul li a 
+{
+    text-decoration: none;
+}
+
+
+/* footer code ends */
+
+</style>
+
+</head>
+<body>
+
+    <!-- indroducing navbar starts -->
+
+    <div class="indroducing-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <p>Free Shipping Over $95 &nbsp;/  <a href="">Introducing Ratio Eight Series 2...</a></p>
+                </div>
+                <div class="col-4 containesCJA">
+                    <span>|</span>
+                    <a href="contact.html">Contact</a>
+                    <a href="aboutus.html">Journal</a>
+                    <a href="aboutus.html">About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- indroducing navbar ends -->
+
+    <!-- navbar starts -->
+
+    <div class="navbar">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/index.html"><img src="/images/website-main-logo.png" alt=""></a>
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="machines.html">Machines</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Coffee</a></li>
+                    <li><a href="">Bundles</a></li>
+                </ul>
+            </div>
+            <div class="header-icon">
+                <a href="login.html"><i class="bi bi-person" style="font-size: 28px;"></i></a>
+                <a href=""><i class="bi bi-search" style="font-size: 22px;"></i></a>
+                <a href=""><i class="bi bi-cart" style="font-size: 22px;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar ends -->
+
+
+
+
+    <!-- shop all starts -->
+
+    <div class="shopall">
+        <div class="container">
+            <div class="headder">
+                <h1>Shop</h1>
+                <p>You want options? We’ve got options. From the luxe Ratio Eight and its conical physique to the no-nonsense Six, there’s a Ratio that matches your taste and temperament. Slow drinker? Add a thermal carafe. You want the form of the Six with the carafe of the Eight? Do it. Here’s everything you could ever want.</p>
+            </div>
+            <div class="shop_product">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- shop all ends -->
+
+
+
+
+    <!-- footer starts -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="shop.html">Ratio Six</a></li>
+                        <li><a href="shop.html">Ratio Eight</a></li>
+                        <li><a href="shop.html">Ratio Eight Thermal Set</a></li>
+                        <li><a href="shop.html">Espresso Machines</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">Shop All</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="">Ratio Eight versus Ratio Six</a></li>
+                        <li><a href="">How to brew with Ratio Eight</a></li>
+                        <li><a href="">Why does the Ratio Eight cost so much?</a></li>
+                        <li><a href="">Sustainability isn’t just a buzzword</a></li>
+                        <li><a href="">Adjusting your grind</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Warranty</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Spare Parts</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Help Articles</a></li>
+                        <li><a href="">Accessibility</a></li>
+                        <li><a href="">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Inside Ratio</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Ratio Rewards</a></li>
+                        <li><a href="">Press & Reviews</a></li>
+                        <li><a href="">Wholesale Info</a></li>
+                        <li><a href="">Affiliates</a></li>
+                        <li><a href="">Ratio Retailers</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Great Coffee Everywhere</h3>
+                    <ul>
+                        <li><a href="">Office</a></li>
+                        <li><a href="">Hotel</a></li>
+                        <li><a href="">Restaurant</a></li>
+                        <li><a href="">Roaster & Cafe</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="information_footer">
+                <div class="row">
+                    <div class="col-5">
+                        <h2>Get the inside scoop on coffee culture & brewing tips.</h2>
+                        <input type="email" placeholder="Enter Your email">
+                        <i id="mail_icon" class="bi bi-envelope"></i>
+                    </div>
+                    <div class="col-4 follower_app">
+                        <h2>See the latest and follow us.</h2>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p>Privacy Policy • Terms of Service Copyright © 2025 Ratio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer ends -->
+
+
+
+
+
+    <script>
+
+        const maindiv = document.querySelector(".shop_product");
+        
+        function fetchDataFromServer()
+        {
+
+            fetch("http://localhost:3000/products")
+            .then((res)=>res.json())
+            .then((data)=>
+            {
+                cardLists(data)
+            }
+            ).catch((err)=>console.log(err))
+
+        }
+
+        fetchDataFromServer()
+
+
+        function cardLists(data)
+        {
+            let shop_page = data.map((el,i)=>
+            {
+                return cards(el.image[0],el.title,el.rating,el.price);
+            })
+
+            console.log(shop_page)
+
+            maindiv.innerHTML = shop_page.join("")
+        } 
+
+        function cards(image,title,rating,price) {
+    return `
+        <div class="product">
+            <img id="product_image" src="${image}" alt="">
+            <div class="des">   
+                <h1 id="product_title">${title}</h1>
+                <span id="reviews">${rating}</span>
+                <p id="price">${price}</p>
+            </div>
+        </div>
+    `;
+}
+
+
+    </script>
+
+</body>
+</html>
