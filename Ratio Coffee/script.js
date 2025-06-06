@@ -103,49 +103,6 @@ addSliderImage();
 
 // Complete your Ratio set up slider code starts
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  centeredSlides: true,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-var appendNumber = 4;
-var prependNumber = 1;
-document.querySelector(".prepend-2-slides").addEventListener("click", function (e) {
-    e.preventDefault();
-    swiper.prependSlide([
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-    ]);
-  });
-document.querySelector(".prepend-slide").addEventListener("click", function (e) {
-    e.preventDefault();
-    swiper.prependSlide(
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-    );
-  });
-document.querySelector(".append-slide").addEventListener("click", function (e) {
-    e.preventDefault();
-    swiper.appendSlide(
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-    );
-  });
-document.querySelector(".append-2-slides").addEventListener("click", function (e) {
-    e.preventDefault();
-    swiper.appendSlide([
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-    ]);
-  });
-
 // Complete your Ratio set up slider code ends
 
 
@@ -157,45 +114,67 @@ function fetchHomePageApi() {
   fetch("http://localhost:3000/home-page_products")
     .then((res) => res.json())
     .then((data) => {
-      fourProductData(data)
-      // console.log(data)
+      fourProductData(data);
     })
-    .catch((err) => console.log(err))
+    .catch((err) => console.log(err));
 }
 
-fetchHomePageApi()
+fetchHomePageApi();
 
 function fourProductData(data) {
-  let homePageProductArray = data.map((el, i) => {
-    return singleProduct(el.image[0],el.sub_title,el.title,el.btnn)
-  })
+  let homePageProductArray = data.map((el) => {
+    // Make sure el.image has at least 2 images
+    return singleProduct(el.image[0], el.image[1], el.sub_title, el.title, el.btnn);
+  });
 
-  
   home_product_append_div.innerHTML = homePageProductArray.join("");
-
 }
 
-function singleProduct(image,sub_title,title,btnn) {
-  let singleProductDiv = `
-
+function singleProduct(image1, image2, sub_title, title, btnn) {
+  return `
     <div class="home_page_product">
       <div class="product-images">
-          <div class="show-product-images1">
-            <img id="home_page_product_image" src="${image}" alt="">
-          </div>
-          </div>
-          <div class="product-description">
-              <span id="home_page_product_subtitle">${sub_title}</span>
-              <h2 id="home_page_product_title">${title}</h2>
-              <button id="product_description_btn1">${btnn}</button>
-          </div>
+        <div class="show-product-images1">
+          <img class="default-image" src="${image1}" alt="">
+          <img class="hover-image" src="${image2}" alt="">
+        </div>
+      </div>
+      <div class="product-description">
+        <span>${sub_title}</span>
+        <h2>${title}</h2>
+        <button class="hover-btn">${btnn}</button>
+      </div>
     </div>
-  
-  `
-
-  return singleProductDiv
-
+  `;
 }
+
+// Handle hover on both image area and button
+document.addEventListener("mouseover", function (e) {
+  const container = e.target.closest(".home_page_product");
+  if (container && (e.target.classList.contains("hover-btn") || e.target.closest(".product-images"))) {
+    const defaultImg = container.querySelector(".default-image");
+    const hoverImg = container.querySelector(".hover-image");
+    if (defaultImg && hoverImg) {
+      defaultImg.style.opacity = "0";
+      hoverImg.style.opacity = "1";
+    }
+  }
+});
+
+document.addEventListener("mouseout", function (e) {
+  const container = e.target.closest(".home_page_product");
+  if (container && (e.target.classList.contains("hover-btn") || e.target.closest(".product-images"))) {
+    const defaultImg = container.querySelector(".default-image");
+    const hoverImg = container.querySelector(".hover-image");
+    if (defaultImg && hoverImg) {
+      defaultImg.style.opacity = "1";
+      hoverImg.style.opacity = "0";
+    }
+  }
+});
+
+
+
 
 
 

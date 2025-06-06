@@ -1,14 +1,14 @@
+B
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Ratio</title>
-
+    <title>Shop - Page 2 - Ratio</title>
 
     <!-- main icon of the website -->
-    <link rel="icon" href="/images/icon.png">
+    <link rel="icon" href="images/icon.png">
 
     <!-- Bootstrap 5 CSS file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Main Css File -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 
     <!-- font awrsome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -33,6 +33,7 @@
     <!-- jquery main cdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 
     <style>
         * {
@@ -118,7 +119,7 @@
             padding: 0px 40px;
         }
 
-        .navbar .container .header-logo img {
+        .navbar .container .header-logo a img {
             width: 123px;
         }
 
@@ -151,151 +152,153 @@
         /* navbar code ends */
 
 
-        /* aboutus code starts */
 
-        .aboutus .title {
-            height: 450px;
-            width: 100%;
-            background-image: url('images/about/backgroundimage.webp');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
+        /* shop all code starts */
 
-        .aboutus .title h1 {
-            font-family: sans-serif;
-            font-size: 60px;
-            font-weight: 700;
-            color: white;
-            text-align: center;
-            line-height: 450px;
-        }
-
-        .aboutus .container {
-            padding: 0px 40px;
-        }
-
-        .aboutus .container .heading {
+        .shopall {
+            height: auto;
             margin: 100px 0px;
-            padding: 0px 40px;
         }
 
-        .aboutus .container .heading p {
-            margin: auto;
-            width: 75%;
-            font-family: sans-serif;
-            font-size: 32px;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        .aboutus .container .information {
+        .shopall .container .headder {
             margin-bottom: 100px;
         }
 
-        .aboutus .container .information .row .img {
+        .shopall .container .headder h1 {
             text-align: center;
-        }
-
-        .aboutus .container .information .row .img img {
-            height: 500px;
-            width: 500px;
-        }
-
-        .aboutus .container .information .row .description {
-            padding: 40px 0px 40px 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .aboutus .container .information .row .description p {
-            width: 91%;
             font-family: sans-serif;
-            font-size: 16px;
-            font-weight: 400;
+            font-weight: 700;
+            font-size: 35px;
+            margin-bottom: 50px;
         }
 
-        .aboutus .container .information .row .description span {
+        .shopall .container .headder p {
+            text-align: center;
+            width: 65%;
+            margin: auto;
             font-family: sans-serif;
-            font-size: 16px;
             font-weight: 400;
-            display: block;
+            font-size: 19px;
         }
 
-        .aboutus .conatiner {
+        .shopall .container .shop_product {
+            padding: 60px 40px;
+            margin: auto;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             align-items: center;
-            height: 500px;
-            padding: 0px 40px;
-            background-color: #F2F2F2;
-            margin-bottom: 25px;
         }
 
-        .aboutus .conatiner .contact-box {
-            margin-left: 100px;
-            width: 430px;
-            padding: 40px 60px 40px 40px;
-            background-color: white;
+        .shopall .container .shop_product .product {
+            margin-bottom: 10px;
+            text-align: center;
+            margin-left: 18px;
+            width: 285px;
+            height: 450px;
         }
 
-        .aboutus .conatiner .contact-box h2 {
-            font-size: 21px;
-            font-weight: 700;
-            font-family: sans-serif;
-            margin-bottom: 20px;
-        }
-
-        .aboutus .conatiner .contact-box p {
+        .shopall .container .shop_product .product #product_image {
             width: 100%;
-            text-align: left;
-            font-size: 16px;
+            height: 290px;
+            margin-bottom: 10px;
+        }
+
+        .shopall .container .shop_product .product #product_title {
+            width: 90%;
+            font-family: sans-serif;
             font-weight: 400;
-            font-family: sans-serif;
-            margin: 0px 0px 20px 0px;
+            font-size: 19px;
         }
 
-        .aboutus .conatiner .contact-box span {
-            font-size: 16px;
-            font-weight: 700;
+        .shopall .container .shop_product .product #reviews {
             font-family: sans-serif;
+            font-weight: 400;
+            font-size: 12px;
         }
 
-        .aboutus .conatiner .contact-box button {
-            color: white;
-            background-color: #143A47;
+        .shopall .container .shop_product .product #price {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+
+        .product {
+            background-color: #fff;
+            /* padding: 15px; */
+            /* border-radius: 10px; */
+            /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+            /* transition: transform 0.3s ease; */
+        }
+
+        .image-wrapper {
+            position: relative;
             width: 100%;
+            padding-top: 100%;
+            /* Square aspect ratio */
+            overflow: hidden;
+            /* border-radius: 8px; */
+            margin-bottom: 10px;
+        }
+
+        .image-wrapper img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .default-img {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .hover-img {
+            opacity: 0;
+            z-index: 2;
+        }
+
+        .image-wrapper:hover .default-img {
+            opacity: 0;
+        }
+
+        .image-wrapper:hover .hover-img {
+            opacity: 1;
+        }
+
+        .des {
+            margin-top: 12px;
+        }
+
+        .des h1 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .des span {
+            font-size: 14px;
+            color: #888;
             display: block;
-            padding: 11px 40px;
+            margin-bottom: 4px;
+        }
+
+        .des p {
             font-size: 16px;
-            font-weight: 700;
-            font-family: sans-serif;
-            margin-top: 10px;
-            transition: 0.5s;
-        }
-
-        .aboutus .conatiner .contact-box button:hover {
-            background-color: white;
-            color: #143A47;
-        }
-
-        .aboutus .four_images
-        {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 100%;
-        }
-        .aboutus .four_images img
-        {
-            height: 540px;
-            width: 360px;
+            font-weight: bold;
+            color: #333;
         }
 
 
 
-        /* aboutus code ends */
+        /* shop all code ends */
+
+
+
 
 
         /* footercode starts */
@@ -401,8 +404,19 @@
             text-decoration: none;
         }
 
-
         /* footer code ends */
+
+        /* pagination code starts */
+
+        .pagination
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* pagination code ends */
+
     </style>
 
 </head>
@@ -446,77 +460,56 @@
             </div>
             <div class="header-icon">
                 <a href="login.html"><i class="bi bi-person" style="font-size: 28px;"></i></a>
-                <i class="bi bi-search" style="font-size: 22px;"></i>
-                <i class="bi bi-cart" style="font-size: 22px;"></i>
+                <a href=""><i class="bi bi-search" style="font-size: 22px;"></i></a>
+                <a href=""><i class="bi bi-cart" style="font-size: 22px;"></i></a>
             </div>
         </div>
     </div>
 
     <!-- navbar ends -->
 
-    <!-- aboutus code starts -->
 
-    <div class="aboutus">
-        <div class="title">
-            <h1>About Us</h1>
-        </div>
+
+
+    <!-- shop all starts -->
+
+    <div class="shopall">
         <div class="container">
-            <div class="heading">
-                <p>Ratio was born of a simple question: in the age of super premium espresso machines, why hasn’t the
-                    automatic coffee maker evolved?</p>
+            <div class="headder">
+                <h1>Shop</h1>
+                <p>You want options? We’ve got options. From the luxe Ratio Eight and its conical physique to the
+                    no-nonsense Six, there’s a Ratio that matches your taste and temperament. Slow drinker? Add a
+                    thermal carafe. You want the form of the Six with the carafe of the Eight? Do it. Here’s everything
+                    you could ever want.</p>
             </div>
-            <div class="information">
-                <div class="row">
-                    <div class="col-6 img">
-                        <img src="images/about/aboutusimage1.webp" alt="">
-                    </div>
-                    <div class="col-6 description">
-                        <p>For so long, when selecting a coffee solution for the home, coffee enthusiasts had to choose
-                            either a complex brewing method (quality over simplicity) or an overly simplistic one
-                            (convenience over quality). And none of them were beautiful.</p>
-                        <p>This was the impetus for starting Ratio back in 2012: to create a solution that married
-                            beauty, simplicity, and quality into a single experience. We didn’t want to believe you had
-                            to sacrifice one for the other.</p>
-                        <p>To great coffee, every day!</p>
-
-                        <span>Mark Hellweg</span>
-                        <span>Founder</span>
-                        <span>mark@ratiocoffee.com</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="conatiner">
-
-            <div class="contact-box">
-
-                <h2>Ratio HQ</h2>
-
-                <p>1204 SE Water Ave, Ste 15 <br> Portland, OR 97214</p>
-
-                <span>PHONE / CHAT HOURS</span>
-
-                <p>9:00am–1:00pm PST <br> Mon–Fri</p>
-
-                <span>CALL, EMAIL, OR CHAT</span>
-
-                <button>(800) 261-9640</button>
-                <button>hello@ratiocoffee.com</button>
+            <div class="shop_product">
 
             </div>
-
-        </div>
-
-        <div class="four_images">
-            <img src="images/about/fourimage1.webp" alt="">
-            <img src="images/about/fourimage2.webp" alt="">
-            <img src="images/about/fourimage3.webp" alt="">
-            <img src="images/about/fourimage4.webp" alt="">
         </div>
     </div>
 
-    <!-- aboutus code ends -->
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="shop.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="shop2.html">2</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- shop all ends -->
+
+
+
 
     <!-- footer starts -->
 
@@ -526,12 +519,12 @@
                 <div class="col-2">
                     <h3>Shop</h3>
                     <ul>
-                        <li><a href="">Ratio Six</a></li>
-                        <li><a href="">Ratio Eight</a></li>
-                        <li><a href="">Ratio Eight Thermal Set</a></li>
-                        <li><a href="">Espresso Machines</a></li>
-                        <li><a href="">Accessories</a></li>
-                        <li><a href="">Shop All</a></li>
+                        <li><a href="shop.html">Ratio Six</a></li>
+                        <li><a href="shop.html">Ratio Eight</a></li>
+                        <li><a href="shop.html">Ratio Eight Thermal Set</a></li>
+                        <li><a href="shop.html">Espresso Machines</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">Shop All</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
@@ -604,6 +597,53 @@
     </div>
 
     <!-- footer ends -->
+
+
+
+
+
+    <script>
+        const maindiv = document.querySelector(".shop_product");
+
+        function fetchDataFromServer() {
+            fetch("http://localhost:3000/products")
+                .then((res) => res.json())
+                .then((data) => {
+                    cardLists(data);
+                })
+                .catch((err) => console.log(err));
+        }
+
+        fetchDataFromServer();
+
+        function cardLists(data) {
+            let shop_page = data.map((el) => {
+                if(el.id>61)
+            {
+                return cards(el.image[0], el.image[1], el.title, el.rating, el.price);
+            }
+            });
+
+            maindiv.innerHTML = shop_page.join("");
+        }
+
+        function cards(image1, image2, title, rating, price) {
+            return `
+        <div class="product">
+            <div class="image-wrapper">
+                <img class="default-img" id="product_image" src="${image1}" alt="">
+                <img class="hover-img" id="product_image" src="${image2}" alt="">
+            </div>
+            <div class="des">   
+                <h1 id="product_title">${title}</h1>
+                <span id="reviews">${rating}</span>
+                <p id="price">${price}</p>
+            </div>
+        </div>
+        `;
+        }
+    </script>
+
 
 </body>
 
