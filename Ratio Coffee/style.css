@@ -536,7 +536,65 @@
 /* Compare Ratio machines code ends */
 
 /* Complete your Ratio set up starts */
-/* //fetching form api// */
+
+.complete_your_Ratio_set_up_starts .container .headder
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.complete_your_Ratio_set_up_starts .container .headder h2
+{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.complete_your_Ratio_set_up_starts .container .headder a
+{
+    text-decoration: none;
+    color: #2c2e2f;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.complete_your_Ratio_set_up_starts .container .ratiosetup
+{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.complete_your_Ratio_set_up_starts .container .ratiosetup .setup
+{ 
+    width: 410px;
+    margin-right: 25px;
+    background-color: #F7F3EE;
+}
+.complete_your_Ratio_set_up_starts .container .ratiosetup .setup img
+{ 
+    height: 400px;
+    width: 100%;
+}
+.complete_your_Ratio_set_up_starts .container .ratiosetup .setup p
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 20px 20px 5px 20px;
+}
+.complete_your_Ratio_set_up_starts .container .ratiosetup .setup h1
+{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin: 0px 20px 20px 20px;
+}
+
+
+
 /* Complete your Ratio set up ends */
 
 /* The latest from the journal starts */

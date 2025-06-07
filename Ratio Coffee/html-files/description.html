@@ -291,6 +291,146 @@
         }
 
 
+        .description_information {
+            width: 100%;
+            margin-top: 80px;
+        }
+
+        .description_information .second_container {
+            width: 88%;
+            margin: auto;
+            padding: 0px 40px;
+        }
+
+        .description_information .second_container .threeopitions {
+            border-top: 0.8px solid #E9E3DB;
+            border-bottom: 0.8px solid #E9E3DB;
+            padding: 40px 0px;
+            /* margin: 40px 0px; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .description_information .second_container .threeopitions a {
+            font-family: sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            color: #2c2e2f;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .description_information .second_container .threeopitions a i {
+            font-size: 20px;
+            margin-right: 12px;
+        }
+
+        .description_information .second_container .videodescription {
+            height: 750px;
+        }
+
+        .description_information .second_container .videodescription a img {
+            margin: 40px 0px;
+            width: 100%;
+            height: 690px;
+        }
+
+        .description_information .second_container .videodescription a span {
+            font-size: 70px;
+            color: white;
+            position: relative;
+            top: -430px;
+            left: 550px;
+        }
+
+        .as_easy_as_pods_but_so_much_better {
+            width: 100%;
+            margin: 40px 0px;
+        }
+
+        .as_easy_as_pods_but_so_much_better .row {
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .as_easy_as_pods_but_so_much_better .row .image {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .as_easy_as_pods_but_so_much_better .row .image img {
+            width: 600px;
+            height: 450px;
+        }
+
+        .as_easy_as_pods_but_so_much_better .row .description {
+            padding: 0%;
+            margin: 0%;
+            /* margin-left: 20px; */
+            width: 600px;
+            height: 450px;
+            background-color: #F7F3EE;
+            padding: 100px 60px;
+        }
+
+        .as_easy_as_pods_but_so_much_better .row .description h1 {
+            font-size: 26px;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+
+        .as_easy_as_pods_but_so_much_better .row .description p {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: sans-serif;
+        }
+
+        .three_information_bar {
+            margin: 100px 0px;
+        }
+
+        .three_information_bar .row {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .three_information_bar .row .col-4 {
+            padding: 0%;
+            padding-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .three_information_bar .row span {
+            font-family: sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+
+        .three_information_bar .row h3 {
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .three_information_bar .row p {
+            width: 90%;
+            font-family: sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+
+
+
+
 
         /* description code ends */
 
@@ -402,7 +542,6 @@
             text-decoration: none;
         }
 
-
         /* footer code ends */
     </style>
 
@@ -459,14 +598,14 @@
 
     <!-- description starts -->
 
-    <div class="description">
+    <div class="description" style="padding: 60px 0px;">
         <div class="container">
             <div class="product-details">
                 <div class="rating">
-                    &#9733;&#9733;&#9733;&#9733;&#9733; (57 Reviews)
+                    &#9733;&#9733;&#9733;&#9733;&#9733; <span  id="description_dynamic_reviews"></span>
                 </div>
-                <h1>Ratio Four Coffee Machine</h1>
-                <div class="price">$259.00</div>
+                <h1 id="description_dynamic_title"></h1>
+                <div class="price" id="description_dynamic_price"></div>
                 <div class="shipping-info">This item ships for free</div>
 
                 <p class="description">
@@ -513,7 +652,7 @@
                         style="height: 40px; width: 40px; border-radius: 50px;border: 0.8px solid black; color: black;background-color: black;">
                     </div>
 
-                    <button>ADD TO CART — $259.00</button>
+                    <button>ADD TO CART — <span id="description_dynamic_price_add"></span></button>
 
                     <span
                         style="font-size: 14px;font-weight: 400;margin-top: 15px; display: block;text-align: center;">In
@@ -523,18 +662,130 @@
 
             <div class="product-images">
                 <div class="main-image">
-                    <img src="https://ratiocoffee.com/cdn/shop/products/ratio6-black-A3_7f3d3fc4-7d12-4aa4-a809-62746b73af24_360x.jpg?v=1675189304"
-                        alt="Ratio Four Coffee Machine main image">
-                </div>
-                <div class="thumbnail-images">
-                    <img src="https://ratiocoffee.com/cdn/shop/products/ratio6-black-A3_7f3d3fc4-7d12-4aa4-a809-62746b73af24_360x.jpg?v=1675189304"
-                        alt="Thumbnail 1">
-                    <img src="https://ratiocoffee.com/cdn/shop/files/ratio6-black-C3_360x.jpg?v=1713379688"
-                        alt="Thumbnail 2">
-                </div>
+                    <div class="d-flex align-items-start">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" aria-labelledby="v-pills-">
+                                <img src="" id="description_dynamic_image1" alt=""  style="width: 475px;height: 475px;border: none;">
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" aria-labelledby="v-pills">
+                                <img src="" id="description_dynamic_image2" alt="" style="width: 475px;height: 475px;border: none;">
+                            </div>
+                        </div>
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" style="height: 100px; width: 100px; border: 1px solid black; border-radius: 0px; outline: none; margin-bottom: 5px;">
+                                <img id="description_dynamic_image1.1" alt="" style="width: 100%;">
+                            </button>
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" style="height: 100px; width: 100px; border: 1px solid black; border-radius: 0px; outline: none; margin-bottom: 5px;">
+                                <img id="description_dynamic_image2.2" alt="" style="width: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>  
             </div>
 
         </div>
+
+        <div class="description_information">
+            <div class="second_container">
+                <div class="threeopitions">
+                    <a href=""><i class="bi bi-box-seam"></i> FREE GROUND SHIPPING</a>
+                    <a href=""><i class="bi bi-5-circle"></i> 5 YEAR WARRATNY</a>
+                    <a href=""><i class="bi bi-heart"></i> 30-DAY LOVE IT GUARANTEE</a>
+                </div>
+
+                <div class="videodescription">
+                    <a href="https://youtu.be/EeLG7Qjw1tc">
+                        <img src="https://cld.accentuate.io/8475921711336/1701283877322/ratio-4-video-cover.jpg?v=1701283877322&options=q_80,w_2000"
+                            alt="">
+                        <span class="video_icon"><i class="bi bi-play-circle-fill"></i></span>
+                    </a>
+                </div>
+
+                <div class="as_easy_as_pods_but_so_much_better">
+                    <div class="row">
+                        <div class="col-6 image">
+                            <img src="https://cld.accentuate.io/8475921711336/1701283416980/ratio-4-lifestyle-4.jpg?v=1701283416980&options=q_70,w_768"
+                                alt="">
+                        </div>
+                        <div class="col-5 description">
+                            <h1>As easy as pods, but so much better.</h1>
+                            <p>Ever wonder what the convenience of a Keurig really costs? We did too. On average,
+                                $33-$50 a pound, depending on the roaster. For mediocre coffee, brewed with haste and
+                                waste at the forefront, into throwaway plastic pods.</p>
+                            <p>We offer a better way. Buy fresh from your local roaster and have the Four brew up a cup
+                                — the taste will be monumentally better.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="three_information_bar">
+                    <div class="row">
+                        <div class="col-4">
+                            <span>SEAMLESS FILLING</span>
+                            <h3>Removable water canister.</h3>
+                            <p>Filling your water tank just got way easier. Simply take the removable canister to the
+                                sink and fill between 5 and 20 ounces. If you're after precision and want to weigh the
+                                water, put the tank on your scale and fill to your target water volume. </p>
+                        </div>
+                        <div class="col-4">
+                            <span>THE PERFECT POUR OVER</span>
+                            <h3>Automated Bloom cycle.</h3>
+                            <p>Also called pre-infusion, this initial burst of hot water causes freshly roasted coffee
+                                to bubble up in a "bloom." The Four then lets the coffee rest and settle back down for
+                                15 seconds before delivering the remaining hot water, leading to a more complete
+                                extraction.</p>
+                        </div>
+                        <div class="col-4">
+                            <span>BREW IT YOUR WAY</span>
+                            <h3>Supports multiple filter styles.</h3>
+                            <p>The Ratio Four works with several popular filters. It ships with a flat filter basket
+                                (for use with Melitta or similar filters) that encourages a consistent extraction, but
+                                the Hario V60™, Kalita Wave™, and Origami™ all work perfectly as well.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="height: 500px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://cld.accentuate.io/8475921711336/1701283441693/ratio-4-lifestyle-3.jpg?v=1701283441693&options=ar_1.6,c_fill,q_80,w_1280"
+                        class="d-block w-80" style="margin: auto;" height="500px" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://cld.accentuate.io/8475921711336/1701283445699/ratio-4-lifestyle-6.jpg?v=1701283445699&options=ar_1.6,c_fill,q_80,w_1280"
+                        class="d-block w-80" style="margin: auto;" height="500px" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cld.accentuate.io/8475921711336/1701283443563/ratio-4-lifestyle-5.jpg?v=1701283443564&options=ar_1.6,c_fill,q_80,w_1280"
+                        class="d-block w-80" style="margin: auto;" height="500px" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://cld.accentuate.io/8475921711336/1701283438352/ratio-4-lifestyle-1.jpg?v=1701283438352&options=ar_1.6,c_fill,q_80,w_1280"
+                        class="d-block w-80" style="margin: auto;" height="500px" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cld.accentuate.io/8475921711336/1701283440086/ratio-4-lifestyle-2.jpg?v=1701283440086&options=ar_1.6,c_fill,q_80,w_1280"
+                        class="d-block w-80" style="margin: auto;" height="500px" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://cld.accentuate.io/8475921711336/1727734791928/ratio4-detail-A1.png?v=1727734791928&options=ar_1.6,c_fill,q_80,w_1280"
+                        class="d-block w-80" style="margin: auto;" height="500px" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev" style="background-color: #333;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next" style="background-color: #333;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
     </div>
 
     <!-- description ends -->
@@ -628,6 +879,50 @@
     </div>
 
     <!-- footer ends -->
+
+    <script>
+
+        const reviews_info = document.getElementById("description_dynamic_reviews");
+        const title_info = document.getElementById("description_dynamic_title");
+        const price_info = document.getElementById("description_dynamic_price");
+        const price_info_add = document.getElementById("description_dynamic_price_add");
+
+        const image_imfo1 = document.getElementById("description_dynamic_image1");
+        const image_imfo2 = document.getElementById("description_dynamic_image2");
+        
+        const image_imfo11 = document.getElementById("description_dynamic_image1.1");
+        const image_imfo22 = document.getElementById("description_dynamic_image2.2");
+
+        
+
+        const z = new URLSearchParams(window.location.search)
+        const ID  = z.get("id")
+    
+
+
+        function renderUiOfDescriptionPage()
+        {
+            fetch(`http://localhost:3000/products/${ID}`)
+            .then((res)=>res.json())
+            .then((data)=>{
+                reviews_info.innerText = data.rating;
+                title_info.innerHTML = data.title;
+                price_info.innerHTML = data.price;
+                image_imfo1.setAttribute("src",data.image[0])
+                image_imfo2.setAttribute("src",data.image[1])
+
+                image_imfo11.setAttribute("src",data.image[0])
+                image_imfo22.setAttribute("src",data.image[1])
+                price_info_add.innerHTML =data.price
+
+            })
+            .catch((err)=>console.log(err))
+        }
+
+        renderUiOfDescriptionPage()
+
+
+    </script>
 
 </body>
 

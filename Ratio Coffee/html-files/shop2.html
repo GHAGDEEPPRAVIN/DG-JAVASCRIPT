@@ -231,6 +231,11 @@ B
             /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
             /* transition: transform 0.3s ease; */
         }
+        .product a
+        {
+            text-decoration: none;
+            color: #2c2e2f;
+        }
 
         .image-wrapper {
             position: relative;
@@ -492,14 +497,14 @@ B
     <nav aria-label="Page navigation example">
         <ul class="pagination">
             <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
+                <a class="page-link" href="shop.html" aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
             <li class="page-item"><a class="page-link" href="shop.html">1</a></li>
             <li class="page-item"><a class="page-link" href="shop2.html">2</a></li>
             <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
+                <a class="page-link" href="shop2.html" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
             </li>
@@ -630,6 +635,7 @@ B
         function cards(image1, image2, title, rating, price) {
             return `
         <div class="product">
+            <a href="description.html">
             <div class="image-wrapper">
                 <img class="default-img" id="product_image" src="${image1}" alt="">
                 <img class="hover-img" id="product_image" src="${image2}" alt="">
@@ -639,6 +645,7 @@ B
                 <span id="reviews">${rating}</span>
                 <p id="price">${price}</p>
             </div>
+            </a>
         </div>
         `;
         }

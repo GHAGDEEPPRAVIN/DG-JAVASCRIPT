@@ -397,21 +397,21 @@
             <h1>Create Account</h1>
             
             <label>First Name</label>
-            <input type="text">
+            <input id="first_name" type="text">
 
             <label>Last Name</label>
-            <input type="text">
+            <input id="last_name" type="text">
 
             <label>Email</label>
-            <input type="email">
+            <input id="email_address" type="email">
 
             <label>Password</label>
-            <input type="password">
+            <input id="password_number" type="password">
 
             <input type="checkbox" id="check-box">
             <span>Subscribe to our newsletter</span>
 
-            <button>Create</button>
+            <button id="create_btn">Create</button>
     </div>
 
     <!-- createAccount ends -->
@@ -502,6 +502,36 @@
     </div>
 
     <!-- footer ends -->
+
+
+    <script>
+
+        const first_name = document.getElementById("first_name")
+        const last_name = document.getElementById("last_name")
+        const email_address = document.getElementById("email_address")
+        const password_number = document.getElementById("password_number")
+
+        const create_btn = document.getElementById("create_btn")
+
+        let login_data = {
+            firstname : first_name.value,
+            lastname : last_name.value,
+            email : email_address.value,
+            password : password_number.value,
+        }
+
+        create_btn.addEventListener("click",()=>{
+            fetch("http://localhost:3000/login-data",{
+                method:"POST",
+                 headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: JSON.stringify(login_data),
+            })
+        })
+
+
+    </script>
     
 </body>
 </html>
