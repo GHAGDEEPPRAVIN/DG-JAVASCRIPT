@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ratio Coffee Machine</title>
 
-    
+
     <!-- main icon of the website -->
     <link rel="icon" href="/images/icon.png">
 
@@ -25,355 +26,616 @@
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 
     <!-- font awrsome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- jquery main cdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    
+
     <style>
-*
-{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
 
-/* indroducing navbar code starts */
+        /* indroducing navbar code starts */
 
-.indroducing-navbar
-{
-    width: 100%;
-    background-color: #143A47;
-    height: 42.4px;
-    line-height: 42.4px;
-    margin: 0%;
-}
-.indroducing-navbar .container
-{
-    height: auto;
-    color: white;
-    padding: 0px 40px;
-}
-.indroducing-navbar .container .containesCJA a
-{
-    margin-left: 50px;
-    color: white;
-    text-decoration: none; 
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 16px;   
-    transition: 0.7s;
-}
-.indroducing-navbar .container .containesCJA a:hover
-{
-    border-bottom: 1px solid white;
-}
-.indroducing-navbar .container .containesCJA span
-{
-    margin-left: 65px;
-    font-size: 25px;
-    font-weight: 300;
-    line-height: 25px;
-}
-.indroducing-navbar .container .row p
-{
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
-.indroducing-navbar .container .row p a
-{
-    margin-left: 3px;
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px solid white;
-    transition: 0.7s;
-}
-.indroducing-navbar .container .row p:hover a
-{
-    border :  0px solid white;
-}
+        .indroducing-navbar {
+            width: 100%;
+            background-color: #143A47;
+            height: 42.4px;
+            line-height: 42.4px;
+            margin: 0%;
+        }
+
+        .indroducing-navbar .container {
+            height: auto;
+            color: white;
+            padding: 0px 40px;
+        }
+
+        .indroducing-navbar .container .containesCJA a {
+            margin-left: 50px;
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            transition: 0.7s;
+        }
+
+        .indroducing-navbar .container .containesCJA a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .indroducing-navbar .container .containesCJA span {
+            margin-left: 65px;
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 25px;
+        }
+
+        .indroducing-navbar .container .row p {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .indroducing-navbar .container .row p a {
+            margin-left: 3px;
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+            transition: 0.7s;
+        }
+
+        .indroducing-navbar .container .row p:hover a {
+            border: 0px solid white;
+        }
 
 
-/* indroducing navbar code ends */
+        /* indroducing navbar code ends */
 
-/* navbar code starts */
+        /* navbar code starts */
 
-.navbar
-{
-    height: 78.25px;
-    width: 100%;
-    line-height: 78.25px;
-    padding: 0%;
-}
-.navbar .container
-{
-    height: 78.25px;
-    display: flex;
-    align-content: center;
-    padding: 0px 40px;
-}
-.navbar .container .header-logo img
-{
-    width: 123px;
-}
-.navbar .container .header-menu ul
-{
-    display: flex;
-    margin-bottom: 0%;
-}
-.navbar .container .header-menu ul li
-{
-    list-style: none;
-}
-.navbar .container .header-menu ul li a
-{
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    color: black;
-    padding: 25px 8px;
-    margin-right: 20px;
-}
-.navbar .container .header-icon i
-{
-    padding: 25px 8px;
-    font-size: 28px;
-    color: black;
-    font-weight: 500;
-}
+        .navbar {
+            height: 78.25px;
+            width: 100%;
+            line-height: 78.25px;
+            padding: 0%;
+        }
 
-/* navbar code ends */
+        .navbar .container {
+            height: 78.25px;
+            display: flex;
+            align-content: center;
+            padding: 0px 40px;
+        }
 
-/* machine product page code ends */
+        .navbar .container .header-logo img {
+            width: 123px;
+        }
 
-.machinesproductpage
-{
-    height: auto;
-    margin: 100px 0px;
-}
-.machinesproductpage .headder
-{
-    margin-bottom: 100px;
-}
-.machinesproductpage .headder h2
-{
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: 35px;
-    margin-bottom: 50px;
-}
-.machinesproductpage .headder p
-{
-    text-align: center;
-    width: 55%;
-    margin: auto;
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-}
+        .navbar .container .header-menu ul {
+            display: flex;
+            margin-bottom: 0%;
+        }
 
-/* Products Grid */
-.machinesProducts {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
+        .navbar .container .header-menu ul li {
+            list-style: none;
+        }
 
-/* Individual Product Card */
-.product {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
+        .navbar .container .header-menu ul li a {
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            color: black;
+            padding: 25px 8px;
+            margin-right: 20px;
+        }
 
-/* Image Container */
-.image-wrapper {
-    position: relative;
-    width: 100%;
-    padding-top: 100%; /* Makes the image container square */
-    overflow: hidden;
-}
+        .navbar .container .header-icon i {
+            padding: 25px 8px;
+            font-size: 28px;
+            color: black;
+            font-weight: 500;
+        }
 
-.image-wrapper img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    transition: opacity 0.4s ease;
-}
+        /* navbar code ends */
 
-.default-img {
-    opacity: 1;
-    z-index: 1;
-}
+        /* machine product page code ends */
 
-.hover-img {
-    opacity: 0;
-    z-index: 2;
-}
+        .machinesproductpage {
+            height: auto;
+            margin: 100px 0px;
+        }
 
-.image-wrapper:hover .default-img {
-    opacity: 0;
-}
+        .machinesproductpage .headder {
+            margin-bottom: 100px;
+        }
 
-.image-wrapper:hover .hover-img {
-    opacity: 1;
-}
+        .machinesproductpage .headder h2 {
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            margin-bottom: 50px;
+        }
 
-/* Product Info */
-.des {
-    padding: 16px 14px;
-}
+        .machinesproductpage .headder p {
+            text-align: center;
+            width: 55%;
+            margin: auto;
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+        }
 
-.des h1 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-    font-family: sans-serif;
-    color: #222;
-}
+        /* Products Grid */
+        .machinesProducts {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
 
-.des span {
-    font-size: 14px;
-    color: #888;
-    display: block;
-    margin-bottom: 8px;
-    font-family: sans-serif;
-}
+        /* Individual Product Card */
+        .product {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
 
-.des p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #000;
-    font-family: sans-serif;
-}
+        /* Image Container */
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+            /* Makes the image container square */
+            overflow: hidden;
+        }
 
-/* machine product page code ends */
+        .image-wrapper img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .default-img {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .hover-img {
+            opacity: 0;
+            z-index: 2;
+        }
+
+        .image-wrapper:hover .default-img {
+            opacity: 0;
+        }
+
+        .image-wrapper:hover .hover-img {
+            opacity: 1;
+        }
+
+        /* Product Info */
+        .des {
+            padding: 16px 14px;
+        }
+
+        .des h1 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            font-family: sans-serif;
+            color: #222;
+        }
+
+        .des span {
+            font-size: 14px;
+            color: #888;
+            display: block;
+            margin-bottom: 8px;
+            font-family: sans-serif;
+        }
+
+        .des p {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+            font-family: sans-serif;
+        }
+
+        /* machine product page code ends */
 
 
 
 
-/* footercode starts */
+        /* footercode starts */
 
-.footer
-{
-    border-top: 0.8px solid #2c2e2f6d;
-    margin-top: 15px;
-    margin-bottom: 50px;
-    padding: 40px 0px;
-}
-.footer .container
-{
-    padding: 0px 40px;
-}
-.footer .container .row
-{
-    margin-bottom: 35px;
-}
-.footer .container .row h3
-{
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-left: 25px;
-}
-.footer .container .row ul
-{
-    margin: 0%;
-    padding-left: 25px;
-}
-.footer .container .row ul li
-{
-    list-style: none;
-    margin: 10px 0px;
-}
-.footer .container .row ul li a
-{
-    padding: 8px 0px;
-    text-decoration: none;
-    color: #2c2e2f;
-    font-family: sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-}
-.footer .container .information_footer
-{
-    margin-top: 35px;
-    padding-top: 35px;
-    border-top: 0.8px solid #2c2e2f6d;
-}
-.footer .container .information_footer .row h2
-{
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-.footer .container .information_footer .row input
-{
-    width: 300px;
-    padding: 8px 10px 8px 45px;
-}
-.footer .container .information_footer .row i
-{
-    position: relative;
-    left: -293px;
-    top: 3px;
-    font-size: 26px;
-}
-.footer .container .information_footer .follower_app i
-{
-    font-size: 24px;
-    position: relative;
-    left: 0%;
-    top: 0%;
-}
-.footer .container .information_footer .follower_app h2
-{
-    text-align: center;
-}
-.footer .container .information_footer .row p
-{
-    font-size: 15px;
-    font-family: sans-serif;
-    font-weight: 400;
-}
-.footer .container .information_footer .row ul
-{
-    padding: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer .container .information_footer .row ul li
-{
-    list-style: none;
-    margin-right: 15px;
-}
-.footer .container .information_footer .row ul li a 
-{
-    text-decoration: none;
-}
+        .footer {
+            border-top: 0.8px solid #2c2e2f6d;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            padding: 40px 0px;
+        }
+
+        .footer .container {
+            padding: 0px 40px;
+        }
+
+        .footer .container .row {
+            margin-bottom: 35px;
+        }
+
+        .footer .container .row h3 {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        .footer .container .row ul {
+            margin: 0%;
+            padding-left: 25px;
+        }
+
+        .footer .container .row ul li {
+            list-style: none;
+            margin: 10px 0px;
+        }
+
+        .footer .container .row ul li a {
+            padding: 8px 0px;
+            text-decoration: none;
+            color: #2c2e2f;
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .footer .container .information_footer {
+            margin-top: 35px;
+            padding-top: 35px;
+            border-top: 0.8px solid #2c2e2f6d;
+        }
+
+        .footer .container .information_footer .row h2 {
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer .container .information_footer .row input {
+            width: 300px;
+            padding: 8px 10px 8px 45px;
+        }
+
+        .footer .container .information_footer .row i {
+            position: relative;
+            left: -293px;
+            top: 3px;
+            font-size: 26px;
+        }
+
+        .footer .container .information_footer .follower_app i {
+            font-size: 24px;
+            position: relative;
+            left: 0%;
+            top: 0%;
+        }
+
+        .footer .container .information_footer .follower_app h2 {
+            text-align: center;
+        }
+
+        .footer .container .information_footer .row p {
+            font-size: 15px;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+
+        .footer .container .information_footer .row ul {
+            padding: 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer .container .information_footer .row ul li {
+            list-style: none;
+            margin-right: 15px;
+        }
+
+        .footer .container .information_footer .row ul li a {
+            text-decoration: none;
+        }
 
 
-/* footer code ends */
+        /* footer code ends */
 
+
+
+
+
+        @media (max-width: 1024px) {
+            .indroducing-navbar .container {
+                padding: 0px 20px;
+            }
+
+            .indroducing-navbar .container .containesCJA a {
+                margin-left: 20px;
+            }
+
+            .indroducing-navbar .container .containesCJA span {
+                margin-left: 30px;
+            }
+
+            .navbar .container {
+                padding: 0px 20px;
+            }
+
+            .navbar .container .header-menu ul li a {
+                margin-right: 10px;
+            }
+
+            .aboutus .title {
+                height: 350px;
+            }
+
+            .aboutus .title h1 {
+                font-size: 50px;
+                line-height: 350px;
+            }
+
+            .aboutus .container .heading {
+                margin: 70px 0px;
+                padding: 0px 20px;
+            }
+
+            .aboutus .container .heading p {
+                width: 90%;
+                font-size: 28px;
+            }
+
+            .aboutus .container .information .row .img img {
+                height: 400px;
+                width: 400px;
+            }
+
+            .aboutus .container .information .row .description {
+                padding: 20px 15px;
+            }
+
+            .aboutus .container .information .row .description p {
+                width: 100%;
+            }
+
+            .aboutus .conatiner {
+                height: 400px;
+                padding: 0px 20px;
+            }
+
+            .aboutus .conatiner .contact-box {
+                margin-left: 50px;
+                width: 380px;
+                padding: 30px 40px 30px 30px;
+            }
+
+            .aboutus .four_images img {
+                height: 450px;
+                width: 300px;
+            }
+
+            .footer .container {
+                padding: 0px 20px;
+            }
+
+            .footer .container .row .col-2,
+            .footer .container .row .col-3 {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container .information_footer .row input {
+                width: 250px;
+            }
+
+            .footer .container .information_footer .row i {
+                left: -243px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .indroducing-navbar {
+                height: auto;
+            }
+
+            .indroducing-navbar .container {
+                padding: 0px 15px;
+            }
+
+            .indroducing-navbar .container .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .indroducing-navbar .container .row .col-8,
+            .indroducing-navbar .container .row .col-4 {
+                width: 100%;
+            }
+
+            .indroducing-navbar .container .containesCJA a {
+                margin-left: 10px;
+            }
+
+            .indroducing-navbar .container .containesCJA span {
+                display: none;
+            }
+
+            .navbar {
+                height: auto;
+            }
+
+            .navbar .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 15px;
+                height: auto;
+            }
+
+            .navbar .container .header-menu ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            .navbar .container .header-menu ul li a {
+                padding: 10px 8px;
+                margin-right: 0;
+            }
+
+            .navbar .container .header-icon {
+                padding-bottom: 10px;
+            }
+
+            .aboutus .title {
+                height: 250px;
+            }
+
+            .aboutus .title h1 {
+                font-size: 40px;
+                line-height: 250px;
+            }
+
+            .aboutus .container {
+                padding: 0px 15px;
+            }
+
+            .aboutus .container .heading {
+                margin: 50px 0px;
+                padding: 0px 15px;
+            }
+
+            .aboutus .container .heading p {
+                width: 100%;
+                font-size: 24px;
+            }
+
+            .aboutus .container .information .row {
+                flex-direction: column;
+            }
+
+            .aboutus .container .information .row .col-6 {
+                width: 100%;
+            }
+
+            .aboutus .container .information .row .img img {
+                height: auto;
+                width: 100%;
+            }
+
+            .aboutus .container .information .row .description {
+                padding: 20px 0px;
+            }
+
+            .aboutus .container .information .row .description p {
+                width: 100%;
+            }
+
+            .aboutus .conatiner {
+                flex-direction: column;
+                height: auto;
+                padding: 20px 15px;
+            }
+
+            .aboutus .conatiner .contact-box {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .aboutus .four_images {
+                flex-direction: column;
+            }
+
+            .aboutus .four_images img {
+                height: auto;
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container {
+                padding: 0px 15px;
+            }
+
+            .footer .container .row {
+                flex-direction: column;
+            }
+
+            .footer .container .row .col-2,
+            .footer .container .row .col-3 {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .footer .container .row h3 {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .footer .container .row ul {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .footer .container .information_footer .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer .container .information_footer .row .col-5,
+            .footer .container .information_footer .row .col-4,
+            .footer .container .information_footer .row .col-3 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container .information_footer .row input {
+                width: 100%;
+                padding: 8px 10px;
+            }
+
+            .footer .container .information_footer .row i {
+                position: static;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .footer .container .information_footer .follower_app ul {
+                justify-content: center;
+            }
+        }
     </style>
 
 </head>
+
 <body>
 
     <!-- indroducing navbar starts -->
@@ -382,7 +644,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <p>Free Shipping Over $95 &nbsp;/  <a href="description.html?id=83">Introducing Ratio Eight Series 2...</a></p>
+                    <p>Free Shipping Over $95 &nbsp;/ <a href="description.html?id=83">Introducing Ratio Eight Series
+                            2...</a></p>
                 </div>
                 <div class="col-4 containesCJA">
                     <span>|</span>
@@ -401,7 +664,7 @@
     <div class="navbar">
         <div class="container">
             <div class="header-logo">
-               <a href="/index.html"><img src="/images/website-main-logo.png" alt=""></a>
+                <a href="/index.html"><img src="/images/website-main-logo.png" alt=""></a>
             </div>
             <div class="header-menu">
                 <ul>
@@ -413,8 +676,8 @@
             </div>
             <div class="header-icon">
                 <a href="login.html"><i class="bi bi-person" style="font-size: 28px;"></i></a>
-                <i class="bi bi-search" style="font-size: 22px;"></i>
-                <i class="bi bi-cart" style="font-size: 22px;"></i>
+                <a href="search.html"><i class="bi bi-search" style="font-size: 22px;"></i></a>
+                <a href="add-to-cart.html"><i class="bi bi-cart" style="font-size: 22px;"></i></a>
             </div>
         </div>
     </div>
@@ -427,17 +690,18 @@
     <div class="machinesproductpage">
         <div class="headder">
             <h2>Ratio Coffee Machines</h2>
-            <p>If you’re trying to decide between our machines, we empathize. They all produce rich, smooth coffee at the touch of a button and are backed by our 5 year warranty.</p>
+            <p>If you’re trying to decide between our machines, we empathize. They all produce rich, smooth coffee at
+                the touch of a button and are backed by our 5 year warranty.</p>
         </div>
         <div class="machinesProducts">
-            
+
         </div>
     </div>
 
     <!-- machines product page ends -->
 
 
-    
+
 
     <!-- footer starts -->
 
@@ -530,30 +794,30 @@
 
 
     <script>
-    const maindiv = document.querySelector(".machinesProducts");
+        const maindiv = document.querySelector(".machinesProducts");
 
-    async function fetchDataFromServer() {
-        try {
-            const res = await fetch("http://localhost:3000/machine_page_products");
-            const data = await res.json();
-            cardList(data);
-        } catch (err) {
-            console.log(err);
+        async function fetchDataFromServer() {
+            try {
+                const res = await fetch("http://localhost:3000/machine_page_products");
+                const data = await res.json();
+                cardList(data);
+            } catch (err) {
+                console.log(err);
+            }
         }
-    }
 
-    fetchDataFromServer();
+        fetchDataFromServer();
 
-    function cardList(data) {
-        let machinespage = data.map((el) => {
-            return card(el.id, el.title, el.image[0], el.image[1], el.reviews, el.price);
-        });
+        function cardList(data) {
+            let machinespage = data.map((el) => {
+                return card(el.id, el.title, el.image[0], el.image[1], el.reviews, el.price);
+            });
 
-        maindiv.innerHTML = machinespage.join("");
-    }
+            maindiv.innerHTML = machinespage.join("");
+        }
 
-    function card(id, title, image1, image2, reviews, price) {
-        return `
+        function card(id, title, image1, image2, reviews, price) {
+            return `
             <div class="product">
                 <div class="image-wrapper">
                     <img class="default-img" src="${image1}" alt="Product Image">
@@ -566,9 +830,10 @@
                 </div>
             </div>
         `;
-    }
-</script>
+        }
+    </script>
 
-    
+
 </body>
+
 </html>

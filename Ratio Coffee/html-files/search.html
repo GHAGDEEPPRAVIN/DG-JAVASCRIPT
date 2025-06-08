@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account - Ratio</title>
-
+    <title>Search - Ratio</title>
 
     <!-- main icon of the website -->
-    <link rel="icon" href="/images/icon.png">
+    <link rel="icon" href="images/icon.png">
 
     <!-- Bootstrap 5 CSS file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,9 +21,6 @@
     <!-- Bootstrap 5 Icon Cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- Main Css File -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-
     <!-- font awrsome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -33,6 +29,7 @@
     <!-- jquery main cdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 
     <style>
         * {
@@ -118,7 +115,7 @@
             padding: 0px 40px;
         }
 
-        .navbar .container .header-logo img {
+        .navbar .container .header-logo a img {
             width: 123px;
         }
 
@@ -150,86 +147,135 @@
 
         /* navbar code ends */
 
-        /* createAccount code starts */
 
-        .createAccount .form {
-            height: 850px;
+        /* search code starts */
+
+        .searchbox .container .header {
             padding: 60px 40px;
-            width: 470px;
-            margin: auto;
         }
 
-        .createAccount .form input {
-            width: 100%;
-            padding: 8px 10px;
+        .searchbox .container .header h1 {
+            text-align: center;
+            font-size: 35px;
+            font-family: sans-serif;
+            font-weight: 700;
             margin-bottom: 30px;
         }
 
-        .createAccount .form label {
-            font-size: 14px;
-            font-weight: 700;
-            font-family: sans-serif;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .createAccount .form h1 {
-            text-align: center;
-            font-size: 35px;
-            font-weight: 700;
-            font-family: sans-serif;
-            margin-bottom: 50px;
-        }
-
-        .createAccount .form button {
+        .searchbox .container .header input {
+            margin: 0%;
+            height: 50px;
+            padding: 8px 10px;
             font-family: sans-serif;
             font-size: 16px;
             font-weight: 700;
-            width: 100%;
-            padding: 11px 40px;
-            margin-bottom: 30px;
-            background-color: #143A47;
-            color: white;
-            border: 1px solid #143A47;
-            margin-bottom: 50px;
+            background-color: white;
+            border: 0.8px solid #2c2e2f;
+            outline: none;
         }
 
-        .createAccount .form button:hover {
+        .searchbox .container .header button {
+            font-weight: 700;
+            position: relative;
+            top: 1px;
+            margin-left: -5px;
+            padding: 11px 40px;
+            color: white;
+            background-color: #143A47;
+            border: 1px solid #143A47;
+            transition: 0.5s;
+        }
+
+        .searchbox .container .header button:hover {
             color: #143A47;
             background-color: white;
         }
 
-        .createAccount .form a {
+        .show_product {
+            margin: 100px 0px;
+        }
+
+
+        .product {
+            background-color: #fff;
+            /* padding: 15px; */
+            /* border-radius: 10px; */
+            /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+            /* transition: transform 0.3s ease; */
+        }
+
+        .product a {
             text-decoration: none;
             color: #2c2e2f;
+        }
+
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 100%;
+            /* Square aspect ratio */
+            overflow: hidden;
+            /* border-radius: 8px; */
+            margin-bottom: 10px;
+        }
+
+        .image-wrapper img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .default-img {
+            opacity: 1;
+            z-index: 1;
+        }
+
+        .hover-img {
+            opacity: 0;
+            z-index: 2;
+        }
+
+        .image-wrapper:hover .default-img {
+            opacity: 0;
+        }
+
+        .image-wrapper:hover .hover-img {
+            opacity: 1;
+        }
+
+        .des {
+            margin-top: 12px;
+        }
+
+        .des h1 {
+            text-align: center;
             font-size: 16px;
-            font-weight: 400;
-            font-family: sans-serif;
-            /* margin-bottom: 50px; */
+            font-weight: bold;
+            margin-bottom: 6px;
         }
 
-        .createAccount .form label a {
-            color: #2c2e2f;
-            text-decoration: none;
+        .des span {
+            text-align: center;
             font-size: 14px;
-            font-weight: 400;
-            font-family: sans-serif;
-            /* margin-bottom: 50px; */
+            color: #888;
+            display: block;
+            margin-bottom: 4px;
         }
 
-        .createAccount .form span {
-            color: #2c2e2f;
-            font-size: 14px;
-            font-weight: 700;
-            font-family: sans-serif;
+        .des p {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
         }
 
-        .createAccount .form #check-box {
-            width: 20px;
-        }
 
-        /* createAccount code ends */
+        /* search code ends */
+
 
 
         /* footercode starts */
@@ -341,6 +387,68 @@
 
 
 
+
+        @media (max-width: 1024px) {
+            .indroducing-navbar .container {
+                padding: 0px 20px;
+            }
+
+            .indroducing-navbar .container .containesCJA a {
+                margin-left: 20px;
+            }
+
+            .indroducing-navbar .container .containesCJA span {
+                margin-left: 30px;
+            }
+
+            .navbar .container {
+                padding: 0px 20px;
+            }
+
+            .navbar .container .header-menu ul li a {
+                margin-right: 10px;
+            }
+
+            .search .container {
+                padding: 0px 20px;
+            }
+
+            .search .container .search_bar {
+                width: 80%;
+            }
+
+            .search .container .search_bar input {
+                padding: 10px 20px;
+            }
+
+            .search .container .search_bar i {
+                font-size: 20px;
+                right: 20px;
+            }
+
+            .search .products .product {
+                width: 250px;
+            }
+
+            .footer .container {
+                padding: 0px 20px;
+            }
+
+            .footer .container .row .col-2,
+            .footer .container .row .col-3 {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container .information_footer .row input {
+                width: 250px;
+            }
+
+            .footer .container .information_footer .row i {
+                left: -243px;
+            }
+        }
+
         @media (max-width: 767px) {
             .indroducing-navbar {
                 height: auto;
@@ -394,38 +502,31 @@
                 padding-bottom: 10px;
             }
 
-            .createaccount {
-                padding: 40px 15px;
+            .search {
+                padding: 40px 0px;
             }
 
-            .createaccount .createaccount-form {
+            .search .container {
+                padding: 0px 15px;
+            }
+
+            .search .container .search_bar {
                 width: 95%;
-                padding: 30px 20px;
+                margin-bottom: 30px;
             }
 
-            .createaccount .createaccount-form h1 {
-                font-size: 28px;
+            .search .container .search_bar input {
+                padding: 8px 15px;
+            }
+
+            .search .container .search_bar i {
+                font-size: 18px;
+                right: 15px;
+            }
+
+            .search .products .product {
+                width: 100%;
                 margin-bottom: 20px;
-            }
-
-            .createaccount .createaccount-form label {
-                font-size: 14px;
-                margin-bottom: 5px;
-            }
-
-            .createaccount .createaccount-form input {
-                padding: 10px;
-                font-size: 14px;
-            }
-
-            .createaccount .createaccount-form .createaccount-button {
-                padding: 10px 0;
-                font-size: 16px;
-                margin-top: 20px;
-            }
-
-            .createaccount .createaccount-form p {
-                font-size: 14px;
             }
 
             .footer .container {
@@ -477,63 +578,6 @@
 
             .footer .container .information_footer .follower_app ul {
                 justify-content: center;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-            .indroducing-navbar .container {
-                padding: 0px 20px;
-            }
-
-            .indroducing-navbar .container .containesCJA a {
-                margin-left: 20px;
-            }
-
-            .indroducing-navbar .container .containesCJA span {
-                margin-left: 30px;
-            }
-
-            .navbar .container {
-                padding: 0px 20px;
-            }
-
-            .navbar .container .header-menu ul li a {
-                margin-right: 10px;
-            }
-
-            .createaccount {
-                padding: 60px 40px;
-            }
-
-            .createaccount .createaccount-form {
-                width: 70%;
-                padding: 40px;
-            }
-
-            .createaccount .createaccount-form h1 {
-                font-size: 32px;
-            }
-
-            .createaccount .createaccount-form input {
-                padding: 12px;
-            }
-
-            .footer .container {
-                padding: 0px 20px;
-            }
-
-            .footer .container .row .col-2,
-            .footer .container .row .col-3 {
-                width: 50%;
-                margin-bottom: 20px;
-            }
-
-            .footer .container .information_footer .row input {
-                width: 250px;
-            }
-
-            .footer .container .information_footer .row i {
-                left: -243px;
             }
         }
     </style>
@@ -588,197 +632,172 @@
 
     <!-- navbar ends -->
 
-    <!-- createAccount starts -->
-
-    <div class="createAccount">
-        <div class="form">
-            <h1>Create Account</h1>
-
-            <label>First Name</label>
-            <input id="first_name" type="text">
-
-            <label>Last Name</label>
-            <input id="last_name" type="text">
-
-            <label>Email</label>
-            <input id="email_address" type="email">
-
-            <label>Password</label>
-            <input id="password_number" type="password">
-
-            <input type="checkbox" id="check-box">
-            <span>Subscribe to our newsletter</span>
-
-            <button id="create_btn">Create</button>
 
 
-            <div id="errorMessage" class="error"></div>
+    <div class="searchbox">
+        <div class="container">
+            <div class="header">
+                <h1>Search</h1>
+                <input id="search_input" type="text" placeholder="Search our store">
+                <button id="serach_button"><i class="bi bi-search" style="font-size: 16.5px;"></i></button>
+            </div>
+            <div class="show_product">
+
+            </div>
         </div>
+    </div>
 
-        <!-- createAccount ends -->
 
-        <!-- footer starts -->
 
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <h3>Shop</h3>
-                        <ul>
-                            <li><a href="">Ratio Six</a></li>
-                            <li><a href="">Ratio Eight</a></li>
-                            <li><a href="">Ratio Eight Thermal Set</a></li>
-                            <li><a href="">Espresso Machines</a></li>
-                            <li><a href="">Accessories</a></li>
-                            <li><a href="">Shop All</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <h3>Learn</h3>
-                        <ul>
-                            <li><a href="">Ratio Eight versus Ratio Six</a></li>
-                            <li><a href="">How to brew with Ratio Eight</a></li>
-                            <li><a href="">Why does the Ratio Eight cost so much?</a></li>
-                            <li><a href="">Sustainability isn’t just a buzzword</a></li>
-                            <li><a href="">Adjusting your grind</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <h3>Support</h3>
-                        <ul>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Warranty</a></li>
-                            <li><a href="">Returns</a></li>
-                            <li><a href="">Spare Parts</a></li>
-                            <li><a href="">FAQs</a></li>
-                            <li><a href="">Help Articles</a></li>
-                            <li><a href="">Accessibility</a></li>
-                            <li><a href="">Shipping Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-2">
-                        <h3>Inside Ratio</h3>
-                        <ul>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Ratio Rewards</a></li>
-                            <li><a href="">Press & Reviews</a></li>
-                            <li><a href="">Wholesale Info</a></li>
-                            <li><a href="">Affiliates</a></li>
-                            <li><a href="">Ratio Retailers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <h3>Great Coffee Everywhere</h3>
-                        <ul>
-                            <li><a href="">Office</a></li>
-                            <li><a href="">Hotel</a></li>
-                            <li><a href="">Restaurant</a></li>
-                            <li><a href="">Roaster & Cafe</a></li>
-                        </ul>
-                    </div>
+    <!-- footer starts -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="shop.html">Ratio Six</a></li>
+                        <li><a href="shop.html">Ratio Eight</a></li>
+                        <li><a href="shop.html">Ratio Eight Thermal Set</a></li>
+                        <li><a href="shop.html">Espresso Machines</a></li>
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">Shop All</a></li>
+                    </ul>
                 </div>
+                <div class="col-3">
+                    <h3>Learn</h3>
+                    <ul>
+                        <li><a href="">Ratio Eight versus Ratio Six</a></li>
+                        <li><a href="">How to brew with Ratio Eight</a></li>
+                        <li><a href="">Why does the Ratio Eight cost so much?</a></li>
+                        <li><a href="">Sustainability isn’t just a buzzword</a></li>
+                        <li><a href="">Adjusting your grind</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Warranty</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Spare Parts</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Help Articles</a></li>
+                        <li><a href="">Accessibility</a></li>
+                        <li><a href="">Shipping Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3>Inside Ratio</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Ratio Rewards</a></li>
+                        <li><a href="">Press & Reviews</a></li>
+                        <li><a href="">Wholesale Info</a></li>
+                        <li><a href="">Affiliates</a></li>
+                        <li><a href="">Ratio Retailers</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Great Coffee Everywhere</h3>
+                    <ul>
+                        <li><a href="">Office</a></li>
+                        <li><a href="">Hotel</a></li>
+                        <li><a href="">Restaurant</a></li>
+                        <li><a href="">Roaster & Cafe</a></li>
+                    </ul>
+                </div>
+            </div>
 
-                <div class="information_footer">
-                    <div class="row">
-                        <div class="col-5">
-                            <h2>Get the inside scoop on coffee culture & brewing tips.</h2>
-                            <input type="email" placeholder="Enter Your email">
-                            <i id="mail_icon" class="bi bi-envelope"></i>
-                        </div>
-                        <div class="col-4 follower_app">
-                            <h2>See the latest and follow us.</h2>
-                            <ul>
-                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-3">
-                            <p>Privacy Policy • Terms of Service Copyright © 2025 Ratio</p>
-                        </div>
+            <div class="information_footer">
+                <div class="row">
+                    <div class="col-5">
+                        <h2>Get the inside scoop on coffee culture & brewing tips.</h2>
+                        <input type="email" placeholder="Enter Your email">
+                        <i id="mail_icon" class="bi bi-envelope"></i>
+                    </div>
+                    <div class="col-4 follower_app">
+                        <h2>See the latest and follow us.</h2>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p>Privacy Policy • Terms of Service Copyright © 2025 Ratio</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- footer ends -->
-
-
-        <script>
-
-            // const first_name = document.getElementById("first_name")
-            // const last_name = document.getElementById("last_name")
-            // const email_address = document.getElementById("email_address")
-            // const password_number = document.getElementById("password_number")
-
-            const create_btn = document.getElementById("create_btn")
+    <!-- footer ends -->
 
 
-            // const form = document.getElementById("createAccountForm");
-            const errorMessage = document.getElementById("errorMessage");
+    <script>
 
-            create_btn.addEventListener("click", function (e) {
-                e.preventDefault();
+        const product_display_div = document.querySelector(".show_product")
 
-                const firstName = document.getElementById("first_name").value.trim();
-                const lastName = document.getElementById("last_name").value.trim();
-                const email = document.getElementById("email_address").value.trim();
-                const password = document.getElementById("password_number").value.trim();
+        const search_input = document.getElementById("search_input");
+        const serach_button = document.getElementById("serach_button");
 
-                // Validation
-                if (!firstName || !lastName || !email || !password) {
-                    errorMessage.textContent = "All fields are required.";
-                    return;
-                }
+        let allproductData = [];
 
-                if (/\d/.test(firstName) || /\d/.test(lastName)) {
-                    errorMessage.textContent = "First and Last names cannot contain numbers.";
-                    return;
-                }
-
-                if (email !== email.toLowerCase()) {
-                    errorMessage.textContent = "Email must be in lowercase.";
-                    return;
-                }
-
-                if (!email.endsWith("@gmail.com")) {
-                    errorMessage.textContent = "Email must end with '@gmail.com'.";
-                    return;
-                }
-
-                if (password.length !== 6) {
-                    errorMessage.textContent = "Password must be exactly 6 characters.";
-                    return;
-                }
-
-                errorMessage.textContent = "";
-                alert("Account Created Successfully!");
-                // form.reset();
-
-
-
-                let login_data = {
-                    firstname: firstName,
-                    lastname: lastName,
-                    email: email,
-                    password: password,
-                }
-
-                fetch("http://localhost:3000/login-data", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/x-www-form-urlencoded",
-                    },
-                    body: JSON.stringify(login_data),
+        function fetchHomePageApi() {
+            fetch("http://localhost:3000/products")
+                .then((res) => res.json())
+                .then((data) => {
+                    allproductData = data;
                 })
+                .catch((err) => console.log(err));
+        }
 
+        fetchHomePageApi();
 
-                window.open("login.html");
+        function cardLists(data) {
+            let shop_page = data.map((el) => {
+                if (el.id <= 61) {
+                    return cards(el.image[0], el.image[1], el.title, el.rating, el.price, el.id);
+                }
             });
 
+            product_display_div.innerHTML = shop_page.join("");
+        }
 
-        </script>
+        function cards(image1, image2, title, rating, price, id) {
+            return `
+        <div class="product">
+            <a href="description.html?id=${encodeURIComponent(id)}">
+            <div class="image-wrapper">
+                <img class="default-img" id="product_image" src="${image1}" alt="">
+                <img class="hover-img" id="product_image" src="${image2}" alt="">
+            </div>
+            <div class="des">   
+                <h1 id="product_title">${title}</h1>
+                <span id="reviews">${rating}</span>
+                <p id="price">${price}</p>
+            </div>
+            </a>
+        </div>
+        `;
+        }
+
+        serach_button.addEventListener("click", (e) => {
+            e.preventDefault()
+
+            const searchValue = search_input.value.toLocaleLowerCase()
+
+            const searchfilterData = allproductData.filter((el, i) => el.title.toLocaleLowerCase().includes(searchValue))
+            console.log(searchfilterData)
+
+            cardLists(searchfilterData)
+        })
+
+    </script>
+
 
 </body>
 

@@ -231,8 +231,8 @@ B
             /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
             /* transition: transform 0.3s ease; */
         }
-        .product a
-        {
+
+        .product a {
             text-decoration: none;
             color: #2c2e2f;
         }
@@ -413,8 +413,7 @@ B
 
         /* pagination code starts */
 
-        .pagination
-        {
+        .pagination {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -422,6 +421,206 @@ B
 
         /* pagination code ends */
 
+
+
+
+
+
+
+
+
+        @media (max-width: 1024px) {
+            .indroducing-navbar .container {
+                padding: 0px 20px;
+            }
+
+            .indroducing-navbar .container .containesCJA a {
+                margin-left: 20px;
+            }
+
+            .indroducing-navbar .container .containesCJA span {
+                margin-left: 30px;
+            }
+
+            .navbar .container {
+                padding: 0px 20px;
+            }
+
+            .navbar .container .header-menu ul li a {
+                margin-right: 10px;
+            }
+
+            .shop .container .headder h2 {
+                font-size: 30px;
+            }
+
+            .shop .container .filter button {
+                margin: 5px;
+            }
+
+            .shop .container .products .product {
+                width: 250px;
+            }
+
+            .footer .container {
+                padding: 0px 20px;
+            }
+
+            .footer .container .row .col-2,
+            .footer .container .row .col-3 {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container .information_footer .row input {
+                width: 250px;
+            }
+
+            .footer .container .information_footer .row i {
+                left: -243px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .indroducing-navbar {
+                height: auto;
+            }
+
+            .indroducing-navbar .container {
+                padding: 0px 15px;
+            }
+
+            .indroducing-navbar .container .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .indroducing-navbar .container .row .col-8,
+            .indroducing-navbar .container .row .col-4 {
+                width: 100%;
+            }
+
+            .indroducing-navbar .container .containesCJA a {
+                margin-left: 10px;
+            }
+
+            .indroducing-navbar .container .containesCJA span {
+                display: none;
+            }
+
+            .navbar {
+                height: auto;
+            }
+
+            .navbar .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 15px;
+                height: auto;
+            }
+
+            .navbar .container .header-menu ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            .navbar .container .header-menu ul li a {
+                padding: 10px 8px;
+                margin-right: 0;
+            }
+
+            .navbar .container .header-icon {
+                padding-bottom: 10px;
+            }
+
+            .shop {
+                padding: 40px 0px;
+            }
+
+            .shop .container {
+                padding: 0px 15px;
+            }
+
+            .shop .container .headder {
+                margin-bottom: 30px;
+            }
+
+            .shop .container .headder h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            .shop .container .headder p {
+                width: 100%;
+            }
+
+            .shop .container .filter {
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            .shop .container .filter button {
+                width: 100%;
+                margin: 5px 0px;
+            }
+
+            .shop .container .products .product {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container {
+                padding: 0px 15px;
+            }
+
+            .footer .container .row {
+                flex-direction: column;
+            }
+
+            .footer .container .row .col-2,
+            .footer .container .row .col-3 {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .footer .container .row h3 {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .footer .container .row ul {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .footer .container .information_footer .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer .container .information_footer .row .col-5,
+            .footer .container .information_footer .row .col-4,
+            .footer .container .information_footer .row .col-3 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container .information_footer .row input {
+                width: 100%;
+                padding: 8px 10px;
+            }
+
+            .footer .container .information_footer .row i {
+                position: static;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .footer .container .information_footer .follower_app ul {
+                justify-content: center;
+            }
+        }
     </style>
 
 </head>
@@ -434,7 +633,8 @@ B
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <p>Free Shipping Over $95 &nbsp;/ <a href="description.html?id=83">Introducing Ratio Eight Series 2...</a></p>
+                    <p>Free Shipping Over $95 &nbsp;/ <a href="description.html?id=83">Introducing Ratio Eight Series
+                            2...</a></p>
                 </div>
                 <div class="col-4 containesCJA">
                     <span>|</span>
@@ -465,8 +665,8 @@ B
             </div>
             <div class="header-icon">
                 <a href="login.html"><i class="bi bi-person" style="font-size: 28px;"></i></a>
-                <a href=""><i class="bi bi-search" style="font-size: 22px;"></i></a>
-                <a href=""><i class="bi bi-cart" style="font-size: 22px;"></i></a>
+                <a href="search.html"><i class="bi bi-search" style="font-size: 22px;"></i></a>
+                <a href="add-to-cart.html"><i class="bi bi-cart" style="font-size: 22px;"></i></a>
             </div>
         </div>
     </div>
@@ -494,7 +694,7 @@ B
     </div>
 
 
-    <nav aria-label="Page navigation example">
+    <nav aria-label="Page navigation example" style="margin-bottom: 100px;">
         <ul class="pagination">
             <li class="page-item">
                 <a class="page-link" href="shop.html" aria-label="Previous">
@@ -623,16 +823,15 @@ B
 
         function cardLists(data) {
             let shop_page = data.map((el) => {
-                if(el.id>61)
-            {
-                return cards(el.image[0], el.image[1], el.title, el.rating, el.price, el.id);
-            }
+                if (el.id > 61) {
+                    return cards(el.image[0], el.image[1], el.title, el.rating, el.price, el.id);
+                }
             });
 
             maindiv.innerHTML = shop_page.join("");
         }
 
-        function cards(image1, image2, title, rating, price,id) {
+        function cards(image1, image2, title, rating, price, id) {
             return `
         <div class="product">
             <a href="description.html?id=${encodeURIComponent(id)}">

@@ -149,6 +149,12 @@ B
             font-weight: 500;
         }
 
+        .navbar .container .header-icon button {
+            background-color: white;
+            border: none;
+            outline: none;
+        }
+
         /* navbar code ends */
 
 
@@ -231,8 +237,8 @@ B
             /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
             /* transition: transform 0.3s ease; */
         }
-        .product a
-        {
+
+        .product a {
             text-decoration: none;
             color: #2c2e2f;
         }
@@ -301,6 +307,73 @@ B
 
 
         /* shop all code ends */
+
+
+        /* offcanvas add to cart code starts */
+
+        .addtocard {
+            margin-bottom: 20px;
+            height: 120px;
+            width: 100%;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .addtocard .addtocartimage #add_to_cart_product_image {
+            height: 100px;
+            width: 100px;
+        }
+
+        .addtocard #add_to_cart_product_title {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-bottom: 5px;
+        }
+
+        .addtocard #add_to_cart_price {
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: sans-serif;
+        }
+
+        .addtocard .qunatity .decreaseQty {
+            text-align: center;
+            height: 30px;
+            width: 30px;
+            font-weight: 700;
+            background-color: white;
+            margin: auto;
+            border: 0.5px solid #2c2e2f;
+        }
+
+        .addtocard .qunatity .increaseQty {
+            text-align: center;
+            height: 30px;
+            width: 30px;
+            font-weight: 700;
+            background-color: white;
+            margin: auto;
+            border: 0.5px solid #2c2e2f;
+        }
+
+        .addtocard .qunatity span {
+            height: 30px;
+            width: 45px;
+            padding: 4px 20px;
+            border: 0.5px solid #2c2e2f;
+            background-color: white;
+            margin: auto;
+        }
+
+
+
+
+
+        /* offcanvas add to cart code ends */
 
 
 
@@ -414,8 +487,7 @@ B
 
         /* pagination code starts */
 
-        .pagination
-        {
+        .pagination {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -424,6 +496,203 @@ B
         /* pagination code ends */
 
 
+
+
+
+
+
+        @media (max-width: 1024px) {
+            .indroducing-navbar .container {
+                padding: 0px 20px;
+            }
+
+            .indroducing-navbar .container .containesCJA a {
+                margin-left: 20px;
+            }
+
+            .indroducing-navbar .container .containesCJA span {
+                margin-left: 30px;
+            }
+
+            .navbar .container {
+                padding: 0px 20px;
+            }
+
+            .navbar .container .header-menu ul li a {
+                margin-right: 10px;
+            }
+
+            .shop .container .headder h2 {
+                font-size: 30px;
+            }
+
+            .shop .container .filter button {
+                margin: 5px;
+            }
+
+            .shop .container .products .product {
+                width: 250px;
+            }
+
+            .footer .container {
+                padding: 0px 20px;
+            }
+
+            .footer .container .row .col-2,
+            .footer .container .row .col-3 {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container .information_footer .row input {
+                width: 250px;
+            }
+
+            .footer .container .information_footer .row i {
+                left: -243px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .indroducing-navbar {
+                height: auto;
+            }
+
+            .indroducing-navbar .container {
+                padding: 0px 15px;
+            }
+
+            .indroducing-navbar .container .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .indroducing-navbar .container .row .col-8,
+            .indroducing-navbar .container .row .col-4 {
+                width: 100%;
+            }
+
+            .indroducing-navbar .container .containesCJA a {
+                margin-left: 10px;
+            }
+
+            .indroducing-navbar .container .containesCJA span {
+                display: none;
+            }
+
+            .navbar {
+                height: auto;
+            }
+
+            .navbar .container {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 15px;
+                height: auto;
+            }
+
+            .navbar .container .header-menu ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            .navbar .container .header-menu ul li a {
+                padding: 10px 8px;
+                margin-right: 0;
+            }
+
+            .navbar .container .header-icon {
+                padding-bottom: 10px;
+            }
+
+            .shop {
+                padding: 40px 0px;
+            }
+
+            .shop .container {
+                padding: 0px 15px;
+            }
+
+            .shop .container .headder {
+                margin-bottom: 30px;
+            }
+
+            .shop .container .headder h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            .shop .container .headder p {
+                width: 100%;
+            }
+
+            .shop .container .filter {
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            .shop .container .filter button {
+                width: 100%;
+                margin: 5px 0px;
+            }
+
+            .shop .container .products .product {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container {
+                padding: 0px 15px;
+            }
+
+            .footer .container .row {
+                flex-direction: column;
+            }
+
+            .footer .container .row .col-2,
+            .footer .container .row .col-3 {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .footer .container .row h3 {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .footer .container .row ul {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .footer .container .information_footer .row {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer .container .information_footer .row .col-5,
+            .footer .container .information_footer .row .col-4,
+            .footer .container .information_footer .row .col-3 {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer .container .information_footer .row input {
+                width: 100%;
+                padding: 8px 10px;
+            }
+
+            .footer .container .information_footer .row i {
+                position: static;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .footer .container .information_footer .follower_app ul {
+                justify-content: center;
+            }
+        }
     </style>
 
 </head>
@@ -436,7 +705,8 @@ B
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <p>Free Shipping Over $95 &nbsp;/ <a href="description.html?id=83">Introducing Ratio Eight Series 2...</a></p>
+                    <p>Free Shipping Over $95 &nbsp;/ <a href="description.html?id=83">Introducing Ratio Eight Series
+                            2...</a></p>
                 </div>
                 <div class="col-4 containesCJA">
                     <span>|</span>
@@ -467,11 +737,26 @@ B
             </div>
             <div class="header-icon">
                 <a href="login.html"><i class="bi bi-person" style="font-size: 28px;"></i></a>
-                <a href=""><i class="bi bi-search" style="font-size: 22px;"></i></a>
-                <a href=""><i class="bi bi-cart" style="font-size: 22px;"></i></a>
+                <a href="search.html"><i class="bi bi-search" style="font-size: 22px;"></i></a>
+                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="bi bi-cart" style="font-size: 22px;"></i></button>
             </div>
         </div>
     </div>
+
+    <!-- offcanvas for Add To Card starts -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card"></div>
+        </div>
+    </div>
+
+    <!-- offcanvas for Add To Card ends -->
 
     <!-- navbar ends -->
 
@@ -496,7 +781,7 @@ B
     </div>
 
 
-    <nav aria-label="Page navigation example">
+    <nav aria-label="Page navigation example" style="margin-bottom: 100px;">
         <ul class="pagination">
             <li class="page-item">
                 <a class="page-link" href="shop.html" aria-label="Previous">
@@ -605,10 +890,6 @@ B
 
     <!-- footer ends -->
 
-
-
-
-
     <script>
         const maindiv = document.querySelector(".shop_product");
 
@@ -625,16 +906,15 @@ B
 
         function cardLists(data) {
             let shop_page = data.map((el) => {
-                if(el.id<=61)
-            {
-                return cards(el.image[0], el.image[1], el.title, el.rating, el.price,el.id);
-            }
+                if (el.id <= 61) {
+                    return cards(el.image[0], el.image[1], el.title, el.rating, el.price, el.id);
+                }
             });
 
             maindiv.innerHTML = shop_page.join("");
         }
 
-        function cards(image1, image2, title, rating, price,id) {
+        function cards(image1, image2, title, rating, price, id) {
             return `
         <div class="product">
             <a href="description.html?id=${encodeURIComponent(id)}">
@@ -651,6 +931,93 @@ B
         </div>
         `;
         }
+
+
+
+        // add to card code starts form here...
+
+        const cardDisplay = document.querySelector(".card")
+        const offcanvas = document.getElementById("offcanvasRight")
+
+        async function GetCartDataFromServer() {
+            const res = await fetch("http://localhost:3000/Add-To-Cart");
+            const data = await res.json()
+
+            return data
+        }
+
+        async function cardList() {
+
+            const data = await GetCartDataFromServer()
+
+            let productData = data.map((el) => {
+                // Make sure el.image has at least 2 images
+                return AddtoCartdetail(el.image[0], el.title, el.price, el.id, el.qunatity);
+            });
+
+            cardDisplay.innerHTML = productData.join("");
+        }
+
+        cardList()
+
+        function AddtoCartdetail(image, title, price, id, qunatity) {
+            return `
+        <div class="addtocard">
+                    <div class="addtocartimage">
+                        <img id="add_to_cart_product_image" src="${image}" alt="">
+                    </div>
+                    <div class="description">
+                        <h1 id="add_to_cart_product_title">${title}</h1>
+                        <p id="add_to_cart_price">${price}</p>
+                        <div class="qunatity">
+                            <button class="decreaseQty" id=${id}>-</button>
+                            <span>${qunatity}</span>
+                            <button class="increaseQty" id=${id}>+</button>
+                        </div>
+                    </div>
+            </div>
+        `;
+        }
+
+        async function HandleChangeQty(id, change) {
+
+            // console.log(change)
+
+            let allData = await GetCartDataFromServer()
+
+            const updated = allData.filter((el, i) => {
+                return el.qunatity += change
+            })
+
+            console.log(updated)
+
+            fetch(`http://localhost:3000/Add-To-Cart/${id}`,
+                {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(updated),
+                }
+            )
+
+        }
+
+        offcanvas.addEventListener("click", (e) => {
+            if (e.target.classList.contains("decreaseQty")) {
+                const ID = e.target.id;
+                HandleChangeQty(ID, -1)
+            }
+        })
+
+        offcanvas.addEventListener("click", (e) => {
+            if (e.target.classList.contains("increaseQty")) {
+                const ID = e.target.id;
+                HandleChangeQty(ID, 1)
+            }
+        })
+
+
     </script>
 
 
