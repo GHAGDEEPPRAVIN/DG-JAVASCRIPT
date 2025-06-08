@@ -935,20 +935,6 @@
       "id": "5"
     }
   ],
-  "login-data": [
-    {
-      "id": "29e7",
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "3ca9",
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "password": ""
-    }
-  ]
+  "login-data": [],
+  "Add-To-Cart": []
 }

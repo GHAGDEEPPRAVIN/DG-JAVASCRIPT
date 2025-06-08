@@ -434,7 +434,7 @@ B
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <p>Free Shipping Over $95 &nbsp;/ <a href="">Introducing Ratio Eight Series 2...</a></p>
+                    <p>Free Shipping Over $95 &nbsp;/ <a href="description.html?id=83">Introducing Ratio Eight Series 2...</a></p>
                 </div>
                 <div class="col-4 containesCJA">
                     <span>|</span>
@@ -625,17 +625,17 @@ B
             let shop_page = data.map((el) => {
                 if(el.id>61)
             {
-                return cards(el.image[0], el.image[1], el.title, el.rating, el.price);
+                return cards(el.image[0], el.image[1], el.title, el.rating, el.price, el.id);
             }
             });
 
             maindiv.innerHTML = shop_page.join("");
         }
 
-        function cards(image1, image2, title, rating, price) {
+        function cards(image1, image2, title, rating, price,id) {
             return `
         <div class="product">
-            <a href="description.html">
+            <a href="description.html?id=${encodeURIComponent(id)}">
             <div class="image-wrapper">
                 <img class="default-img" id="product_image" src="${image1}" alt="">
                 <img class="hover-img" id="product_image" src="${image2}" alt="">

@@ -152,76 +152,83 @@
 
         /* login form code starts */
 
-        .loginform {
-            height: 600px;
-            /* margin: 100px 0px; */
+        .login-container {
+            width: 400px;
+            max-width: 90%;
+            padding: 40px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 60px auto;
         }
 
-        .loginform .form {
-            height: 450px;
-            padding: 60px 40px;
-            width: 470px;
-            margin: auto;
-        }
-
-        .loginform .form input {
-            width: 100%;
-            padding: 8px 10px;
+        h1 {
             margin-bottom: 30px;
+            font-size: 32px;
+            font-weight: bold;
         }
 
-        .loginform .form label {
-            font-size: 14px;
-            font-weight: 700;
-            font-family: sans-serif;
-            margin-bottom: 10px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 16px;
+            background-color: #0e3c47;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0c2f39;
+        }
+
+        .password-wrapper {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
-        .loginform .form h1 {
-            text-align: center;
-            font-size: 35px;
-            font-weight: 700;
-            font-family: sans-serif;
-            margin-bottom: 50px;
-        }
-
-        .loginform .form button {
-            font-family: sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            width: 100%;
-            padding: 11px 40px;
-            margin-bottom: 30px;
-            background-color: #143A47;
-            color: white;
-            border: 1px solid #143A47;
-            margin-bottom: 50px;
-        }
-
-        .loginform .form button:hover {
-            color: #143A47;
-            background-color: white;
-        }
-
-        .loginform .form a {
-            text-decoration: none;
-            color: #2c2e2f;
-            font-size: 16px;
-            font-weight: 400;
-            font-family: sans-serif;
-            /* margin-bottom: 50px; */
-        }
-
-        .loginform .form label a {
-            color: #2c2e2f;
-            text-decoration: none;
+        .forgot {
             font-size: 14px;
-            font-weight: 400;
-            font-family: sans-serif;
-            /* margin-bottom: 50px; */
+            text-decoration: none;
+            color: #333;
         }
+
+        .forgot:hover {
+            text-decoration: underline;
+        }
+
+        .create-account {
+            display: block;
+            margin-top: 20px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .create-account:hover {
+            text-decoration: underline;
+        }
+
+        .message {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+
 
 
         /* login form code ends */
@@ -344,7 +351,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <p>Free Shipping Over $95 &nbsp;/ <a href="">Introducing Ratio Eight Series 2...</a></p>
+                    <p>Free Shipping Over $95 &nbsp;/ <a href="description.html?id=83">Introducing Ratio Eight Series
+                            2...</a></p>
                 </div>
                 <div class="col-4 containesCJA">
                     <span>|</span>
@@ -385,20 +393,26 @@
 
     <!-- login form starts -->
 
-    <div class="loginform">
-        <div class="form">
-            <h1>Login</h1>
+    <div class="login-container">
+        <h1>Login</h1>
 
-            <label>Email</label>
-            <input type="email">
+        <form id="loginForm">
+            <label style="display: flex; justify-content: start;">Email</label>
+            <input type="email" id="email" list="email-suggestions" required>
+            <datalist id="email-suggestions"></datalist>
 
-            <label>Password <a href="">Forgot?</a></label>
-            <input type="password">
+            <div class="password-wrapper">
+                <label>Password</label>
+                <a href="#" class="forgot">Forgot?</a>
+            </div>
+            <input type="password" id="password" required>
 
-            <button>Sign In</button>
+            <button type="submit" style="margin-top: 30px;">Sign In</button>
 
-            <a href="createAccount.html">Create account</a>
-        </div>
+            <p class="message" id="message"></p>
+        </form>
+
+        <a href="createAccount.html" class="create-account" style="display: flex; justify-content: start; margin-top: 0%;">Create account</a>
     </div>
 
 
@@ -490,6 +504,63 @@
     </div>
 
     <!-- footer ends -->
+
+
+    <script>
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const emailInput = document.getElementById("email");
+            const passwordInput = document.getElementById("password");
+            const form = document.getElementById("loginForm");
+            const message = document.getElementById("message");
+            const datalist = document.getElementById("email-suggestions");
+
+            let users = [];
+
+            // Load user data from JSON file
+            fetch("http://localhost:3000/login-data") // Same directory or use full path
+                .then((res) => res.json())
+                .then((data) => {
+                    users = data;
+
+                    // Suggest existing emails
+                    data.forEach(user => {
+                        const option = document.createElement("option");
+                        option.value = user.email;
+                        datalist.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    console.error("Error loading users:", error);
+                });
+
+            // Handle login
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                const enteredEmail = emailInput.value.trim().toLowerCase();
+                const enteredPassword = passwordInput.value.trim();
+
+                const userFound = users.find(
+                    user => user.email === enteredEmail && user.password === enteredPassword
+                );
+
+                if (userFound) {
+                    message.style.color = "green";
+                    message.textContent = "Login successful!";
+                    window.open("/index.html");
+                    // Redirect if needed
+                    // window.location.href = "dashboard.html";
+                } else {
+                    message.style.color = "red";
+                    message.textContent = "Invalid email or password.";
+                }
+            });
+        });
+
+
+    </script>
 
 </body>
 

@@ -555,7 +555,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <p>Free Shipping Over $95 &nbsp;/ <a href="">Introducing Ratio Eight Series 2...</a></p>
+                    <p>Free Shipping Over $95 &nbsp;/ <a href="description.html?id=83">Introducing Ratio Eight Series 2...</a></p>
                 </div>
                 <div class="col-4 containesCJA">
                     <span>|</span>
@@ -602,7 +602,7 @@
         <div class="container">
             <div class="product-details">
                 <div class="rating">
-                    &#9733;&#9733;&#9733;&#9733;&#9733; <span  id="description_dynamic_reviews"></span>
+                    &#9733;&#9733;&#9733;&#9733;&#9733; <span id="description_dynamic_reviews"></span>
                 </div>
                 <h1 id="description_dynamic_title"></h1>
                 <div class="price" id="description_dynamic_price"></div>
@@ -665,22 +665,29 @@
                     <div class="d-flex align-items-start">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" aria-labelledby="v-pills-">
-                                <img src="" id="description_dynamic_image1" alt=""  style="width: 475px;height: 475px;border: none;">
+                                <img src="" id="description_dynamic_image1" alt=""
+                                    style="width: 475px;height: 475px;border: none;">
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" aria-labelledby="v-pills">
-                                <img src="" id="description_dynamic_image2" alt="" style="width: 475px;height: 475px;border: none;">
+                                <img src="" id="description_dynamic_image2" alt=""
+                                    style="width: 475px;height: 475px;border: none;">
                             </div>
                         </div>
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" style="height: 100px; width: 100px; border: 1px solid black; border-radius: 0px; outline: none; margin-bottom: 5px;">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home"
+                                style="height: 100px; width: 100px; border: 1px solid black; border-radius: 0px; outline: none; margin-bottom: 5px;">
                                 <img id="description_dynamic_image1.1" alt="" style="width: 100%;">
                             </button>
-                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" style="height: 100px; width: 100px; border: 1px solid black; border-radius: 0px; outline: none; margin-bottom: 5px;">
+                            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile"
+                                style="height: 100px; width: 100px; border: 1px solid black; border-radius: 0px; outline: none; margin-bottom: 5px;">
                                 <img id="description_dynamic_image2.2" alt="" style="width: 100%;">
                             </button>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
 
         </div>
@@ -889,34 +896,35 @@
 
         const image_imfo1 = document.getElementById("description_dynamic_image1");
         const image_imfo2 = document.getElementById("description_dynamic_image2");
-        
+
         const image_imfo11 = document.getElementById("description_dynamic_image1.1");
         const image_imfo22 = document.getElementById("description_dynamic_image2.2");
 
-        
+
 
         const z = new URLSearchParams(window.location.search)
-        const ID  = z.get("id")
-    
+        const ID = z.get("id")
 
 
-        function renderUiOfDescriptionPage()
-        {
+
+        function renderUiOfDescriptionPage() {
+
             fetch(`http://localhost:3000/products/${ID}`)
-            .then((res)=>res.json())
-            .then((data)=>{
-                reviews_info.innerText = data.rating;
-                title_info.innerHTML = data.title;
-                price_info.innerHTML = data.price;
-                image_imfo1.setAttribute("src",data.image[0])
-                image_imfo2.setAttribute("src",data.image[1])
+                .then((res) => res.json())
+                .then((data) => {
+                    reviews_info.innerText = data.rating;
+                    title_info.innerHTML = data.title;
+                    price_info.innerHTML = data.price;
+                    image_imfo1.setAttribute("src", data.image[0])
+                    image_imfo2.setAttribute("src", data.image[1])
 
-                image_imfo11.setAttribute("src",data.image[0])
-                image_imfo22.setAttribute("src",data.image[1])
-                price_info_add.innerHTML =data.price
+                    image_imfo11.setAttribute("src", data.image[0])
+                    image_imfo22.setAttribute("src", data.image[1])
+                    price_info_add.innerHTML = data.price
 
-            })
-            .catch((err)=>console.log(err))
+                })
+                .catch((err) => console.log(err))
+
         }
 
         renderUiOfDescriptionPage()
