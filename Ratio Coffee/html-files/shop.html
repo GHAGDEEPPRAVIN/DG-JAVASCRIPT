@@ -989,17 +989,18 @@ B
                 return el.qunatity += change
             })
 
-            console.log(updated)
+            const updatedData = {updated}
 
             fetch(`http://localhost:3000/Add-To-Cart/${id}`,
                 {
-                    method: "PUT",
+                    method: "PATCH",
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify(updated),
+                    body: JSON.stringify(updatedData),
                 }
-            )
+            ).then((res)=>res.json)
+            .catch((err)=>console.log(err))
 
         }
 
