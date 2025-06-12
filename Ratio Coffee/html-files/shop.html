@@ -989,7 +989,6 @@ B
                 return el.qunatity += change
             })
 
-            const updatedData = {updated}
 
             fetch(`http://localhost:3000/Add-To-Cart/${id}`,
                 {
@@ -997,7 +996,7 @@ B
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify(updatedData),
+                    body: JSON.stringify(updated),
                 }
             ).then((res)=>res.json)
             .catch((err)=>console.log(err))

@@ -958,30 +958,5 @@
       "password": "147852"
     }
   ],
-  "Add-To-Cart": [
-    {
-      "id": "2",
-      "image": [
-        "https://ratiocoffee.com/cdn/shop/products/ratio8-white-walnut-glass-A2_ec9add25-30ff-46d7-9ff8-9389fae5e6eb_360x.jpg?v=1748376563",
-        "https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"
-      ],
-      "title": "Ratio Eight Original Coffee Machine",
-      "rating": "(241 Reviews)",
-      "price": "$899.00",
-      "qunatity": 1,
-      "updated": [
-        {
-          "id": "2",
-          "image": [
-            "https://ratiocoffee.com/cdn/shop/products/ratio8-white-walnut-glass-A2_ec9add25-30ff-46d7-9ff8-9389fae5e6eb_360x.jpg?v=1748376563",
-            "https://ratiocoffee.com/cdn/shop/files/Ratio_Eight_Original_Plaque_360x.jpg?v=1748376563"
-          ],
-          "title": "Ratio Eight Original Coffee Machine",
-          "rating": "(241 Reviews)",
-          "price": "$899.00",
-          "qunatity": 2
-        }
-      ]
-    }
-  ]
+  "Add-To-Cart": []
 }

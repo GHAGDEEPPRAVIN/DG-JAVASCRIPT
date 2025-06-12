@@ -47,8 +47,8 @@ let images_for_slider_home_page = [
     name: "Surf Photographers",
     image: "https://ratiocoffee.com/cdn/shop/files/Jon-Way-Surfer-Testimonial_1512x.jpg?v=1652390452",
     description: "Beyond brewing a delicious cup of coffee, the Ratio is the culmination of a lot my values around simplicity and attention to detail.",
-    "para-title": "- Jon Way",
-    "para-des": "Photographer",
+    para_title: "- Jon Way",
+    para_des: "Photographer",
     readMoreBtn: "Read More"
   }
 ];
