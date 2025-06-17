@@ -148,6 +148,84 @@
             font-weight: 500;
         }
 
+        .navbar .container .header-icon button {
+            background-color: white;
+            border: none;
+            outline: none;
+        }
+
+
+
+        /* offcanvas add to cart code starts */
+
+        .addtocard {
+            margin-bottom: 20px;
+            height: 120px;
+            width: 100%;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .addtocard .addtocartimage #add_to_cart_product_image {
+            height: 100px;
+            width: 100px;
+        }
+
+        .addtocard #add_to_cart_product_title {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-bottom: 5px;
+        }
+
+        .addtocard #add_to_cart_price {
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: sans-serif;
+        }
+
+        .addtocard .qunatity .decreaseQty {
+            text-align: center;
+            height: 30px;
+            width: 30px;
+            font-weight: 700;
+            background-color: white;
+            margin: auto;
+            border: 0.5px solid #2c2e2f;
+        }
+
+        .addtocard .qunatity .increaseQty {
+            text-align: center;
+            height: 30px;
+            width: 30px;
+            font-weight: 700;
+            background-color: white;
+            margin: auto;
+            border: 0.5px solid #2c2e2f;
+        }
+
+        .addtocard .qunatity span {
+            height: 30px;
+            width: 45px;
+            padding: 4px 20px;
+            border: 0.5px solid #2c2e2f;
+            background-color: white;
+            margin: auto;
+        }
+
+
+
+
+
+        /* offcanvas add to cart code ends */
+
+
+
+
+
         /* navbar code ends */
 
 
@@ -934,10 +1012,34 @@
             <div class="header-icon">
                 <a href="login.html"><i class="bi bi-person" style="font-size: 28px;"></i></a>
                 <a href="search.html"><i class="bi bi-search" style="font-size: 22px;"></i></a>
-                <a href="add-to-cart.html"><i class="bi bi-cart" style="font-size: 22px;"></i></a>
+                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="bi bi-cart" style="font-size: 22px;"></i></button>
             </div>
         </div>
     </div>
+
+
+
+    <!-- offcanvas for Add To Card starts -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Cart</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card">
+        </div>
+    <div class="cart-summary">
+        <h3>Total: $<span id="cartTotal">0.00</span></h3>
+    </div>
+        </div>
+    </div>
+
+    <!-- offcanvas for Add To Card ends -->
+
+
+
 
     <!-- navbar ends -->
 
@@ -1236,7 +1338,173 @@
 
     <script>
 
-        const reviews_info = document.getElementById("description_dynamic_reviews");
+        // const reviews_info = document.getElementById("description_dynamic_reviews");
+        // const title_info = document.getElementById("description_dynamic_title");
+        // const price_info = document.getElementById("description_dynamic_price");
+        // const price_info_add = document.getElementById("description_dynamic_price_add");
+
+        // const image_imfo1 = document.getElementById("description_dynamic_image1");
+        // const image_imfo2 = document.getElementById("description_dynamic_image2");
+
+        // const image_imfo11 = document.getElementById("description_dynamic_image1.1");
+        // const image_imfo22 = document.getElementById("description_dynamic_image2.2");
+
+        // const addtocardbtn = document.getElementById("Add_To_Cart_btn")
+
+
+
+        // const z = new URLSearchParams(window.location.search)
+        // const ID = z.get("id")
+
+        // let currectDesData = [];
+
+
+
+        // function renderUiOfDescriptionPage() {
+
+        //     fetch(`http://localhost:3000/products/${ID}`)
+        //         .then((res) => res.json())
+        //         .then((data) => {
+
+        //             currectDesData = data;
+
+        //             reviews_info.innerText = data.rating;
+        //             title_info.innerHTML = data.title;
+        //             price_info.innerHTML = data.price;
+        //             image_imfo1.setAttribute("src", data.image[0])
+        //             image_imfo2.setAttribute("src", data.image[1])
+
+        //             image_imfo11.setAttribute("src", data.image[0])
+        //             image_imfo22.setAttribute("src", data.image[1])
+        //             price_info_add.innerHTML = data.price
+
+        //         })
+        //         .catch((err) => console.log(err))
+
+        // }
+
+        // renderUiOfDescriptionPage()
+
+        // async function GetCartData() {
+        //     const res = await fetch("http://localhost:3000/Add-To-Cart")
+        //     const data = await res.json()
+
+        //     return data
+        // }
+
+
+        // addtocardbtn.addEventListener("click", async () => {
+        //     const cartData = await GetCartData()
+
+        //     const found = cartData.find((el, i) => el.id == ID)
+        //     if (!found) {
+        //         fetch("http://localhost:3000/Add-To-Cart", {
+        //             method: "POST",
+        //             headers: {
+        //                 "Content-Type": "application/x-www-form-urlencoded",
+        //             },
+        //             body: JSON.stringify({ ...currectDesData, qunatity: 1 }),
+        //         })
+
+        //         alert("data is added")
+        //     }
+        //     else {
+        //         alert("data is already exist")
+        //     }
+
+        // })
+
+
+        // // add to card code starts form here...
+
+        // const cardDisplay = document.querySelector(".card")
+        // const offcanvas = document.getElementById("offcanvasRight")
+
+        // async function GetCartDataFromServer() {
+        //     const res = await fetch("http://localhost:3000/Add-To-Cart");
+        //     const data = await res.json()
+
+        //     return data
+        // }
+
+        // async function cardList() {
+
+        //     const data = await GetCartDataFromServer()
+
+        //     let productData = data.map((el) => {
+        //         // Make sure el.image has at least 2 images
+        //         return AddtoCartdetail(el.image[0], el.title, el.price, el.id, el.qunatity);
+        //     });
+
+        //     cardDisplay.innerHTML = productData.join("");
+        // }
+
+        // cardList()
+
+        // function AddtoCartdetail(image, title, price, id, qunatity) {
+        //     return `
+        // <div class="addtocard">
+        //             <div class="addtocartimage">
+        //                 <img id="add_to_cart_product_image" src="${image}" alt="">
+        //             </div>
+        //             <div class="description">
+        //                 <h1 id="add_to_cart_product_title">${title}</h1>
+        //                 <p id="add_to_cart_price">${price}</p>
+        //                 <div class="qunatity">
+        //                     <button class="decreaseQty" id=${id}>-</button>
+        //                     <span>${qunatity}</span>
+        //                     <button class="increaseQty" id=${id}>+</button>
+        //                 </div>
+        //             </div>
+        //     </div>
+        // `;
+        // }
+
+        // async function HandleChangeQty(id, change) {
+
+        //     // console.log(change)
+
+        //     let allData = await GetCartDataFromServer()
+
+        //     const updated = allData.filter((el, i) => {
+        //         return el.qunatity += change
+        //     })
+
+
+        //     fetch(`http://localhost:3000/Add-To-Cart/${id}`,
+        //         {
+        //             method: "PATCH",
+        //             headers: {
+        //                 "Content-Type": "application/json",
+        //             },
+        //             body: JSON.stringify(updated),
+        //         }
+        //     ).then((res)=>res.json)
+        //     .catch((err)=>console.log(err))
+
+        // }
+
+        // offcanvas.addEventListener("click", (e) => {
+        //     if (e.target.classList.contains("decreaseQty")) {
+        //         const IDs = e.target.id;
+        //         HandleChangeQty(IDs, -1)
+        //         // console.log("-1")
+        //     }
+        // })
+
+        // offcanvas.addEventListener("click", (e) => {
+        //     if (e.target.classList.contains("increaseQty")) {
+        //         const IDs = e.target.id;
+        //         HandleChangeQty(IDs, 1)
+        //         // console.log("1")
+        //     }
+        // })
+
+
+
+
+
+       const reviews_info = document.getElementById("description_dynamic_reviews");
         const title_info = document.getElementById("description_dynamic_title");
         const price_info = document.getElementById("description_dynamic_price");
         const price_info_add = document.getElementById("description_dynamic_price_add");
@@ -1249,14 +1517,10 @@
 
         const addtocardbtn = document.getElementById("Add_To_Cart_btn")
 
-
-
         const z = new URLSearchParams(window.location.search)
         const ID = z.get("id")
 
         let currectDesData = [];
-
-
 
         function renderUiOfDescriptionPage() {
 
@@ -1299,18 +1563,134 @@
                 fetch("http://localhost:3000/Add-To-Cart", {
                     method: "POST",
                     headers: {
-                        "Content-Type": "application/x-www-form-urlencoded",
+                        "Content-Type": "application/json",
                     },
                     body: JSON.stringify({ ...currectDesData, qunatity: 1 }),
                 })
-
-                alert("data is added")
+                .then(res => res.json())
+                .then(data => {
+                    alert("Data is added");
+                    cardList();
+                })
+                .catch(err => console.log(err));
             }
             else {
-                alert("data is already exist")
+                alert("Data is already exist");
             }
 
         })
+
+
+        // add to card code starts form here...
+
+        const cardDisplay = document.querySelector(".card")
+        const offcanvas = document.getElementById("offcanvasRight")
+        const cartTotalDisplay = document.getElementById("cartTotal"); // Assuming you have an element with this ID for total
+
+        async function GetCartDataFromServer() {
+            const res = await fetch("http://localhost:3000/Add-To-Cart");
+            const data = await res.json()
+
+            return data
+        }
+
+        async function cardList() {
+            const data = await GetCartDataFromServer();
+            let totalCartPrice = 0; // Initialize total cart price
+
+            let productData = data.map((el) => {
+                // Calculate item total price
+                const itemTotalPrice = el.price * el.qunatity;
+                totalCartPrice += itemTotalPrice; // Add to overall cart total
+
+                // Pass itemTotalPrice to the AddtoCartdetail function
+                return AddtoCartdetail(el.image[0], el.title, el.price, el.id, el.qunatity, itemTotalPrice);
+            });
+
+            cardDisplay.innerHTML = productData.join("");
+            if (cartTotalDisplay) {
+                cartTotalDisplay.innerHTML = totalCartPrice;
+            }
+        }
+
+        cardList()
+
+        // Added itemTotalPrice parameter
+        function AddtoCartdetail(image, title, price, id, qunatity, itemTotalPrice) {
+            return `
+        <div class="addtocard">
+                    <div class="addtocartimage">
+                        <img id="add_to_cart_product_image" src="${image}" alt="">
+                    </div>
+                    <div class="description">
+                        <h1 id="add_to_cart_product_title">${title}</h1>
+                        <p>Price: $<span id="add_to_cart_price_per_item">${price}</span></p>
+                        <p>Total: $<span id="add_to_cart_item_total">${itemTotalPrice.toFixed(2)}</span></p>
+                        <div class="qunatity">
+                            <button class="decreaseQty" data-id="${id}">-</button>
+                            <span>${qunatity}</span>
+                            <button class="increaseQty" data-id="${id}">+</button>
+                        </div>
+                    </div>
+            </div>
+        `;
+        }
+
+        async function HandleChangeQty(id, change) {
+            let allData = await GetCartDataFromServer();
+            const itemToUpdate = allData.find(el => el.id == id);
+
+            if (itemToUpdate) {
+                let newQuantity = itemToUpdate.qunatity + change;
+
+                if (newQuantity < 1) {
+                    fetch(`http://localhost:3000/Add-To-Cart/${id}`, {
+                        method: "DELETE",
+                    })
+                    .then(res => {
+                        if (res.ok) {
+                            console.log(`Item with ID ${id} deleted from cart.`);
+                            cardList();
+                        } else {
+                            console.error("Failed to delete item from cart:", res.statusText);
+                        }
+                    })
+                    .catch(err => console.error("Error deleting item:", err));
+                    return;
+                }
+
+                fetch(`http://localhost:3000/Add-To-Cart/${id}`,
+                    {
+                        method: "PATCH",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({ qunatity: newQuantity }),
+                    }
+                )
+                .then((res) => {
+                    if (!res.ok) {
+                        throw new Error(`HTTP error! status: ${res.status}`);
+                    }
+                    return res.json();
+                })
+                .then((data) => {
+                    console.log("Quantity updated:", data);
+                    cardList();
+                })
+                .catch((err) => console.log("Error updating quantity:", err));
+            }
+        }
+
+        offcanvas.addEventListener("click", (e) => {
+            if (e.target.classList.contains("decreaseQty")) {
+                const IDs = e.target.dataset.id;
+                HandleChangeQty(IDs, -1);
+            } else if (e.target.classList.contains("increaseQty")) {
+                const IDs = e.target.dataset.id;
+                HandleChangeQty(IDs, 1);
+            }
+        });
 
 
 

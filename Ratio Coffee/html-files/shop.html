@@ -149,12 +149,6 @@ B
             font-weight: 500;
         }
 
-        .navbar .container .header-icon button {
-            background-color: white;
-            border: none;
-            outline: none;
-        }
-
         /* navbar code ends */
 
 
@@ -307,75 +301,6 @@ B
 
 
         /* shop all code ends */
-
-
-        /* offcanvas add to cart code starts */
-
-        .addtocard {
-            margin-bottom: 20px;
-            height: 120px;
-            width: 100%;
-            padding: 20px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .addtocard .addtocartimage #add_to_cart_product_image {
-            height: 100px;
-            width: 100px;
-        }
-
-        .addtocard #add_to_cart_product_title {
-            font-size: 16px;
-            font-weight: 700;
-            font-family: sans-serif;
-            margin-bottom: 5px;
-        }
-
-        .addtocard #add_to_cart_price {
-            margin-bottom: 10px;
-            font-size: 15px;
-            font-weight: 400;
-            font-family: sans-serif;
-        }
-
-        .addtocard .qunatity .decreaseQty {
-            text-align: center;
-            height: 30px;
-            width: 30px;
-            font-weight: 700;
-            background-color: white;
-            margin: auto;
-            border: 0.5px solid #2c2e2f;
-        }
-
-        .addtocard .qunatity .increaseQty {
-            text-align: center;
-            height: 30px;
-            width: 30px;
-            font-weight: 700;
-            background-color: white;
-            margin: auto;
-            border: 0.5px solid #2c2e2f;
-        }
-
-        .addtocard .qunatity span {
-            height: 30px;
-            width: 45px;
-            padding: 4px 20px;
-            border: 0.5px solid #2c2e2f;
-            background-color: white;
-            margin: auto;
-        }
-
-
-
-
-
-        /* offcanvas add to cart code ends */
-
-
 
 
 
@@ -738,25 +663,12 @@ B
             <div class="header-icon">
                 <a href="login.html"><i class="bi bi-person" style="font-size: 28px;"></i></a>
                 <a href="search.html"><i class="bi bi-search" style="font-size: 22px;"></i></a>
-                <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
-                        class="bi bi-cart" style="font-size: 22px;"></i></button>
+                <a href="add-to-cart.html"><i class="bi bi-cart" style="font-size: 22px;"></i></a>
             </div>
         </div>
     </div>
 
-    <!-- offcanvas for Add To Card starts -->
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Cart</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="card"></div>
-        </div>
-    </div>
-
-    <!-- offcanvas for Add To Card ends -->
+    
 
     <!-- navbar ends -->
 
@@ -932,90 +844,6 @@ B
         `;
         }
 
-
-
-        // add to card code starts form here...
-
-        const cardDisplay = document.querySelector(".card")
-        const offcanvas = document.getElementById("offcanvasRight")
-
-        async function GetCartDataFromServer() {
-            const res = await fetch("http://localhost:3000/Add-To-Cart");
-            const data = await res.json()
-
-            return data
-        }
-
-        async function cardList() {
-
-            const data = await GetCartDataFromServer()
-
-            let productData = data.map((el) => {
-                // Make sure el.image has at least 2 images
-                return AddtoCartdetail(el.image[0], el.title, el.price, el.id, el.qunatity);
-            });
-
-            cardDisplay.innerHTML = productData.join("");
-        }
-
-        cardList()
-
-        function AddtoCartdetail(image, title, price, id, qunatity) {
-            return `
-        <div class="addtocard">
-                    <div class="addtocartimage">
-                        <img id="add_to_cart_product_image" src="${image}" alt="">
-                    </div>
-                    <div class="description">
-                        <h1 id="add_to_cart_product_title">${title}</h1>
-                        <p id="add_to_cart_price">${price}</p>
-                        <div class="qunatity">
-                            <button class="decreaseQty" id=${id}>-</button>
-                            <span>${qunatity}</span>
-                            <button class="increaseQty" id=${id}>+</button>
-                        </div>
-                    </div>
-            </div>
-        `;
-        }
-
-        async function HandleChangeQty(id, change) {
-
-            // console.log(change)
-
-            let allData = await GetCartDataFromServer()
-
-            const updated = allData.filter((el, i) => {
-                return el.qunatity += change
-            })
-
-
-            fetch(`http://localhost:3000/Add-To-Cart/${id}`,
-                {
-                    method: "PATCH",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(updated),
-                }
-            ).then((res)=>res.json)
-            .catch((err)=>console.log(err))
-
-        }
-
-        offcanvas.addEventListener("click", (e) => {
-            if (e.target.classList.contains("decreaseQty")) {
-                const ID = e.target.id;
-                HandleChangeQty(ID, -1)
-            }
-        })
-
-        offcanvas.addEventListener("click", (e) => {
-            if (e.target.classList.contains("increaseQty")) {
-                const ID = e.target.id;
-                HandleChangeQty(ID, 1)
-            }
-        })
 
 
     </script>

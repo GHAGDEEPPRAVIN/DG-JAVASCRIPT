@@ -958,5 +958,17 @@
       "password": "147852"
     }
   ],
-  "Add-To-Cart": []
+  "Add-To-Cart": [
+    {
+      "id": "1",
+      "image": [
+        "https://ratiocoffee.com/cdn/shop/products/ratio6-black-A3_7f3d3fc4-7d12-4aa4-a809-62746b73af24_360x.jpg?v=1675189304",
+        "https://ratiocoffee.com/cdn/shop/files/ratio6-black-C3_360x.jpg?v=1713379688"
+      ],
+      "title": "Ratio Six Coffee Machine",
+      "rating": "(508 Reviews)",
+      "price": "$359.00",
+      "qunatity": 7
+    }
+  ]
 }
