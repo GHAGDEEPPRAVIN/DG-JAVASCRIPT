@@ -1604,19 +1604,26 @@
                 totalCartPrice += itemTotalPrice; // Add to overall cart total
 
                 // Pass itemTotalPrice to the AddtoCartdetail function
-                return AddtoCartdetail(el.image[0], el.title, el.price, el.id, el.qunatity, itemTotalPrice);
+                return AddtoCartdetail(el.image[0], el.title, el.price, el.id, el.qunatity);
+
+                if (cartTotalDisplay) {
+                cartTotalDisplay.innerText = itemTotalPrice;
+            }
+
             });
 
             cardDisplay.innerHTML = productData.join("");
-            if (cartTotalDisplay) {
-                cartTotalDisplay.innerHTML = totalCartPrice;
-            }
+
+            // if (cartTotalDisplay) {
+            //     cartTotalDisplay.innerText = totalCartPrice;
+            // }
+
         }
 
         cardList()
 
         // Added itemTotalPrice parameter
-        function AddtoCartdetail(image, title, price, id, qunatity, itemTotalPrice) {
+        function AddtoCartdetail(image, title, price, id, qunatity) {
             return `
         <div class="addtocard">
                     <div class="addtocartimage">
@@ -1624,8 +1631,7 @@
                     </div>
                     <div class="description">
                         <h1 id="add_to_cart_product_title">${title}</h1>
-                        <p>Price: $<span id="add_to_cart_price_per_item">${price}</span></p>
-                        <p>Total: $<span id="add_to_cart_item_total">${itemTotalPrice.toFixed(2)}</span></p>
+                        <p>Price: <span id="add_to_cart_price_per_item">${price}</span></p>
                         <div class="qunatity">
                             <button class="decreaseQty" data-id="${id}">-</button>
                             <span>${qunatity}</span>
