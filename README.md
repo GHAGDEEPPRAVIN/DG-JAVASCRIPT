@@ -1,4 +1,4 @@
-## DAY-1 OUTPU
+## DAY-1 OUTPUU
 
 🎯 Quiz App
 A simple and interactive Quiz Application built with HTML, CSS, and JavaScript.
