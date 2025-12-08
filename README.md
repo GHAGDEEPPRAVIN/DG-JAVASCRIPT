@@ -279,7 +279,7 @@ Error handling for invalid country names
 
 Smooth loading animations and dynamic updates
 
-🎥 Demo
+🎥 Demo video
 
 <img src="output-9.gif">
 
