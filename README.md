@@ -109,7 +109,7 @@ Simple and elegant design
 
 Mobile-friendly and responsive
 
-🎥 Demo
+🎥 Demo Clip
 
 <img src="output-4.gif">
 
