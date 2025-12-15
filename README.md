@@ -1,4 +1,4 @@
-## DAY-1 O
+## DAY-1 OU
 
 🎯 Quiz App
 A simple and interactive Quiz Application built with HTML, CSS, and JavaScript.
