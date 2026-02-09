@@ -1,4 +1,4 @@
-## DAY-1 OUTPUTS 
+## DAY-1 OUTPUT 
 
 🎯 Quiz App
 A simple and interactive Quiz Application built with HTML, CSS, and JavaScript.
