@@ -1,5 +1,5 @@
 ## DAY-1 OUTPUT
-   
+    
 🎯 Quiz App 
 A simple and interactive Quiz Application built with HTML, CSS, and JavaScript.
 It allows users to test their knowledge with multiple-choice questions, get instant feedback, and view their final score.
